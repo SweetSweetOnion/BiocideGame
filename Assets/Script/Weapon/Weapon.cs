@@ -11,6 +11,7 @@ public class Weapon : ScriptableObject
 	public float bulletDamage = 10;
 	public float bulletGravity = -9;
 	public float bulletLifetime = 10;
+	public int bulletLevel = 0;
 	[Header("Spawn")]
 	public Vector2 maxSpawnCount = new Vector2(1, 2);
 	public Vector2 minSpawnCount = new Vector2(1, 2);
@@ -44,6 +45,8 @@ public class Weapon : ScriptableObject
 			bullet.direction = finalDir;
 			bullet.gravity = bulletGravity;
 			bullet.lifetime = bulletLifetime;
+			bullet.weaponLevel = bulletLevel;
+			bullet.damage = bulletDamage;
 		}
 	}
 

@@ -23,13 +23,14 @@ public class TileManager : MonoBehaviour
 		instance = this;
 	}
 
-	public static void OnTileHit(Vector3Int position){
+	public static void OnTileHit(Vector3Int position, float damage, int level){
 		
 		if(!tiles.ContainsKey(position)){
 			EnvironementTile tile = new EnvironementTile(GameManager.tilemap.GetEnvironementTile(position), position);
 			tiles.Add(position, tile);
-		}
-		tiles[position].DealDamage(10);
+		}	
+		tiles[position].Flash();
+		tiles[position].DealDamage(damage);
 	}
 
 	public static void RemoveTile(Vector3Int position)
