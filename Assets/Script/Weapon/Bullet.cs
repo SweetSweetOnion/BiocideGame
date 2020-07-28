@@ -52,9 +52,9 @@ public class Bullet : MonoBehaviour
 				
 				Vector3Int coord = GameManager.tilemap.WorldToCell(hitPosition);
 				
-				TileType t = GameManager.tilemap.GetEnvironementTile(coord);
+				TileType t = GameManager.tilemap.GetTileType(coord);
 				if(t){
-					TileManager.OnTileHit(coord,damage,weaponLevel);
+					TileManager.OnTileHit(coord,this);
 				}
 			}
 		}

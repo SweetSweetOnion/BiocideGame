@@ -29,6 +29,10 @@ public class EnvironementTile
 		}
 	}
 
+	public bool CanResist(Bullet b){
+		return _tile.resistanceLevel > b.weaponLevel;
+	}
+
 	public void SetColor(Color c){
 		GameManager.tilemap.SetTileFlags(_position, TileFlags.None);
 		GameManager.tilemap.SetColor(_position, c);
