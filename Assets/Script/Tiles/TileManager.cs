@@ -23,13 +23,16 @@ public class TileManager : MonoBehaviour
 		instance = this;
 	}
 
-	public static void OnTileHit(Vector3Int position){
+	public static void OnTileHit(Vector3Int position, Bullet bullet){
 		
 		if(!tiles.ContainsKey(position)){
-			EnvironementTile tile = new EnvironementTile(GameManager.tilemap.GetEnvironementTile(position), position);
+			EnvironementTile tile = new EnvironementTile(GameManager.tilemap.GetTileType(position), position);
 			tiles.Add(position, tile);
+		}	
+		tiles[position].Flash();
+		if(!tiles[position].CanResist(bullet)){
+			tiles[position].DealDamage(bullet.damage);
 		}
-		tiles[position].DealDamage(10);
 	}
 
 	public static void RemoveTile(Vector3Int position)

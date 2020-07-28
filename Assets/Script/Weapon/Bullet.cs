@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
 	public float lifetime = 50;
 	public float speed = 10;
 	public float gravity = 10;
+	public float damage = 1;
+	public int weaponLevel = 0;
 	public Vector2 direction = new Vector2(1, 0);
 
 	private Rigidbody2D rb;
@@ -50,9 +52,9 @@ public class Bullet : MonoBehaviour
 				
 				Vector3Int coord = GameManager.tilemap.WorldToCell(hitPosition);
 				
-				TileType t = GameManager.tilemap.GetEnvironementTile(coord);
+				TileType t = GameManager.tilemap.GetTileType(coord);
 				if(t){
-					TileManager.OnTileHit(coord);
+					TileManager.OnTileHit(coord,this);
 				}
 			}
 		}
