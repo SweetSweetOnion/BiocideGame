@@ -66,9 +66,9 @@ crashlytics-build.properties
 *.prof
 .cache
 IncrementalSoundBankData.xml
-#Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
-#Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta
-#Assets/WwiseSettings.xml
-#Assets/WwiseSettings.xml.meta
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta
+Assets/WwiseSettings.xml
+Assets/WwiseSettings.xml.meta
 *.wsettings
 DeathStare_WwiseProject/DeathStare_WwiseProject.Pamplemousse.validationcache
