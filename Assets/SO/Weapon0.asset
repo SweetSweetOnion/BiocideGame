@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 904aa510cc8b3a74d81c30ff7de7bdcb, type: 3}
-  m_Name: test
+  m_Name: Weapon0
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 325166070, guid: 06b75dc9452dbbd46bd8dd6112b6442a, type: 3}
-  maxBulletSpeed: 30
-  minBulletSpeed: 2
+  maxBulletSpeed: 10
+  minBulletSpeed: 4
   bulletDamage: 1
   bulletGravity: 3000
   bulletLifetime: 10
   bulletLevel: 0
-  maxSpawnCount: {x: 10, y: 10}
+  maxSpawnCount: {x: 1, y: 1}
   minSpawnCount: {x: 1, y: 1}
-  maxSpawnCooldown: 0.01
-  minSpawnCooldown: 1
-  directionSpread: 30
+  maxSpawnCooldown: 0.04
+  minSpawnCooldown: 0.08
+  directionSpread: 1
   directionOffsetY: 0.5
   spawnOffset: {x: 0.1, y: 0.1}
-  recoil: {x: -0.2, y: 0}
+  recoil: {x: 0, y: 0}
   pressureAddPerUse: -1
   pressureAddEverySecond: 0
   pressureAddPerReload: 10

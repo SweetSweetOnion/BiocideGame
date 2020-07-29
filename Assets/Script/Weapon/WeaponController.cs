@@ -5,7 +5,8 @@ public class WeaponController : MonoBehaviour
 {
 
 	private PlayerController _controller;
-	public Weapon weapon;
+	[SerializeField]
+	private Weapon _weapon;
 	private float _pressure = 100;
 
 	private float lastSpawnTime = 0;
@@ -17,30 +18,34 @@ public class WeaponController : MonoBehaviour
 
 	private void Update()
 	{
-		if (!weapon) return;
+		if (!_weapon) return;
 
 		if(Input.GetAxis("RightTrigger") > 0.2f){
 
-			if(Time.time > lastSpawnTime + weapon.GetSpawnCooldown(_pressure)){
-				Vector2 recoil = weapon.recoil;
+			if(Time.time > lastSpawnTime + _weapon.GetSpawnCooldown(_pressure)){
+				Vector2 recoil = _weapon.recoil;
 				Vector2 shootDirection = Vector2.right;
 				if(_controller.isFlip ){
 					recoil.x *= -1;
 					shootDirection.x *= -1;
 				}
-				_controller.AddForce(recoil * weapon.GetPressure(_pressure));
-				weapon.SpawnBullet(transform.position, shootDirection, _controller.velocity,_pressure) ;
+				_controller.AddForce(recoil * _weapon.GetPressure(_pressure));
+				_weapon.SpawnBullet(transform.position, shootDirection, _controller.velocity,_pressure) ;
 				lastSpawnTime = Time.time;
-				_pressure += weapon.pressureAddPerUse;
+				_pressure += _weapon.pressureAddPerUse;
 			}
 		}
 
 		if(Input.GetButtonUp("Reload")){
-			_pressure += weapon.pressureAddPerReload;
+			_pressure += _weapon.pressureAddPerReload;
 		}
 		float p = _pressure/100f;
-		Debug.Log(p + "  " + p * p);
-		_pressure += weapon.pressureAddEverySecond * Time.deltaTime;
+		_pressure += _weapon.pressureAddEverySecond * Time.deltaTime;
 		_pressure = Mathf.Clamp(_pressure, 0, 100);
+	}
+
+	public void SwitchWeapon(Weapon nextWeapon ){
+		_weapon = nextWeapon;
+		_pressure = 100;
 	}
 }
