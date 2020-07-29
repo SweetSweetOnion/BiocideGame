@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" SchemaVersion="97" RootDocumentID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}">
 	<States>
-		<WorkUnit Name="GENERAL STATES" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" OwnerID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Nested"/>
+		<WorkUnit Name="GENERAL STATES" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" OwnerID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="WeaponLevel" ID="{F66141A9-1E78-46B8-A8A1-58B01C75BBD0}">
+					<ChildrenList>
+						<State Name="None" ID="{81135210-0084-452D-BFFF-CA7022523806}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="OverralAmb" ID="{96A67247-E72D-4415-ABC3-533CC48C1927}">
+					<ChildrenList>
+						<State Name="None" ID="{90561E16-5FDD-4450-8AB7-8C2FDF994514}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

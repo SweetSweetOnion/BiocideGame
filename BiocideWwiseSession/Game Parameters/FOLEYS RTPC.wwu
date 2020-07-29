@@ -6,6 +6,16 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="WeaponCharge" ID="{ABF41A08-5D07-4151-8FD8-E2057B025511}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="90"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="90"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
