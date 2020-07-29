@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8831B311-B3DE-432D-93F8-22A22D0514C2}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="BIOCIDE_AUDIO" ID="{8831B311-B3DE-432D-93F8-22A22D0514C2}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="SFX" ID="{38DC4552-4C13-4043-B77F-D497038D6973}" PersistMode="Reference"/>
+				<WorkUnit Name="VOICES" ID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

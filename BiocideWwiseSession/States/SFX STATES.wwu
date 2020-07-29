@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F5B9D6B-958E-4B08-AA84-28D8DFDAC065}" SchemaVersion="97" RootDocumentID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}">
+	<States>
+		<WorkUnit Name="SFX STATES" ID="{7F5B9D6B-958E-4B08-AA84-28D8DFDAC065}" OwnerID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="AMBIANCES STATES" ID="{9153B9C1-084D-4D73-BCD6-0D74EC2B7F9A}" PersistMode="Reference"/>
+				<WorkUnit Name="EFFECTS STATES" ID="{4AB9C570-83C6-4F5B-B1AD-55A58E2E860C}" PersistMode="Reference"/>
+				<WorkUnit Name="FOLEYS STATES" ID="{B8CE9EBD-B5EE-4535-877B-012A6C6FBA50}" PersistMode="Reference"/>
+				<WorkUnit Name="UI STATES" ID="{C22BBD03-15A6-4600-BF0D-C85E87A59E62}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

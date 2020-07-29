@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" SchemaVersion="97" RootDocumentID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}">
+	<States>
+		<WorkUnit Name="GENERAL STATES" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" OwnerID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Nested"/>
+	</States>
+</WwiseDocument>

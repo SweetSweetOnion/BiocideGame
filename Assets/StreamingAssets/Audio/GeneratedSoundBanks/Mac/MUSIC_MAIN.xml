@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1615767906" GUID="{DFBB66CC-942F-47F9-B3E9-7AD23C672F05}" Language="SFX">
+			<ObjectPath>\SoundBanks\BIOCIDE_SNB\MUSIC SNB\MUSIC_MAIN</ObjectPath>
+			<ShortName>MUSIC_MAIN</ShortName>
+			<Path>MUSIC_MAIN.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1414448543" Name="Play_MusicTest" ObjectPath="\Events\BIOCIDE_EVENTS\MUSIC EVENTS\Play_MusicTest" GUID="{40B38B7E-61EC-4DA6-8A0A-A16A7F3CA3CD}" DurationType="OneShot" DurationMin="149.479996" DurationMax="149.479996">
+					<IncludedMemoryFiles>
+						<File Id="213904705" Language="SFX">
+							<ShortName>Music\02 - The Shire.wav</ShortName>
+							<Path>SFX\Music\02 - The Shire_073B4D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{049FECB0-7F8F-4512-89BE-459027DBF58F}" SchemaVersion="97" RootDocumentID="{27D107AD-1B4B-4691-8EB8-AEF0EDCB951B}">
+	<GameParameters>
+		<WorkUnit Name="FOLEYS RTPC" ID="{049FECB0-7F8F-4512-89BE-459027DBF58F}" OwnerID="{2573715C-1ED1-4DBD-8017-B0F7F7597485}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

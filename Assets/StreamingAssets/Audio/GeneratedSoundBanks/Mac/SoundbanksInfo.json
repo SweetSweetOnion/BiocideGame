@@ -1,0 +1,55 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\",
+   "SourceFilesRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\GeneratedSoundBanks\\Mac"
+  },
+  "DialogueEvents": [],
+  "StreamedFiles": [],
+  "MediaFilesNotInAnyBank": [],
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   },
+   {
+    "Id": "1615767906",
+    "GUID": "{DFBB66CC-942F-47F9-B3E9-7AD23C672F05}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\BIOCIDE_SNB\\MUSIC SNB\\MUSIC_MAIN",
+    "ShortName": "MUSIC_MAIN",
+    "Path": "MUSIC_MAIN.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1414448543",
+      "Name": "Play_MusicTest",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\MUSIC EVENTS\\Play_MusicTest",
+      "GUID": "{40B38B7E-61EC-4DA6-8A0A-A16A7F3CA3CD}",
+      "DurationType": "OneShot",
+      "DurationMin": "149.479996",
+      "DurationMax": "149.479996",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "213904705",
+        "Language": "SFX",
+        "ShortName": "Music\\02 - The Shire.wav",
+        "Path": "SFX\\Music\\02 - The Shire_073B4D0C.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

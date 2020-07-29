@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1414448543	Play_MusicTest			\BIOCIDE_EVENTS\MUSIC EVENTS\Play_MusicTest	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	213904705	02 - The Shire	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\Music\02 - The Shire_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MusicTest\02 - The Shire		8455999
+

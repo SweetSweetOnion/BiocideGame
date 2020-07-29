@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1F8477FE-5FE1-4B0D-8125-92AD456390ED}" SchemaVersion="97">
+	<InteractiveMusic>
+		<WorkUnit Name="BIOCIDE_MUSIC" ID="{1F8477FE-5FE1-4B0D-8125-92AD456390ED}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="MAIN" ID="{606B2E20-8537-4E89-BF40-A4B18949339F}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

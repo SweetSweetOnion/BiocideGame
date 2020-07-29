@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5BA8B03C-3D61-4B21-938F-8B18F84BA6F6}" SchemaVersion="97" RootDocumentID="{7E58BEE4-1D7F-4D09-8E0F-D45B5B67A6A8}">
+	<SoundBanks>
+		<WorkUnit Name="MUSIC SNB" ID="{5BA8B03C-3D61-4B21-938F-8B18F84BA6F6}" OwnerID="{7E58BEE4-1D7F-4D09-8E0F-D45B5B67A6A8}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="MUSIC_MAIN" ID="{DFBB66CC-942F-47F9-B3E9-7AD23C672F05}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MUSIC EVENTS" ID="{3F549426-8D43-4D50-A1E2-B33D682C511B}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
