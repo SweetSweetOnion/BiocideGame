@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{27D107AD-1B4B-4691-8EB8-AEF0EDCB951B}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="BIOCIDE_RTPC" ID="{27D107AD-1B4B-4691-8EB8-AEF0EDCB951B}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="MUSIC RTPC" ID="{952868D9-FA89-46BF-8F6D-D4E3FAC07B8F}" PersistMode="Reference"/>
+				<WorkUnit Name="SFX RTPC" ID="{2573715C-1ED1-4DBD-8017-B0F7F7597485}" PersistMode="Reference"/>
+				<WorkUnit Name="VOICE RTPC" ID="{0CE7C760-64DD-4671-A2C6-173D53CE6F7C}" PersistMode="Reference"/>
+				<WorkUnit Name="GENERAL RTPC" ID="{4031D214-7ED6-4213-9F67-4B9266988D7F}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

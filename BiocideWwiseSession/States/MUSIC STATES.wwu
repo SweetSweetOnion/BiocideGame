@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FB551FBC-DC5A-4E6A-948C-52A5484318F4}" SchemaVersion="97" RootDocumentID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}">
+	<States>
+		<WorkUnit Name="MUSIC STATES" ID="{FB551FBC-DC5A-4E6A-948C-52A5484318F4}" OwnerID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

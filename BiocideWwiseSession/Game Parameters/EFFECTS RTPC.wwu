@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5B1D3137-4566-418C-8F12-EA5148098C6E}" SchemaVersion="97" RootDocumentID="{27D107AD-1B4B-4691-8EB8-AEF0EDCB951B}">
+	<GameParameters>
+		<WorkUnit Name="EFFECTS RTPC" ID="{5B1D3137-4566-418C-8F12-EA5148098C6E}" OwnerID="{2573715C-1ED1-4DBD-8017-B0F7F7597485}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="16"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

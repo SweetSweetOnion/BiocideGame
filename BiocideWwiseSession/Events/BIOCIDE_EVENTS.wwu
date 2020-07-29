@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{231F0C16-FFD3-4584-864B-48DC9E04826E}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="BIOCIDE_EVENTS" ID="{231F0C16-FFD3-4584-864B-48DC9E04826E}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="MUSIC EVENTS" ID="{3F549426-8D43-4D50-A1E2-B33D682C511B}" PersistMode="Reference"/>
+				<WorkUnit Name="SFX EVENTS" ID="{2CA8F888-22F6-4161-9E5B-6BDA0C978825}" PersistMode="Reference"/>
+				<WorkUnit Name="VOICE EVENTS" ID="{519CD9F9-8786-4082-B3D5-5650017A2FEA}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

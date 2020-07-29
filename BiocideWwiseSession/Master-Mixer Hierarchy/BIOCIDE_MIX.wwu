@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="BIOCIDE_MIX" ID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Bus Name="Master" ID="{BEA99F1A-F97B-4F2A-A9F6-4DCF608D0B81}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{3F50CA0F-5B2E-4E39-B4EC-491353CD1504}" WorkUnitID="{A8A1FD9B-678A-4636-AFE0-B6BA9E7B0D93}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{1F8D9160-41FD-426B-A918-F39DDF2DA1B9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="8"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="SFX_Effects" ID="{9FE3C926-A528-45E9-B277-1DDCEF5B0C4F}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="16"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="SFX_UI" ID="{69470E49-9364-4C12-8392-110B5FB84052}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="11"/>
+										<Property Name="HdrEnable" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="13"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Aux" ID="{DF39B0BC-E0AB-4E9E-908A-207FEE8BE4CC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AudioDevice">
+									<ObjectRef Name="System" ID="{3F50CA0F-5B2E-4E39-B4EC-491353CD1504}" WorkUnitID="{A8A1FD9B-678A-4636-AFE0-B6BA9E7B0D93}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
