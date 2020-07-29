@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Prime31;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(BoxCollider2D), typeof(CharacterController2D))]
 public class PlayerController : MonoBehaviour
@@ -38,8 +39,10 @@ public class PlayerController : MonoBehaviour
 	private Vector3 _externalForce;
 	private bool _isFlip = false;
 
-	private BoxCollider2D boxCollider;
+	private BoxCollider2D _boxCollider;
 	private CharacterController2D _controller2D;
+	private PlayerInput _playerInput;
+
 
 	//events
 	public delegate void TeleportEvent(Vector2 previous, Vector2 newPos);
@@ -47,8 +50,42 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake()
 	{
-		boxCollider = GetComponent<BoxCollider2D>();
+		_boxCollider = GetComponent<BoxCollider2D>();
 		_controller2D = GetComponent<CharacterController2D>();
+		_playerInput = GetComponent<PlayerInput>();
+	}
+
+	private void OnEnable()
+	{
+		_playerInput.currentActionMap["Jump"].started += JumpStart;
+		_playerInput.currentActionMap["Jump"].canceled += JumpEnd;
+		_playerInput.currentActionMap["Move"].performed += MovePerformed;
+	}
+
+	private void OnDisable()
+	{
+		_playerInput.currentActionMap["Jump"].started -= JumpStart;
+		_playerInput.currentActionMap["Jump"].canceled -= JumpEnd;
+		_playerInput.currentActionMap["Move"].performed -= MovePerformed;
+	}
+
+
+
+	private void MovePerformed(InputAction.CallbackContext obj)
+	{
+		_moveInput = obj.ReadValue<float>();
+		if (_moveInput > 0) _isFlip = false;
+		if (_moveInput < 0) _isFlip = true;
+	}
+
+	private void JumpStart(InputAction.CallbackContext obj)
+	{
+		_jumpInput = true;
+	}
+
+	private void JumpEnd(InputAction.CallbackContext obj)
+	{
+		_jumpInput = false;
 	}
 
 	public void SetPosition(Vector2 newPos)
@@ -58,57 +95,39 @@ public class PlayerController : MonoBehaviour
 		OnTeleport?.Invoke(old, newPos);
 	}
 
-	public void AddForce(Vector2 v){
-		_externalForce += new Vector3(v.x,v.y,0);
+	public void AddForce(Vector2 v)
+	{
+		_externalForce += new Vector3(v.x, v.y, 0);
 	}
 
 	private void Update()
 	{
-		UpdateInput();
 		UpdateJump();
 
 		if (_moveInput != 0)
 		{
-			if(isGrounded){
+			if (isGrounded)
+			{
 				_velocity.x = Mathf.MoveTowards(_velocity.x, speed * _moveInput, acceleration * Time.deltaTime);
-			}else{
+			}
+			else
+			{
 				_velocity.x = Mathf.MoveTowards(_velocity.x, aerialSpeed * _moveInput, acceleration * Time.deltaTime);
 			}
-			
+
 		}
 		else
 		{
 			_velocity.x = Mathf.MoveTowards(_velocity.x, 0, deceleration * Time.deltaTime);
-			
+
 		}
 
-	
-	
+
+
 
 		_controller2D.move(_velocity * Time.deltaTime + _externalForce);
 
 		_externalForce = Vector3.zero;
-	}
-
-	private void UpdateInput()
-	{
-		if (Input.GetButtonDown("Jump"))
-		{
-			_jumpInput = true;
-		}
-		if (Input.GetButtonUp("Jump"))
-		{
-			_jumpInput = false;
-		}
-
-		_moveInput = Input.GetAxis("Horizontal");
-		if(_moveInput > 0){
-			_isFlip = false;
-		}
-		if (_moveInput < 0)
-		{
-			_isFlip = true;
-		}
 	}
 
 	private void UpdateJump()

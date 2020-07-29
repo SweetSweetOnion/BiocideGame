@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class WeaponController : MonoBehaviour
 {
@@ -11,16 +12,53 @@ public class WeaponController : MonoBehaviour
 
 	private float lastSpawnTime = 0;
 
+	private PlayerInput _playerInput;
+
+	private bool _useWeapon = false;
+
+
 	private void Awake()
 	{
 		_controller = GetComponent<PlayerController>();
+		_playerInput = GetComponent<PlayerInput>();
+	}
+
+	private void OnEnable()
+	{
+		_playerInput.currentActionMap["Fire"].started += FireStart;
+		_playerInput.currentActionMap["Fire"].canceled += FireEnd;
+		_playerInput.currentActionMap["Reload"].performed += ReloadPerformed;
+
+	}
+
+	private void OnDisable()
+	{
+		_playerInput.currentActionMap["Fire"].started -= FireStart;
+		_playerInput.currentActionMap["Fire"].canceled -= FireEnd;
+		_playerInput.currentActionMap["Reload"].performed -= ReloadPerformed;
+	}
+
+	private void FireStart(InputAction.CallbackContext obj)
+	{
+		_useWeapon = true;
+	}
+
+	private void FireEnd(InputAction.CallbackContext obj)
+	{
+		_useWeapon = false;
+	}
+
+	private void ReloadPerformed(InputAction.CallbackContext obj)
+	{
+		_pressure += _weapon.pressureAddPerReload;
 	}
 
 	private void Update()
 	{
 		if (!_weapon) return;
 
-		if(Input.GetAxis("RightTrigger") > 0.2f){
+		if(_useWeapon)
+		{
 
 			if(Time.time > lastSpawnTime + _weapon.GetSpawnCooldown(_pressure)){
 				Vector2 recoil = _weapon.recoil;
@@ -34,10 +72,6 @@ public class WeaponController : MonoBehaviour
 				lastSpawnTime = Time.time;
 				_pressure += _weapon.pressureAddPerUse;
 			}
-		}
-
-		if(Input.GetButtonUp("Reload")){
-			_pressure += _weapon.pressureAddPerReload;
 		}
 		float p = _pressure/100f;
 		_pressure += _weapon.pressureAddEverySecond * Time.deltaTime;
