@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2CA8F888-22F6-4161-9E5B-6BDA0C978825}" SchemaVersion="97" RootDocumentID="{231F0C16-FFD3-4584-864B-48DC9E04826E}">
+	<Events>
+		<WorkUnit Name="SFX EVENTS" ID="{2CA8F888-22F6-4161-9E5B-6BDA0C978825}" OwnerID="{231F0C16-FFD3-4584-864B-48DC9E04826E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="AMBIANCES EVENTS" ID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}" PersistMode="Reference"/>
+				<WorkUnit Name="FOLEYS EVENTS" ID="{8F06FB46-DE49-4975-A90C-336E4500397C}" PersistMode="Reference"/>
+				<WorkUnit Name="EFFECTS EVENTS" ID="{E04DF236-C0B0-40BD-92C8-F555120A983F}" PersistMode="Reference"/>
+				<WorkUnit Name="UI EVENTS" ID="{E18136F1-6155-4D5C-AF64-27F4E0BF9180}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

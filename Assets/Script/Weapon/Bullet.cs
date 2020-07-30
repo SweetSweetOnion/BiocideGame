@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
 	public float lifetime = 50;
 	public float speed = 10;
 	public float gravity = 10;
+	public float damage = 1;
+	public int weaponLevel = 0;
 	public Vector2 direction = new Vector2(1, 0);
 
 	private Rigidbody2D rb;
@@ -41,18 +43,18 @@ public class Bullet : MonoBehaviour
 			Debug.Log("yo");
 		}*/
 		Vector3 hitPosition = Vector3.zero;
-		if (GameManager.tilemap != null && GameManager.tilemap.gameObject == collision.gameObject)
+		if (TileManager.mainTilemap != null && TileManager.mainTilemap.gameObject == collision.gameObject)
 		{
 			foreach (ContactPoint2D hit in collision.contacts)
 			{
 				hitPosition.x = hit.point.x - 0.01f * hit.normal.x;
 				hitPosition.y = hit.point.y - 0.01f * hit.normal.y;
 				
-				Vector3Int coord = GameManager.tilemap.WorldToCell(hitPosition);
+				Vector3Int coord = TileManager.mainTilemap.WorldToCell(hitPosition);
 				
-				TileType t = GameManager.tilemap.GetEnvironementTile(coord);
+				TileType t = TileManager.mainTilemap.GetTileType(coord);
 				if(t){
-					TileManager.OnTileHit(coord);
+					TileManager.OnTileHit(coord,this);
 				}
 			}
 		}

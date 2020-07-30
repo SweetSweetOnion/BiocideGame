@@ -1,0 +1,25 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\",
+   "SourceFilesRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   }
+  ]
+ }
+}

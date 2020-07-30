@@ -1,0 +1,624 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f373f05e9fceb5d45bcdb3ea56ebec0a, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: c8c6fc8c900012459d2e9de122ddd380
+    GuidInternal: 
+    m_lastTime: -8586176893817920003
+    List: []
+  - PhysicalPath: Virtual Acoustics\Factory Reflect Acoustic Textures.wwu
+    ParentPath: Factory Reflect Acoustic Textures
+    guid: 6b663d46a83ca54f8b4a5fef12b883f6
+    GuidInternal: 
+    m_lastTime: -8586180310413533202
+    List:
+    - name: Acoustic_Banner
+      guid: f2532d2fccda8e408b8898b1b52a26d6
+      id: 4168643977
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Acoustic_Banner
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Acoustic_Banner
+    - name: Anechoic
+      guid: 32c20a8be202de4ebeacfdd1a900e3ed
+      id: 1873957695
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Anechoic
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Anechoic
+    - name: Brick
+      guid: a9a586b004f2534ca838bdb18b18f6d6
+      id: 504532776
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Brick
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Brick
+    - name: Carpet
+      guid: 8975223456dc604296c4b9f4b669092b
+      id: 2412606308
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Carpet
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Carpet
+    - name: Concrete
+      guid: 001cf85c9628e04aaf7c3080bdaba682
+      id: 841620460
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Concrete
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Concrete
+    - name: Cork_Tiles
+      guid: 19c9d2305f92434189063dbb3c4ae5e2
+      id: 3195498748
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Cork_Tiles
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Cork_Tiles
+    - name: Curtains
+      guid: 339ee6f8975c6849b508a1535f2d66e8
+      id: 2928161104
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Curtains
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Curtains
+    - name: Drywall
+      guid: f4e3a4680b4c8746a8b8a84db93dbc8f
+      id: 3670307564
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Drywall
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Drywall
+    - name: Fabric
+      guid: 32d581836edbed4ea7a3bc7b0a0b8ba8
+      id: 1970351858
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Fabric
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Fabric
+    - name: Mountain
+      guid: 313793c51a00b44a98dd9b033a8c8eab
+      id: 513139656
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Mountain
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Mountain
+    - name: Textures
+      guid: a3121e7828e3df4a8bba5fb89c74031d
+      id: 1276632493
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Textures
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Textures
+    - name: Tile
+      guid: c4da82a82a13b747ba9db9907ba29cc0
+      id: 2637588553
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Tile
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Tile
+    - name: Wood
+      guid: 96bcff1fe76f9e48ba6c7c14a71391ae
+      id: 2058049674
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Wood
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Wood
+    - name: Wood_Bright
+      guid: e5d1857ba2c1634e9a13cec54b641adc
+      id: 4262522749
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Wood_Bright
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Wood_Bright
+    - name: Wood_Deep
+      guid: 8e474652dac50c4ea0dec98d1479529a
+      id: 1755085759
+      PathAndIcons:
+      - ElementName: Factory Reflect Acoustic Textures
+        ObjectType: 12
+      - ElementName: Textures
+        ObjectType: 4
+      - ElementName: Wood_Deep
+        ObjectType: 15
+      Path: Factory Reflect Acoustic Textures\Textures\Wood_Deep
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\BIOCIDE_MIX.wwu
+    ParentPath: BIOCIDE_MIX
+    guid: 6a4dfaa9d7132e41ba1963c22c553c3b
+    GuidInternal: 
+    m_lastTime: -8586055930660694599
+    List:
+    - name: Aux
+      guid: bcb039dfabe09e4e908a207fee8be4cc
+      id: 983310469
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: Aux
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\Aux
+    - name: Master
+      guid: 1a9fa9be7bf92a4fa9f64dcf608d0b81
+      id: 4056684167
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master
+    - name: Music
+      guid: 2bcf94860e7c1840a8c5e60cd816124f
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: Music
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\Music
+    - name: SFX
+      guid: 60918d1ffd416b42a918f39ddf2da1b9
+      id: 393239870
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\SFX
+    - name: SFX_Ambiances
+      guid: 2bb158d922eec64f994ed7a1cb5502c1
+      id: 2383096572
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: SFX_Ambiances
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\SFX\SFX_Ambiances
+    - name: SFX_Effects
+      guid: 26c9e39f28a5e945b2771ddcef5b0c4f
+      id: 2324388809
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: SFX_Effects
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\SFX\SFX_Effects
+    - name: SFX_Foleys
+      guid: 1863c01639c9ff4d8c5557d030091e9b
+      id: 3183352817
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: SFX_Foleys
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\SFX\SFX_Foleys
+    - name: SFX_UI
+      guid: 490e47696493124c8392110b5fb84052
+      id: 3862737079
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: SFX_UI
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\SFX\SFX_UI
+    - name: Voices
+      guid: 80504513d2a355499f4f6c04dfa35521
+      id: 3313685232
+      PathAndIcons:
+      - ElementName: BIOCIDE_MIX
+        ObjectType: 12
+      - ElementName: Master
+        ObjectType: 2
+      - ElementName: Voices
+        ObjectType: 2
+      Path: BIOCIDE_MIX\Master\Voices
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 8fcaf8cf947adf4bb88045b1a399cc8f
+    GuidInternal: 
+    m_lastTime: -8586176833329940865
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\BIOCIDE_SNB.wwu
+    ParentPath: BIOCIDE_SNB
+    guid: e4be587e7f1d094d8e0fd45b5b67a6a8
+    GuidInternal: 
+    m_lastTime: -8586055930486450352
+    List: []
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 6110ba39c45fde4c8badd708a7bee7ad
+    GuidInternal: 
+    m_lastTime: -8586176893819920292
+    List: []
+  - PhysicalPath: SoundBanks\MUSIC SNB.wwu
+    ParentPath: BIOCIDE_SNB\MUSIC SNB
+    guid: 3cb0a85b613d214b938f8b18f84ba6f6
+    GuidInternal: 
+    m_lastTime: -8586055927773234273
+    List:
+    - name: MUSIC_MAIN
+      guid: cc66bbdf2f94f947b3e97ad23c672f05
+      id: 1615767906
+      PathAndIcons:
+      - ElementName: BIOCIDE_SNB
+        ObjectType: 12
+      - ElementName: MUSIC SNB
+        ObjectType: 12
+      - ElementName: MUSIC_MAIN
+        ObjectType: 7
+      Path: BIOCIDE_SNB\MUSIC SNB\MUSIC_MAIN
+  - PhysicalPath: SoundBanks\SFX SNB.wwu
+    ParentPath: BIOCIDE_SNB\SFX SNB
+    guid: 5f51d95c3d663a44a75df7c962e84493
+    GuidInternal: 
+    m_lastTime: -8586172423506134326
+    List: []
+  - PhysicalPath: SoundBanks\VOICE SNB.wwu
+    ParentPath: BIOCIDE_SNB\VOICE SNB
+    guid: 247c45f15a3c7c4a81d87a11c13579a2
+    GuidInternal: 
+    m_lastTime: -8586176729807446010
+    List: []
+  EventWwu:
+  - PhysicalPath: Events\AMBIANCES EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS\SFX EVENTS\AMBIANCES EVENTS
+    guid: b0f38bff0217c344b75a436b1b512770
+    GuidInternal: 
+    m_lastTime: -8586173261501491481
+    List: []
+  - PhysicalPath: Events\BIOCIDE_EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS
+    guid: 160c1f23d3ff8445864b48dc9e04826e
+    GuidInternal: 
+    m_lastTime: -8586055930579460912
+    List: []
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 7cccdb0e548ba54ea6a63eaba775cd02
+    GuidInternal: 
+    m_lastTime: -8586055929197583851
+    List: []
+  - PhysicalPath: Events\EFFECTS EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS\SFX EVENTS\EFFECTS EVENTS
+    guid: 36f24de0b0c0bd4092c8f555120a983f
+    GuidInternal: 
+    m_lastTime: -8586173261408562630
+    List: []
+  - PhysicalPath: Events\FOLEYS EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS
+    guid: 46fb068f49de7549a90c336e4500397c
+    GuidInternal: 
+    m_lastTime: -8586173261348973104
+    List: []
+  - PhysicalPath: Events\MUSIC EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS\MUSIC EVENTS
+    guid: 2694543f438d504da1e2b33d682c511b
+    GuidInternal: 
+    m_lastTime: -8586055929197353037
+    List:
+    - name: Play_MusicTest
+      guid: 7e8bb340ec61a64d8a0aa16a7f3ca3cd
+      id: 1414448543
+      PathAndIcons:
+      - ElementName: BIOCIDE_EVENTS
+        ObjectType: 12
+      - ElementName: MUSIC EVENTS
+        ObjectType: 12
+      - ElementName: Play_MusicTest
+        ObjectType: 3
+      Path: BIOCIDE_EVENTS\MUSIC EVENTS\Play_MusicTest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\SFX EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS\SFX EVENTS
+    guid: 88f8a82cf62261419e5b6bda0c978825
+    GuidInternal: 
+    m_lastTime: -8586173261265640441
+    List: []
+  - PhysicalPath: Events\UI EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS\SFX EVENTS\UI EVENTS
+    guid: f13681e155615c4daf6427f4e0bf9180
+    GuidInternal: 
+    m_lastTime: -8586173261265541253
+    List: []
+  - PhysicalPath: Events\VOICE EVENTS.wwu
+    ParentPath: BIOCIDE_EVENTS\VOICE EVENTS
+    guid: f9d99c5186878240b3d55650017a2fea
+    GuidInternal: 
+    m_lastTime: -8586176731767569558
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\AMBIANCES RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\SFX RTPC\AMBIANCES RTPC
+    guid: 024553859138314ea9649e4d9a10bfa2
+    GuidInternal: 
+    m_lastTime: -8586173232635442506
+    List: []
+  - PhysicalPath: Game Parameters\BIOCIDE_RTPC.wwu
+    ParentPath: BIOCIDE_RTPC
+    guid: ad07d1274b1b91468eb8aef0edcb951b
+    GuidInternal: 
+    m_lastTime: -8586055930424352258
+    List: []
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: ef2cdc6ded63654487eab6552e4ad3af
+    GuidInternal: 
+    m_lastTime: -8586175979246197187
+    List: []
+  - PhysicalPath: Game Parameters\EFFECTS RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\SFX RTPC\EFFECTS RTPC
+    guid: 37311d5b66458c418f12ea5148098c6e
+    GuidInternal: 
+    m_lastTime: -8586173232635243041
+    List: []
+  - PhysicalPath: Game Parameters\FOLEYS RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\SFX RTPC\FOLEYS RTPC
+    guid: b0ec9f048f7f124589be459027dbf58f
+    GuidInternal: 
+    m_lastTime: -8586173232635332798
+    List: []
+  - PhysicalPath: Game Parameters\GENERAL RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\GENERAL RTPC
+    guid: 14d23140d67e13429f674b9266988d7f
+    GuidInternal: 
+    m_lastTime: -8586176733520103860
+    List: []
+  - PhysicalPath: Game Parameters\MUSIC RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\MUSIC RTPC
+    guid: d968289589fabf468f6dd4e3fac07b8f
+    GuidInternal: 
+    m_lastTime: -8586176730427877273
+    List: []
+  - PhysicalPath: Game Parameters\SFX RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\SFX RTPC
+    guid: 5c717325d11ebd4d8017b0f7f7597485
+    GuidInternal: 
+    m_lastTime: -8586173232929933594
+    List: []
+  - PhysicalPath: Game Parameters\UI RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\SFX RTPC\UI RTPC
+    guid: 80f8d6d2aeaed34b8cba7194615f94f3
+    GuidInternal: 
+    m_lastTime: -8586173232635142849
+    List: []
+  - PhysicalPath: Game Parameters\VOICE RTPC.wwu
+    ParentPath: BIOCIDE_RTPC\VOICE RTPC
+    guid: 60c7e70cdd647146a2c6173d53ce6f7c
+    GuidInternal: 
+    m_lastTime: -8586176730427986624
+    List: []
+  StateWwu:
+  - PhysicalPath: States\AMBIANCES STATES.wwu
+    ParentPath: BIOCIDE_STATES\SFX STATES\AMBIANCES STATES
+    guid: c1b953914d08734dbcd60d74ec2b7f9a
+    GuidInternal: 
+    m_lastTime: -8586173255110175762
+    List: []
+  - PhysicalPath: States\BIOCIDE_STATES.wwu
+    ParentPath: BIOCIDE_STATES
+    guid: 8fdc2e95cc9e864e9f83cf4d32902132
+    GuidInternal: 
+    m_lastTime: -8586055930424840045
+    List: []
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 34f54c8a15004c45b42698ee2b944cc2
+    GuidInternal: 
+    m_lastTime: -8586176739412945352
+    List: []
+  - PhysicalPath: States\EFFECTS STATES.wwu
+    ParentPath: BIOCIDE_STATES\SFX STATES\EFFECTS STATES
+    guid: 70c5b94ac6835b4fb1ad55a58e2e860c
+    GuidInternal: 
+    m_lastTime: -8586173255110086160
+    List: []
+  - PhysicalPath: States\FOLEYS STATES.wwu
+    ParentPath: BIOCIDE_STATES\SFX STATES\FOLEYS STATES
+    guid: bd9eceb8eeb53545877b012a6c6fba50
+    GuidInternal: 
+    m_lastTime: -8586173255109996401
+    List: []
+  - PhysicalPath: States\GENERAL STATES.wwu
+    ParentPath: BIOCIDE_STATES\GENERAL STATES
+    guid: f382bce998530244a44a6821a22982bb
+    GuidInternal: 
+    m_lastTime: -8586176733416781745
+    List: []
+  - PhysicalPath: States\MUSIC STATES.wwu
+    ParentPath: BIOCIDE_STATES\MUSIC STATES
+    guid: bc1f55fb5adc6a4e948c52a5484318f4
+    GuidInternal: 
+    m_lastTime: -8586176730882121245
+    List: []
+  - PhysicalPath: States\SFX STATES.wwu
+    ParentPath: BIOCIDE_STATES\SFX STATES
+    guid: 6b9d5b7f8e95084baa8428d8dfdac065
+    GuidInternal: 
+    m_lastTime: -8586173255110303717
+    List: []
+  - PhysicalPath: States\UI STATES.wwu
+    ParentPath: BIOCIDE_STATES\SFX STATES\UI STATES
+    guid: 03bd2bc2a6150046bf0dc85e87a59e62
+    GuidInternal: 
+    m_lastTime: -8586173255109895631
+    List: []
+  - PhysicalPath: States\VOICE STATES.wwu
+    ParentPath: BIOCIDE_STATES\VOICE STATES
+    guid: 284f887d5a8cda4da7c59a15a2758d88
+    GuidInternal: 
+    m_lastTime: -8586176730881891889
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\AMBIANCES SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\SFX SWITCHES\AMBIANCES SWITCHES
+    guid: 12fdc752931d86409c36a486e1bdc7ff
+    GuidInternal: 
+    m_lastTime: -8586173259502410553
+    List: []
+  - PhysicalPath: Switches\BIOCIDE_SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES
+    guid: 6693862959b100478c89509361acad23
+    GuidInternal: 
+    m_lastTime: -8586055930425140567
+    List: []
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 133512bad73bdb47ae69da5b2dbb7081
+    GuidInternal: 
+    m_lastTime: -8586176893818313956
+    List: []
+  - PhysicalPath: Switches\EFFECTS SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\SFX SWITCHES\EFFECTS SWITCHES
+    guid: 080ac4c84d3f3c41b59b17e13cb9e6bd
+    GuidInternal: 
+    m_lastTime: -8586173259502300614
+    List: []
+  - PhysicalPath: Switches\FOLEYS SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\SFX SWITCHES\FOLEYS SWITCHES
+    guid: f4838f2bd4f7814a8950f2ea9dbd59a0
+    GuidInternal: 
+    m_lastTime: -8586173259502510084
+    List: []
+  - PhysicalPath: Switches\GENERAL SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\GENERAL SWITCHES
+    guid: 198d95d2b275eb44b94cdd531ce26d4e
+    GuidInternal: 
+    m_lastTime: -8586176733336107516
+    List: []
+  - PhysicalPath: Switches\MUSIC SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\MUSIC SWITCHES
+    guid: 5381800d0f0ac24da1e3619f7f71d4dc
+    GuidInternal: 
+    m_lastTime: -8586176731118877317
+    List: []
+  - PhysicalPath: Switches\SFX SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\SFX SWITCHES
+    guid: b59fcf29bc3be248a93d28a7524adab4
+    GuidInternal: 
+    m_lastTime: -8586173260166038025
+    List: []
+  - PhysicalPath: Switches\UI SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\SFX SWITCHES\UI SWITCHES
+    guid: f9c6d9b84b3c78409e70e53eb46aebf6
+    GuidInternal: 
+    m_lastTime: -8586173259502200836
+    List: []
+  - PhysicalPath: Switches\VOICE SWITCHES.wwu
+    ParentPath: BIOCIDE_SWITCHES\VOICE SWITCHES
+    guid: d1ccb7a0cdb8844d8003d336bdeb0401
+    GuidInternal: 
+    m_lastTime: -8586176731118997056
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 8c276cf0dbc96448be0f0fdd6e97961b
+    GuidInternal: 
+    m_lastTime: -8586176732967746527
+    List: []
+  ExpandedItems:
+  - /BiocideWwiseSession
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

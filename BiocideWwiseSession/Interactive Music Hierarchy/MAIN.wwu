@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{606B2E20-8537-4E89-BF40-A4B18949339F}" SchemaVersion="97" RootDocumentID="{1F8477FE-5FE1-4B0D-8125-92AD456390ED}">
+	<InteractiveMusic>
+		<WorkUnit Name="MAIN" ID="{606B2E20-8537-4E89-BF40-A4B18949339F}" OwnerID="{1F8477FE-5FE1-4B0D-8125-92AD456390ED}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<MusicSegment Name="MusicTest" ID="{F7AAD36F-132B-4698-A4D4-28364F56B020}" ShortID="665064768">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="149480"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="02 - The Shire" ID="{7D33B7DB-E690-4F67-BC7E-7A8B302ACE70}" ShortID="1756206">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="02 - The Shire" ID="{46E6B6AB-FBF7-448B-9A4B-390FB3E96B5F}">
+									<Language>SFX</Language>
+									<AudioFile>Music\02 - The Shire.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="213904705"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{1EEF106B-2AFF-4B05-BE57-72D0C0E0427C}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{229469F4-E434-457B-9BAB-34D75CE22DD1}">
+									<ClipList>
+										<MusicClip Name="02 - The Shire" ID="{03853A57-8411-4FEF-8DA2-60858964C25E}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="149480"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="02 - The Shire" ID="{46E6B6AB-FBF7-448B-9A4B-390FB3E96B5F}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{EBD9C28A-4261-4352-9CF9-BC24267172E2}"/>
+						<MusicCue Name="Exit Cue" ID="{C7996161-0F6B-4726-AF69-E7692F573BCF}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="1000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

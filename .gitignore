@@ -61,3 +61,14 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#WWise gitignore
+*.akd
+*.prof
+.cache
+IncrementalSoundBankData.xml
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta
+Assets/WwiseSettings.xml
+Assets/WwiseSettings.xml.meta
+*.wsettings
+DeathStare_WwiseProject/DeathStare_WwiseProject.Pamplemousse.validationcache

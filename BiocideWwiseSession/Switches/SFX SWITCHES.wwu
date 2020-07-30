@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{29CF9FB5-3BBC-48E2-A93D-28A7524ADAB4}" SchemaVersion="97" RootDocumentID="{29869366-B159-4700-8C89-509361ACAD23}">
+	<Switches>
+		<WorkUnit Name="SFX SWITCHES" ID="{29CF9FB5-3BBC-48E2-A93D-28A7524ADAB4}" OwnerID="{29869366-B159-4700-8C89-509361ACAD23}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="AMBIANCES SWITCHES" ID="{52C7FD12-1D93-4086-9C36-A486E1BDC7FF}" PersistMode="Reference"/>
+				<WorkUnit Name="FOLEYS SWITCHES" ID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}" PersistMode="Reference"/>
+				<WorkUnit Name="EFFECTS SWITCHES" ID="{C8C40A08-3F4D-413C-B59B-17E13CB9E6BD}" PersistMode="Reference"/>
+				<WorkUnit Name="UI SWITCHES" ID="{B8D9C6F9-3C4B-4078-9E70-E53EB46AEBF6}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

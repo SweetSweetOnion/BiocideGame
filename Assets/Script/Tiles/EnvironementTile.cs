@@ -1,24 +1,90 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
+using UnityEngine.Tilemaps;
 
-public class EnvironementTile 
+public class EnvironementTile
 {
-	public TileType tile;
-	public Vector3Int position;
-	public int hp = 100;
+	private TileType _tile;
+	private Vector3Int _position;
+	private float _hp;
+	private Color _startColor;
+	private bool _doDamage;
+	private float _tickTime;
+	//accesors
+	public Color color => _startColor;
+	private int flashCount = 0;
 
 	public EnvironementTile(TileType t, Vector3Int pos)
 	{
-		tile = t;
-		position = pos;
-		hp = Random.Range(t.startHp.x,t.startHp.y);
+		_tile = t;
+		_position = pos;
+		_hp = Random.Range(t.startHp.x, t.startHp.y);
+		_startColor = TileManager.mainTilemap.GetColor(pos);
+		_doDamage = t.doDamage;
+		_tickTime = Random.Range(0, _tile.tickCooldDown);
+		if (_tile.indestructible)
+			TileManager.resistanceTilemap.SetTile(pos, _tile.indestructibleTile);
 	}
 
-	public void DealDamage(int damageAmount){
-		hp -= damageAmount;
-		if(hp <= 0){
-			TileManager.RemoveTile(position);
+	public void UpdateToxicTiles(){
+		_tickTime += Time.deltaTime;
+		if(_doDamage && _tickTime > _tile.tickCooldDown){
+			DoToxic(Vector3Int.left);
+			DoToxic(Vector3Int.right);
+			DoToxic(Vector3Int.up);
+			DoToxic(Vector3Int.down);
+			_tickTime = 0;
 		}
+	}
+
+	private void DoToxic(Vector3Int offset){
+		var other = TileManager.GetOrCreateEnvironementTile(_position + offset);
+		if (other == null) return;
+		if (other._tile.indestructible == false &&_tile.resistanceLevel >= other._tile.resistanceLevel){
+			other.ReceiveDamage(_tile.damagePerTick);
+		}
+	}
+
+	public void ReceiveDamage(float damageAmount)
+	{
+		
+		_hp -= damageAmount;
+		TileManager.damageTilemap.SetTile(_position, _tile.damageLevelSprites[0]);
+		if (_hp <= 0)
+		{
+			if(_tile.transformTo){
+				TileManager.TransformTile(_position, _tile.transformTo);
+			}else{
+				TileManager.RemoveTile(_position);
+			}
+		}
+		else{
+			Flash();
+		}
+	}
+
+	public void WalkByPlayer(PlayerController player)
+	{
+		if (_doDamage)
+			player.playerHealth.ReceivedDamage(1, TileManager.mainTilemap.GetCellCenterWorld(_position));
+	}
+
+	public bool CanResist(Bullet b)
+	{
+		return _tile.resistanceLevel > b.weaponLevel;
+	}
+
+	private void Flash(){
+		TileManager.instance.StartCoroutine(FlashRoutine());
+		flashCount++;
+	}
+
+	private IEnumerator FlashRoutine()
+	{
+		TileManager.vfxTile.SetTile(_position, _tile.vfxDamageTile);
+		yield return new WaitForSeconds(0.02f);
+		TileManager.vfxTile.SetTile(_position, null);
 	}
 
 }
