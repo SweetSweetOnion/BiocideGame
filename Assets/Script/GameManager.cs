@@ -4,11 +4,11 @@ using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
 {
-	[SerializeField]
-	private Tilemap _tilemap;
+	//[SerializeField]
+	//private Tilemap _tilemap;
 
 	public static GameManager instance;
-	public static Tilemap tilemap => instance._tilemap;
+	//public static Tilemap tilemap => instance._tilemap;
 
 	private void Awake()
 	{

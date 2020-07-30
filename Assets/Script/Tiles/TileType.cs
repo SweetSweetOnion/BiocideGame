@@ -17,5 +17,6 @@ public class TileType : Tile
 	public TileBase indestructibleTile;
 	public TileBase[] resistanceLevelSprites;
 	public TileBase[] damageLevelSprites;
+	public TileBase vfxDamageTile;
 
 }

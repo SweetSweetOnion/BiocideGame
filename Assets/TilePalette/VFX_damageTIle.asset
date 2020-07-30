@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546b505ecc769a544ad28ffba79cf27d, type: 3}
-  m_Name: AbsorbantTile
+  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: VFX_damageTIle
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: a3af64889fa8b5c4487e52fe1f94da77, type: 3}
-  m_Color: {r: 0.19351768, g: 0.8679245, b: 0.13510147, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -34,15 +34,3 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  startHp: {x: 90, y: 110}
-  resistanceLevel: 0
-  doDamage: 0
-  damagePerTick: 10
-  tickCooldDown: 0.5
-  indestructible: 0
-  transformTo: {fileID: 11400000, guid: ff2c6f1f5dffba14b82338f448f8e47f, type: 2}
-  indestructibleTile: {fileID: 0}
-  resistanceLevelSprites: []
-  damageLevelSprites:
-  - {fileID: 11400000, guid: 88e2a5a190709e244ba7a0263b9b71c9, type: 2}
-  vfxDamageTile: {fileID: 11400000, guid: a63385673b529b449bc5aacc9a2d1956, type: 2}

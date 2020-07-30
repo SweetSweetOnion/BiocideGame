@@ -9,22 +9,22 @@ public class EnvironementTile
 	private Vector3Int _position;
 	private float _hp;
 	private Color _startColor;
-	private Coroutine flashRoutine;
 	private bool _doDamage;
 	private float _tickTime;
 	//accesors
 	public Color color => _startColor;
+	private int flashCount = 0;
 
 	public EnvironementTile(TileType t, Vector3Int pos)
 	{
 		_tile = t;
 		_position = pos;
 		_hp = Random.Range(t.startHp.x, t.startHp.y);
-		_startColor = GameManager.tilemap.GetColor(pos);
+		_startColor = TileManager.mainTilemap.GetColor(pos);
 		_doDamage = t.doDamage;
 		_tickTime = Random.Range(0, _tile.tickCooldDown);
 		if (_tile.indestructible)
-			TileManager.instance.indestructibleTileMap.SetTile(pos, _tile.indestructibleTile);
+			TileManager.indestructibleTileMap.SetTile(pos, _tile.indestructibleTile);
 	}
 
 	public void UpdateToxicTiles(){
@@ -50,7 +50,7 @@ public class EnvironementTile
 	{
 		
 		_hp -= damageAmount;
-		TileManager.instance.damageTilemap.SetTile(_position, _tile.damageLevelSprites[0]);
+		TileManager.damageTilemap.SetTile(_position, _tile.damageLevelSprites[0]);
 		if (_hp <= 0)
 		{
 			if(_tile.transformTo){
@@ -58,7 +58,6 @@ public class EnvironementTile
 			}else{
 				TileManager.RemoveTile(_position);
 			}
-			StopFlash();
 		}
 		else{
 			Flash();
@@ -68,7 +67,7 @@ public class EnvironementTile
 	public void WalkByPlayer(PlayerController player)
 	{
 		if (_doDamage)
-			player.playerHealth.ReceivedDamage(1, GameManager.tilemap.GetCellCenterWorld(_position));
+			player.playerHealth.ReceivedDamage(1, TileManager.mainTilemap.GetCellCenterWorld(_position));
 	}
 
 	public bool CanResist(Bullet b)
@@ -76,32 +75,23 @@ public class EnvironementTile
 		return _tile.resistanceLevel > b.weaponLevel;
 	}
 
-	public void SetColor(Color c)
+	/*public void SetColor(Color c)
 	{
-		GameManager.tilemap.SetTileFlags(_position, TileFlags.None);
-		GameManager.tilemap.SetColor(_position, c);
+		TileManager.mainTilemap.SetTileFlags(_position, TileFlags.None);
+		TileManager.mainTilemap.SetColor(_position, c);
 
-	}
+	}*/
 
-	public void Flash()
-	{
-		if (flashRoutine != null)
-		{
-			TileManager.instance.StopCoroutine(flashRoutine);
-		}
-		flashRoutine = TileManager.instance.StartCoroutine(FlashRoutine());
-	}
-
-	public void StopFlash(){
-		if(flashRoutine!= null)
-		TileManager.instance.StopCoroutine(flashRoutine);
+	private void Flash(){
+		TileManager.instance.StartCoroutine(FlashRoutine());
+		flashCount++;
 	}
 
 	private IEnumerator FlashRoutine()
 	{
-		SetColor(Color.white);
+		TileManager.vfxTile.SetTile(_position, _tile.vfxDamageTile);
 		yield return new WaitForSeconds(0.02f);
-		SetColor(_startColor);
+		TileManager.vfxTile.SetTile(_position, null);
 	}
 
 }
