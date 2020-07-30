@@ -37,4 +37,11 @@ MonoBehaviour:
   startHp: {x: 90, y: 110}
   resistanceLevel: 0
   doDamage: 0
+  damagePerTick: 10
+  tickCooldDown: 0.5
+  indestructible: 0
   transformTo: {fileID: 11400000, guid: ff2c6f1f5dffba14b82338f448f8e47f, type: 2}
+  indestructibleTile: {fileID: 0}
+  resistanceLevelSprites: []
+  damageLevelSprites:
+  - {fileID: 11400000, guid: 88e2a5a190709e244ba7a0263b9b71c9, type: 2}

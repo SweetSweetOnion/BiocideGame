@@ -8,12 +8,13 @@ using System;
 public class TileManager : MonoBehaviour
 {
 	public static TileManager instance;
+	public Tilemap indestructibleTileMap;
+	public Tilemap damageTilemap;
 
 	private static Dictionary<Vector3Int, EnvironementTile> tiles = new Dictionary<Vector3Int, EnvironementTile>();
 	private static List<EnvironementTile> toxicTiles = new List<EnvironementTile>();
 
 
-	private Dictionary<Vector3Int, Coroutine> flashDictionary = new Dictionary<Vector3Int, Coroutine>();
 
 
 	public delegate void TileEvent(Vector3Int position);
@@ -29,6 +30,25 @@ public class TileManager : MonoBehaviour
 			Destroy(this); return;
 		}
 		instance = this;
+	}
+
+	private void Start()
+	{
+		DisplayIndestructible();
+	}
+
+	private void DisplayIndestructible(){
+		var bounds = GameManager.tilemap.cellBounds;
+		for (int x = bounds.xMin; x < bounds.xMax; x++)
+		{
+			for (int y = bounds.yMin; y < bounds.yMax; y++)
+			{
+				var t = GameManager.tilemap.GetTileType(new Vector3Int(x, y, 0));
+				if(t && t.indestructible){
+					indestructibleTileMap.SetTile(new Vector3Int(x, y, 0),t.indestructibleTile);
+				}
+			}
+		}
 	}
 
 	private void Update()
@@ -79,11 +99,15 @@ public class TileManager : MonoBehaviour
 		{
 			tiles.Remove(position);
 		}
+		instance.indestructibleTileMap.SetTile(position, null);
+		instance.damageTilemap.SetTile(position, null);
 		GameManager.tilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
 	}
 
 	public static void TransformTile(Vector3Int position, TileType type){
+		instance.indestructibleTileMap.SetTile(position, null);
+		instance.damageTilemap.SetTile(position, null);
 		GameManager.tilemap.SetTile(position, type);
 		if (tiles.ContainsKey(position))
 		{

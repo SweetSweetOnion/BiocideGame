@@ -23,6 +23,8 @@ public class EnvironementTile
 		_startColor = GameManager.tilemap.GetColor(pos);
 		_doDamage = t.doDamage;
 		_tickTime = Random.Range(0, _tile.tickCooldDown);
+		if (_tile.indestructible)
+			TileManager.instance.indestructibleTileMap.SetTile(pos, _tile.indestructibleTile);
 	}
 
 	public void UpdateToxicTiles(){
@@ -48,6 +50,7 @@ public class EnvironementTile
 	{
 		
 		_hp -= damageAmount;
+		TileManager.instance.damageTilemap.SetTile(_position, _tile.damageLevelSprites[0]);
 		if (_hp <= 0)
 		{
 			if(_tile.transformTo){
