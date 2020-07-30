@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 546b505ecc769a544ad28ffba79cf27d, type: 3}
-  m_Name: BasicTile 2
+  m_Name: GrassSlopeLeft
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: a3af64889fa8b5c4487e52fe1f94da77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3a085bd78ef5af54b97769c42032f4a5, type: 3}
   m_Color: {r: 0.50671947, g: 0.5566038, b: 0.52112305, a: 1}
   m_Transform:
     e00: 1
@@ -35,13 +35,13 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   startHp: {x: 90, y: 110}
-  resistanceLevel: 2
+  resistanceLevel: 0
   doDamage: 0
   damagePerTick: 10
   tickCooldDown: 0.5
   indestructible: 0
   transformTo: {fileID: 0}
-  indestructibleTile: {fileID: 0}
+  indestructibleTile: {fileID: 11400000, guid: 99c6d3b629a99094891807e75d101439, type: 2}
   resistanceLevelSprites:
   - {fileID: 11400000, guid: 6950cc243a7e7f94ca08c239c25c0cea, type: 2}
   - {fileID: 11400000, guid: 56bb5b26fd04707418bc71b55610c38a, type: 2}
