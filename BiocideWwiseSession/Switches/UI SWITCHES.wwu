@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B8D9C6F9-3C4B-4078-9E70-E53EB46AEBF6}" SchemaVersion="97" RootDocumentID="{29869366-B159-4700-8C89-509361ACAD23}">
+	<Switches>
+		<WorkUnit Name="UI SWITCHES" ID="{B8D9C6F9-3C4B-4078-9E70-E53EB46AEBF6}" OwnerID="{29CF9FB5-3BBC-48E2-A93D-28A7524ADAB4}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="11"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

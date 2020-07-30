@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0CE7C760-64DD-4671-A2C6-173D53CE6F7C}" SchemaVersion="97" RootDocumentID="{27D107AD-1B4B-4691-8EB8-AEF0EDCB951B}">
+	<GameParameters>
+		<WorkUnit Name="VOICE RTPC" ID="{0CE7C760-64DD-4671-A2C6-173D53CE6F7C}" OwnerID="{27D107AD-1B4B-4691-8EB8-AEF0EDCB951B}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

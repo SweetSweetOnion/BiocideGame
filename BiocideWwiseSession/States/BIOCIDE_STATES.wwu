@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" SchemaVersion="97">
+	<States>
+		<WorkUnit Name="BIOCIDE_STATES" ID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="SFX STATES" ID="{7F5B9D6B-958E-4B08-AA84-28D8DFDAC065}" PersistMode="Reference"/>
+				<WorkUnit Name="MUSIC STATES" ID="{FB551FBC-DC5A-4E6A-948C-52A5484318F4}" PersistMode="Reference"/>
+				<WorkUnit Name="VOICE STATES" ID="{7D884F28-8C5A-4DDA-A7C5-9A15A2758D88}" PersistMode="Reference"/>
+				<WorkUnit Name="GENERAL STATES" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

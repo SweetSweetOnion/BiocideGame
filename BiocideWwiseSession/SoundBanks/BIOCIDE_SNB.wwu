@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7E58BEE4-1D7F-4D09-8E0F-D45B5B67A6A8}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="BIOCIDE_SNB" ID="{7E58BEE4-1D7F-4D09-8E0F-D45B5B67A6A8}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="MUSIC SNB" ID="{5BA8B03C-3D61-4B21-938F-8B18F84BA6F6}" PersistMode="Reference"/>
+				<WorkUnit Name="SFX SNB" ID="{5CD9515F-663D-443A-A75D-F7C962E84493}" PersistMode="Reference"/>
+				<WorkUnit Name="VOICE SNB" ID="{F1457C24-3C5A-4A7C-81D8-7A11C13579A2}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

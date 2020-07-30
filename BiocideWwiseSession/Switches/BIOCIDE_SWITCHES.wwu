@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{29869366-B159-4700-8C89-509361ACAD23}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="BIOCIDE_SWITCHES" ID="{29869366-B159-4700-8C89-509361ACAD23}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="SFX SWITCHES" ID="{29CF9FB5-3BBC-48E2-A93D-28A7524ADAB4}" PersistMode="Reference"/>
+				<WorkUnit Name="MUSIC SWITCHES" ID="{0D808153-0A0F-4DC2-A1E3-619F7F71D4DC}" PersistMode="Reference"/>
+				<WorkUnit Name="VOICE SWITCHES" ID="{A0B7CCD1-B8CD-4D84-8003-D336BDEB0401}" PersistMode="Reference"/>
+				<WorkUnit Name="GENERAL SWITCHES" ID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

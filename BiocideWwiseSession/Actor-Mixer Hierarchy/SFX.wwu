@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{38DC4552-4C13-4043-B77F-D497038D6973}" SchemaVersion="97" RootDocumentID="{8831B311-B3DE-432D-93F8-22A22D0514C2}">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{38DC4552-4C13-4043-B77F-D497038D6973}" OwnerID="{8831B311-B3DE-432D-93F8-22A22D0514C2}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="AMBIANCES" ID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}" PersistMode="Reference"/>
+				<WorkUnit Name="FOLEYS" ID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}" PersistMode="Reference"/>
+				<WorkUnit Name="EFFECTS" ID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}" PersistMode="Reference"/>
+				<WorkUnit Name="UI" ID="{BCA17406-2EAE-4800-B769-6449CC0ED489}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

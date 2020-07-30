@@ -3,16 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
 using System.Runtime.CompilerServices;
+using System;
 
 public class TileManager : MonoBehaviour
 {
 	public static TileManager instance;
 
 	private static Dictionary<Vector3Int, EnvironementTile> tiles = new Dictionary<Vector3Int, EnvironementTile>();
+	private static List<EnvironementTile> toxicTiles = new List<EnvironementTile>();
 
 
 	private Dictionary<Vector3Int, Coroutine> flashDictionary = new Dictionary<Vector3Int, Coroutine>();
 
+
+	public delegate void TileEvent(Vector3Int position);
+	public delegate void TileEventExperience(Vector3Int position, float experience);
+	public delegate void CompleteTileEvent(Vector3Int position, EnvironementTile envTile);
+	public static event CompleteTileEvent OnTileDamage;
+	public static event TileEventExperience OnTileDestroy;
 
 	private void Awake()
 	{
@@ -23,16 +31,46 @@ public class TileManager : MonoBehaviour
 		instance = this;
 	}
 
-	public static void OnTileHit(Vector3Int position, Bullet bullet){
-		
-		if(!tiles.ContainsKey(position)){
-			EnvironementTile tile = new EnvironementTile(GameManager.tilemap.GetTileType(position), position);
-			tiles.Add(position, tile);
-		}	
-		tiles[position].Flash();
-		if(!tiles[position].CanResist(bullet)){
-			tiles[position].DealDamage(bullet.damage);
+	private void Update()
+	{
+		for(int i = 0; i< toxicTiles.Count; i++){
+			toxicTiles[i].UpdateToxicTiles();
 		}
+	}
+
+	public static EnvironementTile GetOrCreateEnvironementTile(Vector3Int position)
+	{
+		if (!GameManager.tilemap.GetTileType(position)) return null; 
+		if (!tiles.ContainsKey(position))
+		{
+			TileType t = GameManager.tilemap.GetTileType(position);
+			EnvironementTile tile = new EnvironementTile(t, position);
+			tiles.Add(position, tile);
+			if(t.doDamage){
+				toxicTiles.Add(tile);
+			}
+		}
+		return tiles[position];
+	}
+
+	public static void OnTileHit(Vector3Int position, Bullet bullet)
+	{
+		var t = GetOrCreateEnvironementTile(position);
+		if (!t.CanResist(bullet))
+		{
+			t.ReceiveDamage(bullet.damage);
+			OnTileDamage?.Invoke(position, t);
+		}
+	}
+
+	public static void OnTilesWalkedOn(Vector3Int[] positions, PlayerController player)
+	{
+		foreach(Vector3Int pos in positions){
+			var t = GetOrCreateEnvironementTile(pos);
+			if (t != null)
+				t.WalkByPlayer(player);
+		}
+
 	}
 
 	public static void RemoveTile(Vector3Int position)
@@ -42,39 +80,16 @@ public class TileManager : MonoBehaviour
 			tiles.Remove(position);
 		}
 		GameManager.tilemap.SetTile(position, null);
+		OnTileDestroy?.Invoke(position, 10);
 	}
 
-
-
-	/*public static void FlashTile(Vector3Int position, Color flashColor, float flashDuration)
-	{
-		if (instance.flashDictionary.ContainsKey(position))
+	public static void TransformTile(Vector3Int position, TileType type){
+		GameManager.tilemap.SetTile(position, type);
+		if (tiles.ContainsKey(position))
 		{
-			instance.StopCoroutine(instance.flashDictionary[position]);
-			instance.flashDictionary.Remove(position);
+			tiles.Remove(position);
+			GetOrCreateEnvironementTile(position);
 		}
-		else{
-
-		}
-
-		var c = instance.StartCoroutine(FlashRoutine(position, flashColor, flashDuration));
-		instance.flashDictionary.Add(position, c);
+		
 	}
-
-	private static IEnumerator FlashRoutine(Vector3Int position, Color flashColor, float flashDuration)
-	{
-		float t = 0;
-		Color normalColor = GameManager.tilemap.GetEnvironementTile(position).normalColor;
-		GameManager.tilemap.SetTileFlags(position, TileFlags.None);
-		while (t < 1)
-		{
-			Color c = Color.Lerp(flashColor, normalColor, t * t);
-			
-			GameManager.tilemap.SetColor(position, c);
-			t += Time.deltaTime / flashDuration;
-			yield return null;
-		}
-		GameManager.tilemap.SetColor(position, normalColor);
-		instance.flashDictionary.Remove(position);
-	}*/
 }
