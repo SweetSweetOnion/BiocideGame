@@ -11,7 +11,7 @@ public class EnvironementTile
 	private Color _startColor;
 	private Coroutine flashRoutine;
 	private bool _doDamage;
-
+	private float _tickTime;
 	//accesors
 	public Color color => _startColor;
 
@@ -22,14 +22,17 @@ public class EnvironementTile
 		_hp = Random.Range(t.startHp.x, t.startHp.y);
 		_startColor = GameManager.tilemap.GetColor(pos);
 		_doDamage = t.doDamage;
+		_tickTime = Random.Range(0, _tile.tickCooldDown);
 	}
 
 	public void UpdateToxicTiles(){
-		if(_doDamage && Random.value > 0.95f){
+		_tickTime += Time.deltaTime;
+		if(_doDamage && _tickTime > _tile.tickCooldDown){
 			DoToxic(Vector3Int.left);
 			DoToxic(Vector3Int.right);
 			DoToxic(Vector3Int.up);
 			DoToxic(Vector3Int.down);
+			_tickTime = 0;
 		}
 	}
 
@@ -37,7 +40,7 @@ public class EnvironementTile
 		var other = TileManager.GetOrCreateEnvironementTile(_position + offset);
 		if (other == null) return;
 		if (other._tile.indestructible == false &&_tile.resistanceLevel >= other._tile.resistanceLevel){
-			other.ReceiveDamage(10);
+			other.ReceiveDamage(_tile.damagePerTick);
 		}
 	}
 

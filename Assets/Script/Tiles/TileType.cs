@@ -8,6 +8,8 @@ public class TileType : Tile
 	public Vector2Int startHp = new Vector2Int(90,110);
 	public int resistanceLevel = 0;
 	public bool doDamage = false;
+	public float damagePerTick = 10;
+	public float tickCooldDown = 0.5f;
 	public bool indestructible = false;
 	public TileType transformTo = null;
 }
