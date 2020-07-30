@@ -75,13 +75,6 @@ public class EnvironementTile
 		return _tile.resistanceLevel > b.weaponLevel;
 	}
 
-	/*public void SetColor(Color c)
-	{
-		TileManager.mainTilemap.SetTileFlags(_position, TileFlags.None);
-		TileManager.mainTilemap.SetColor(_position, c);
-
-	}*/
-
 	private void Flash(){
 		TileManager.instance.StartCoroutine(FlashRoutine());
 		flashCount++;
