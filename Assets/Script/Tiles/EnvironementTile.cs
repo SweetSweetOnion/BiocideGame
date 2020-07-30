@@ -24,7 +24,7 @@ public class EnvironementTile
 		_doDamage = t.doDamage;
 		_tickTime = Random.Range(0, _tile.tickCooldDown);
 		if (_tile.indestructible)
-			TileManager.indestructibleTileMap.SetTile(pos, _tile.indestructibleTile);
+			TileManager.resistanceTilemap.SetTile(pos, _tile.indestructibleTile);
 	}
 
 	public void UpdateToxicTiles(){

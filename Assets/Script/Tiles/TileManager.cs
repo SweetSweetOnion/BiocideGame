@@ -9,7 +9,7 @@ public class TileManager : MonoBehaviour
 {
 	public static TileManager instance;
 	public static Tilemap mainTilemap => instance._mainTilemap;
-	public static Tilemap indestructibleTileMap => instance._indestructibleTileMap;
+	public static Tilemap resistanceTilemap => instance._resistanceTilemap;
 	public static Tilemap damageTilemap => instance._damageTilemap;
 	public static Tilemap vfxTile => instance._vfxTile;
 	public static Tilemap backgroundTilemap => instance._backgroundTilemap;
@@ -17,7 +17,7 @@ public class TileManager : MonoBehaviour
 	[SerializeField]
 	private Tilemap _mainTilemap;
 	[SerializeField]
-	private Tilemap _indestructibleTileMap;
+	private Tilemap _resistanceTilemap;
 	[SerializeField]
 	private Tilemap _damageTilemap;
 	[SerializeField]
@@ -50,20 +50,26 @@ public class TileManager : MonoBehaviour
 
 	private void Start()
 	{
-		DisplayIndestructible();
+		DisplayResistance();
 	}
 
-	private void DisplayIndestructible()
+	private void DisplayResistance()
 	{
 		var bounds = mainTilemap.cellBounds;
 		for (int x = bounds.xMin; x < bounds.xMax; x++)
 		{
 			for (int y = bounds.yMin; y < bounds.yMax; y++)
 			{
-				var t = mainTilemap.GetTileType(new Vector3Int(x, y, 0));
-				if (t && t.indestructible)
+				var pos = new Vector3Int(x, y, 0);
+				var t = mainTilemap.GetTileType(pos);
+				if (t )
 				{
-					indestructibleTileMap.SetTile(new Vector3Int(x, y, 0), t.indestructibleTile);
+					if(t.indestructible){
+						resistanceTilemap.SetTile(pos, t.indestructibleTile);
+					}else{
+						if(t.resistanceLevel> 0 && t.resistanceLevel < t.resistanceLevelSprites.Length)
+							resistanceTilemap.SetTile(pos, t.resistanceLevelSprites[t.resistanceLevel-1]);
+					}
 				}
 			}
 		}
@@ -123,7 +129,7 @@ public class TileManager : MonoBehaviour
 			tiles.Remove(position);
 		}
 		
-		indestructibleTileMap.SetTile(position, null);
+		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
 		mainTilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
@@ -131,7 +137,7 @@ public class TileManager : MonoBehaviour
 
 	public static void TransformTile(Vector3Int position, TileType type)
 	{
-		indestructibleTileMap.SetTile(position, null);
+		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
 		mainTilemap.SetTile(position, type);
 		if (tiles.ContainsKey(position))
