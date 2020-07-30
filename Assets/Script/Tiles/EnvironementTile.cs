@@ -24,18 +24,26 @@ public class EnvironementTile
 		_doDamage = t.doDamage;
 	}
 
-	public void UpdateTile(){
-		if(_doDamage){
-			TileManager.GetOrCreateEnvironementTile(_position + Vector3Int.left)?.ReceiveDamage(1 * Time.deltaTime);
-			TileManager.GetOrCreateEnvironementTile(_position + Vector3Int.right)?.ReceiveDamage(1 * Time.deltaTime);
-			TileManager.GetOrCreateEnvironementTile(_position + Vector3Int.up)?.ReceiveDamage(1 * Time.deltaTime);
-			TileManager.GetOrCreateEnvironementTile(_position + Vector3Int.down)?.ReceiveDamage(1 * Time.deltaTime);
+	public void UpdateToxicTiles(){
+		if(_doDamage && Random.value > 0.95f){
+			DoToxic(Vector3Int.left);
+			DoToxic(Vector3Int.right);
+			DoToxic(Vector3Int.up);
+			DoToxic(Vector3Int.down);
+		}
+	}
+
+	private void DoToxic(Vector3Int offset){
+		var other = TileManager.GetOrCreateEnvironementTile(_position + offset);
+		if (other == null) return;
+		if (other._tile.indestructible == false &&_tile.resistanceLevel >= other._tile.resistanceLevel){
+			other.ReceiveDamage(10);
 		}
 	}
 
 	public void ReceiveDamage(float damageAmount)
 	{
-		//Flash();
+		
 		_hp -= damageAmount;
 		if (_hp <= 0)
 		{
@@ -44,6 +52,10 @@ public class EnvironementTile
 			}else{
 				TileManager.RemoveTile(_position);
 			}
+			StopFlash();
+		}
+		else{
+			Flash();
 		}
 	}
 
@@ -72,6 +84,11 @@ public class EnvironementTile
 			TileManager.instance.StopCoroutine(flashRoutine);
 		}
 		flashRoutine = TileManager.instance.StartCoroutine(FlashRoutine());
+	}
+
+	public void StopFlash(){
+		if(flashRoutine!= null)
+		TileManager.instance.StopCoroutine(flashRoutine);
 	}
 
 	private IEnumerator FlashRoutine()

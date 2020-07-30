@@ -21,8 +21,8 @@ MonoBehaviour:
   bulletLevel: 0
   maxSpawnCount: {x: 5, y: 10}
   minSpawnCount: {x: 1, y: 4}
-  maxSpawnCooldown: 0.4
-  minSpawnCooldown: 0.2
+  maxSpawnCooldown: 0.2
+  minSpawnCooldown: 0.4
   directionSpread: 15
   directionOffsetY: 0.5
   spawnOffset: {x: 0.1, y: 0.1}

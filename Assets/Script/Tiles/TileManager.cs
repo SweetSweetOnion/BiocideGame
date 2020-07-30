@@ -10,6 +10,7 @@ public class TileManager : MonoBehaviour
 	public static TileManager instance;
 
 	private static Dictionary<Vector3Int, EnvironementTile> tiles = new Dictionary<Vector3Int, EnvironementTile>();
+	private static List<EnvironementTile> toxicTiles = new List<EnvironementTile>();
 
 
 	private Dictionary<Vector3Int, Coroutine> flashDictionary = new Dictionary<Vector3Int, Coroutine>();
@@ -32,7 +33,9 @@ public class TileManager : MonoBehaviour
 
 	private void Update()
 	{
-		
+		for(int i = 0; i< toxicTiles.Count; i++){
+			toxicTiles[i].UpdateToxicTiles();
+		}
 	}
 
 	public static EnvironementTile GetOrCreateEnvironementTile(Vector3Int position)
@@ -40,8 +43,12 @@ public class TileManager : MonoBehaviour
 		if (!GameManager.tilemap.GetTileType(position)) return null; 
 		if (!tiles.ContainsKey(position))
 		{
-			EnvironementTile tile = new EnvironementTile(GameManager.tilemap.GetTileType(position), position);
+			TileType t = GameManager.tilemap.GetTileType(position);
+			EnvironementTile tile = new EnvironementTile(t, position);
 			tiles.Add(position, tile);
+			if(t.doDamage){
+				toxicTiles.Add(tile);
+			}
 		}
 		return tiles[position];
 	}

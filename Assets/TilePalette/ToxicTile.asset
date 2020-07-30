@@ -37,4 +37,5 @@ MonoBehaviour:
   startHp: {x: 1000, y: 1000}
   resistanceLevel: 100
   doDamage: 1
+  indestructible: 1
   transformTo: {fileID: 0}

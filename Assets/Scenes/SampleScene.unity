@@ -6077,6 +6077,11 @@ PrefabInstance:
       propertyPath: timeToFallnormal
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1580252708464739261, guid: c55460b38a06c6b45a14caac5927f4a0,
+        type: 3}
+      propertyPath: damageRecoil
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1580252708464739264, guid: c55460b38a06c6b45a14caac5927f4a0,
         type: 3}
       propertyPath: m_LocalPosition.x

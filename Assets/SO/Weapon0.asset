@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Weapon0
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 325166070, guid: 06b75dc9452dbbd46bd8dd6112b6442a, type: 3}
-  maxBulletSpeed: 10
-  minBulletSpeed: 4
+  maxBulletSpeed: 12
+  minBulletSpeed: 6
   bulletDamage: 10
   bulletGravity: 3000
   bulletLifetime: 10
