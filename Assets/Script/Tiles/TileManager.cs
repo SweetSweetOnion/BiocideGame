@@ -30,17 +30,40 @@ public class TileManager : MonoBehaviour
 		instance = this;
 	}
 
-	public static void OnTileHit(Vector3Int position, Bullet bullet){
+	private void Update()
+	{
 		
-		if(!tiles.ContainsKey(position)){
+	}
+
+	public static EnvironementTile GetOrCreateEnvironementTile(Vector3Int position)
+	{
+		if (!GameManager.tilemap.GetTileType(position)) return null; 
+		if (!tiles.ContainsKey(position))
+		{
 			EnvironementTile tile = new EnvironementTile(GameManager.tilemap.GetTileType(position), position);
 			tiles.Add(position, tile);
-		}	
-		tiles[position].Flash();
-		if(!tiles[position].CanResist(bullet)){
-			tiles[position].DealDamage(bullet.damage);
-			OnTileDamage?.Invoke(position,tiles[position]);
 		}
+		return tiles[position];
+	}
+
+	public static void OnTileHit(Vector3Int position, Bullet bullet)
+	{
+		var t = GetOrCreateEnvironementTile(position);
+		if (!t.CanResist(bullet))
+		{
+			t.ReceiveDamage(bullet.damage);
+			OnTileDamage?.Invoke(position, t);
+		}
+	}
+
+	public static void OnTilesWalkedOn(Vector3Int[] positions, PlayerController player)
+	{
+		foreach(Vector3Int pos in positions){
+			var t = GetOrCreateEnvironementTile(pos);
+			if (t != null)
+				t.WalkByPlayer(player);
+		}
+
 	}
 
 	public static void RemoveTile(Vector3Int position)
@@ -51,5 +74,15 @@ public class TileManager : MonoBehaviour
 		}
 		GameManager.tilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
+	}
+
+	public static void TransformTile(Vector3Int position, TileType type){
+		GameManager.tilemap.SetTile(position, type);
+		if (tiles.ContainsKey(position))
+		{
+			tiles.Remove(position);
+			GetOrCreateEnvironementTile(position);
+		}
+		
 	}
 }

@@ -7,5 +7,6 @@ public class TileType : Tile
 {
 	public Vector2Int startHp = new Vector2Int(90,110);
 	public int resistanceLevel = 0;
-	
+	public bool doDamage = false;
+	public TileType transformTo = null;
 }

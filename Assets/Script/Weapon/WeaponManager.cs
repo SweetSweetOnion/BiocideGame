@@ -54,7 +54,7 @@ public class WeaponManager : MonoBehaviour
 				_weaponController.SwitchWeapon(GetCurrentWeapon());
 			}
 		}
-		OnExperienceChange(_experience);
+		OnExperienceChange?.Invoke(_experience);
 	}
 
 	private void OnTileDamage(Tuple<Vector3Int, float> tuple)

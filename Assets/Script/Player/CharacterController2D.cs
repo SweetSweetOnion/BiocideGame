@@ -326,6 +326,7 @@ namespace Prime31
 			_horizontalDistanceBetweenRays = colliderUseableWidth / (totalVerticalRays - 1);
 		}
 
+
 		#endregion
 
 

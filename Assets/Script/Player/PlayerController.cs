@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -13,8 +14,9 @@ public class PlayerController : MonoBehaviour
 	public float maxJumpHeight = 5;
 	public float timeToJumpHeight = 1;
 	public float minJumpTime = 0.2f;
-	public float timeToFall = 0.2f;
+	public float timeToFallJump = 0.2f;
 	public float jumpCooldown = 0.2f;
+	public float timeToFallnormal = 0.5f;
 
 	[Header("Move")]
 	public float acceleration = 1;
@@ -22,27 +24,39 @@ public class PlayerController : MonoBehaviour
 	public float speed = 10;
 	public float aerialSpeed = 10;
 
+	[Header("Recoil")]
+	public float damageRecoil = 1;
+	public float recoilDuration = 0.3f;
+
 	//Accessors
 	public bool isGrounded => _controller2D.isGrounded;
 	public Vector3 velocity => _controller2D.velocity;
 	public bool isFlip => _isFlip;
+	public PlayerHealth playerHealth => _playerHealth;
+
+	//privates fields
 
 	private float _gravity = -9.8f;
 	private Vector3 _velocity;
 	private float _jumpGravity;
 	private float _fallGravity;
+	private float _normalGravity;
 	private float _jumpVelocity;
 	private float _jumpTime = 0;
 	private float _moveInput = 0;
 	private bool _jumpInput;
 	private bool _canJump = false;
+	private bool _hasJump = false;
 	private Vector3 _externalForce;
+	private float _lastJump;
 	private bool _isFlip = false;
 
 	private BoxCollider2D _boxCollider;
 	private CharacterController2D _controller2D;
 	private PlayerInput _playerInput;
+	private PlayerHealth _playerHealth;
 
+	private Vector3Int[] currentTiles = new Vector3Int[2];
 
 	//events
 	public delegate void TeleportEvent(Vector2 previous, Vector2 newPos);
@@ -53,6 +67,7 @@ public class PlayerController : MonoBehaviour
 		_boxCollider = GetComponent<BoxCollider2D>();
 		_controller2D = GetComponent<CharacterController2D>();
 		_playerInput = GetComponent<PlayerInput>();
+		_playerHealth = GetComponent<PlayerHealth>();
 	}
 
 	private void OnEnable()
@@ -60,16 +75,27 @@ public class PlayerController : MonoBehaviour
 		_playerInput.currentActionMap["Jump"].started += JumpStart;
 		_playerInput.currentActionMap["Jump"].canceled += JumpEnd;
 		_playerInput.currentActionMap["Move"].performed += MovePerformed;
+		_playerHealth.OnDamage += OnDamage;
 	}
+
+	
 
 	private void OnDisable()
 	{
 		_playerInput.currentActionMap["Jump"].started -= JumpStart;
 		_playerInput.currentActionMap["Jump"].canceled -= JumpEnd;
 		_playerInput.currentActionMap["Move"].performed -= MovePerformed;
+		_playerHealth.OnDamage += OnDamage;
+
 	}
 
-
+	private void OnDamage(int amount, Vector3 worldOrigin)
+	{
+		Vector3 v = transform.position - worldOrigin;
+		Vector2 vv = new Vector2(v.x, v.y).normalized;
+		AddForce(vv * damageRecoil, recoilDuration);
+		//_jumpInput = true;
+	}
 
 	private void MovePerformed(InputAction.CallbackContext obj)
 	{
@@ -100,8 +126,22 @@ public class PlayerController : MonoBehaviour
 		_externalForce += new Vector3(v.x, v.y, 0);
 	}
 
+	public void AddForce(Vector2 v, float duration){
+		StartCoroutine(ForceOverTime(v, duration)) ;
+	}
+
+	private IEnumerator ForceOverTime(Vector2 v, float duration){
+		float t = 0;
+		while(t < duration){
+			t += Time.deltaTime;
+			AddForce(v * Time.deltaTime);
+			yield return null;
+		}
+	}
+
 	private void Update()
 	{
+		UpdateCurrentTiles();
 		UpdateJump();
 
 		if (_moveInput != 0)
@@ -124,16 +164,31 @@ public class PlayerController : MonoBehaviour
 
 
 
-
+		if(velocity.y > 0){
+			_externalForce.y = 0;
+		}
 		_controller2D.move(_velocity * Time.deltaTime + _externalForce);
 
 		_externalForce = Vector3.zero;
+		
+	}
+
+	private void UpdateCurrentTiles(){
+		Vector3 bottomLeftPos = transform.position - Vector3.up * transform.localScale.y / 2 + Vector3.left * transform.localScale.x/2;
+		Vector3 bottomRightPos = transform.position - Vector3.up * transform.localScale.y / 2 - Vector3.left * transform.localScale.x/2;
+		currentTiles[0] = GameManager.tilemap.WorldToCell(bottomLeftPos - Vector3.up *0.1f);
+		currentTiles[1] = GameManager.tilemap.WorldToCell(bottomRightPos - Vector3.up * 0.1f);
+		if(isGrounded){
+			TileManager.OnTilesWalkedOn(currentTiles, this);
+		}
 	}
 
 	private void UpdateJump()
 	{
 		_jumpGravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToJumpHeight, 2);
-		_fallGravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToFall, 2);
+		_fallGravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToFallJump, 2);
+		_normalGravity = -(2 * maxJumpHeight) / Mathf.Pow(timeToFallnormal, 2);
+
 		_jumpVelocity = Mathf.Abs(_jumpGravity) * timeToJumpHeight;
 
 
@@ -146,10 +201,14 @@ public class PlayerController : MonoBehaviour
 				_velocity.y = _jumpVelocity;
 				_jumpTime = 0;
 				_canJump = false;
+				_hasJump = true;
+				_lastJump = Time.time;
+			}else{
+				_hasJump = false;
 			}
 		}
 
-		if (!_jumpInput)
+		if (!_jumpInput && Time.time >= _lastJump + jumpCooldown)
 		{
 			_canJump = true;
 		}
@@ -159,7 +218,11 @@ public class PlayerController : MonoBehaviour
 			_jumpTime = timeToJumpHeight;
 		}
 
-		_gravity = _jumpTime >= timeToJumpHeight ? _fallGravity : _jumpGravity;
+		if(_hasJump){
+			_gravity = _jumpTime >= timeToJumpHeight ? _fallGravity : _jumpGravity;
+		}else{
+			_gravity = _normalGravity;
+		}
 
 		_jumpTime += Time.deltaTime;
 
