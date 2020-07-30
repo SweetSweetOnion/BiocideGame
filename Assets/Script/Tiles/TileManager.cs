@@ -116,10 +116,13 @@ public class TileManager : MonoBehaviour
 
 	public static void RemoveTile(Vector3Int position)
 	{
+		backgroundTilemap.SetTile(position, mainTilemap.GetTileType(position).backgroundTile);
+
 		if (tiles.ContainsKey(position))
 		{
 			tiles.Remove(position);
 		}
+		
 		indestructibleTileMap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
 		mainTilemap.SetTile(position, null);
