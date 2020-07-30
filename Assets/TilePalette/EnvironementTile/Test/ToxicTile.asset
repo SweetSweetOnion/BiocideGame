@@ -45,7 +45,7 @@ MonoBehaviour:
   resistanceLevelSprites:
   - {fileID: 11400000, guid: 6950cc243a7e7f94ca08c239c25c0cea, type: 2}
   - {fileID: 11400000, guid: 56bb5b26fd04707418bc71b55610c38a, type: 2}
-  - {fileID: 11400000, guid: 815ad27f8b0ae924ebb80711070e05d8, type: 2}
+  - {fileID: 0}
   damageLevelSprites:
   - {fileID: 11400000, guid: 88e2a5a190709e244ba7a0263b9b71c9, type: 2}
   vfxDamageTile: {fileID: 11400000, guid: a63385673b529b449bc5aacc9a2d1956, type: 2}
