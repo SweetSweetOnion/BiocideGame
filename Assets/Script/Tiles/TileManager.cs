@@ -113,6 +113,7 @@ public class TileManager : MonoBehaviour
 
 	public static void OnTileHit(Vector3Int position, Bullet bullet)
 	{
+		//Debug.DrawRay(mainTilemap.GetCellCenterWorld(position), Vector3.up * 10, Color.red,1) ;
 		var t = GetOrCreateEnvironementTile(position);
 		if (!t.CanResist(bullet))
 		{
