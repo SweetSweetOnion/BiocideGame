@@ -63,6 +63,7 @@ public class PlayerAnimation : MonoBehaviour
 	private void OnLevelUp(int newLevel)
 	{
 		animator.runtimeAnimatorController = animatorControllers[newLevel];
+		transform.DOPunchScale(Vector3.one * 2.2f, 1);
 	}
 
 	private void OnDamage(int amount, Vector3 worldOrigin)
