@@ -6,6 +6,18 @@
 				<Property Name="Color" Type="int16" Value="19"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Main" ID="{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}">
+					<ChildrenList>
+						<State Name="None" ID="{47E1800A-9C1A-48A7-8F7F-02AC29EE4BB7}"/>
+						<State Name="Introduction" ID="{6E2DCA28-2923-44DA-BEDF-ACFCD348AC53}"/>
+						<State Name="Level_01" ID="{1FF9BB1D-DFDD-49A8-B081-DF5A3881AFB6}"/>
+						<State Name="Level_02" ID="{ECD7AF2A-2AB5-4920-BF3E-869E541CE57D}"/>
+						<State Name="Level_03" ID="{2FAE39AB-4031-4234-8B73-93D21FEC9F1F}"/>
+						<State Name="End" ID="{98F37E2A-B520-43FD-9BB4-5E26E00B9623}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
 		</WorkUnit>
 	</States>
 </WwiseDocument>

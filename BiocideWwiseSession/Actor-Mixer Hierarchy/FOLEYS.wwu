@@ -93,6 +93,820 @@
 										</BlendContainer>
 									</ChildrenList>
 								</ActorMixer>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_000" ID="{DC83A614-F2DF-4337-A4C4-9915E31EFFA0}" ShortID="358995520">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_000" ID="{BCFCDC8D-74BB-4362-93E9-37EAE8BFB5DA}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="194862144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_000" ID="{BCFCDC8D-74BB-4362-93E9-37EAE8BFB5DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_001" ID="{15FCD974-E798-4444-A304-72D34D823891}" ShortID="615866949">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_001" ID="{F729E0DC-485E-4B30-A0CF-58C7DCA4D443}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="634379850"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_001" ID="{F729E0DC-485E-4B30-A0CF-58C7DCA4D443}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_002" ID="{4B0D1759-2551-4834-975C-5990087E29D5}" ShortID="947189472">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_002" ID="{95413F1E-317E-457F-8E40-3A1C6342699E}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="607544915"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_002" ID="{95413F1E-317E-457F-8E40-3A1C6342699E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_003" ID="{B63D5386-7FEE-4C88-950D-424182BC8905}" ShortID="792806712">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_003" ID="{5C5660CA-43D2-4906-AB10-F29FAFF7F8A7}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="171009811"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_003" ID="{5C5660CA-43D2-4906-AB10-F29FAFF7F8A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_004" ID="{47141D71-D309-455E-8769-FA93CA7A3776}" ShortID="837170547">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_004" ID="{4789460D-77F0-47A1-A8BB-56DDF6240E99}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="342569084"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_004" ID="{4789460D-77F0-47A1-A8BB-56DDF6240E99}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_005" ID="{1F58AEDD-AA36-4927-92A7-D1826C5AAEC9}" ShortID="257991881">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_005" ID="{29AD1899-3143-48A8-B8A9-EBC07825E1EB}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="494501753"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_005" ID="{29AD1899-3143-48A8-B8A9-EBC07825E1EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_006" ID="{19AFA177-165A-4A5C-B786-F6B8F54AC9F4}" ShortID="374283287">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_006" ID="{79CCE36C-70DD-40F8-B185-0A3A2D84BB0B}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="899669772"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_006" ID="{79CCE36C-70DD-40F8-B185-0A3A2D84BB0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Grass_007" ID="{72E2273C-D5D5-4124-A749-ACC81DBB32E7}" ShortID="606799183">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Grass_007" ID="{6B2CAF74-1882-4460-B6FC-5893F1A4AA18}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Grass_007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="750921527"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Grass_007" ID="{6B2CAF74-1882-4460-B6FC-5893F1A4AA18}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Toxic_000" ID="{CF300B1F-0A32-49DF-8980-B593D874A80F}" ShortID="381849146">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Toxic_000" ID="{FCFCECEC-4A93-4DEA-B0DD-24C27C94233C}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Toxic_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="427722980"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Toxic_000" ID="{FCFCECEC-4A93-4DEA-B0DD-24C27C94233C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Toxic_001" ID="{32D8C0E4-5093-40AE-9DE8-B2D9C62D868A}" ShortID="679549170">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Toxic_001" ID="{8AF11F52-35A6-4ED1-A5A6-FE566A8995C4}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Toxic_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="993310014"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Toxic_001" ID="{8AF11F52-35A6-4ED1-A5A6-FE566A8995C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Toxic_002" ID="{9102C08B-1115-4645-BB36-C53618D37A82}" ShortID="146396524">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Toxic_002" ID="{BA605244-F250-4A6C-B33E-19B2620595D7}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Toxic_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="493482129"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Toxic_002" ID="{BA605244-F250-4A6C-B33E-19B2620595D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Toxic_003" ID="{E1F01A3C-AE7F-4C71-932C-CA30D79314DC}" ShortID="598516201">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Toxic_003" ID="{2B39FEFD-C180-4E47-99FA-25FAFE3845D8}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Toxic_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="414720820"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Toxic_003" ID="{2B39FEFD-C180-4E47-99FA-25FAFE3845D8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Footsteps_Toxic_004" ID="{421A88F7-271A-4452-B9A0-9823F41A08EB}" ShortID="677718759">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Footsteps_Toxic_004" ID="{0799DE6C-8604-4CA0-96B9-780AA2B67F29}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Footsteps_Toxic_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="885310517"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Footsteps_Toxic_004" ID="{0799DE6C-8604-4CA0-96B9-780AA2B67F29}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Hit_000" ID="{CBE84A3D-C12B-4F8F-8148-0B7708B2BDD7}" ShortID="332256038">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Hit_000" ID="{D03631E4-7889-4D79-A038-D2D76C99C1F6}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Hit_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="553222752"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Hit_000" ID="{D03631E4-7889-4D79-A038-D2D76C99C1F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Hit_001" ID="{6F1BCE3F-25C8-4BA5-837F-3CD0143BAF48}" ShortID="558266800">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Hit_001" ID="{0D16D009-3D9C-4B74-B78F-3C6F6BC49C7F}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Hit_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="112944646"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Hit_001" ID="{0D16D009-3D9C-4B74-B78F-3C6F6BC49C7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Hit_002" ID="{04D898A6-A23A-4E42-94F9-EA856BBC2C5F}" ShortID="518843304">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Hit_002" ID="{31EA7DE1-5123-46B7-960A-486B2444E52D}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Hit_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="291015539"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Hit_002" ID="{31EA7DE1-5123-46B7-960A-486B2444E52D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Hit_003" ID="{A4F3FA06-3E87-46A3-9338-98C800153A45}" ShortID="378141683">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Hit_003" ID="{2CC6BE28-8017-43E1-88DB-FD3A2410B60D}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Hit_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1065839264"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Hit_003" ID="{2CC6BE28-8017-43E1-88DB-FD3A2410B60D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Grass_000" ID="{9B7BA40F-23F0-4337-A8F2-8DD789329A2F}" ShortID="77083337">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Grass_000" ID="{ED5E5C15-31E5-46E2-8051-828C0FB3DADD}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="53071694"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Grass_000" ID="{ED5E5C15-31E5-46E2-8051-828C0FB3DADD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Grass_001" ID="{FEC2851C-3E35-49C0-9282-C8775AE51FCE}" ShortID="886860467">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Grass_001" ID="{3964C5EA-5949-4140-B5A6-4244EBEE613C}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="63976718"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Grass_001" ID="{3964C5EA-5949-4140-B5A6-4244EBEE613C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Grass_002" ID="{38A19D84-6AAA-4FA3-B7AB-3186C392FC57}" ShortID="243219946">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Grass_002" ID="{F85A044F-E63B-4C71-A693-C919EC87E962}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306447583"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Grass_002" ID="{F85A044F-E63B-4C71-A693-C919EC87E962}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Grass_003" ID="{189D68FB-02D5-40F4-8F4B-B6833F87F3E0}" ShortID="564149332">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Grass_003" ID="{93D722AF-3329-4D05-9D93-CFB54CF773C5}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="198385611"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Grass_003" ID="{93D722AF-3329-4D05-9D93-CFB54CF773C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Grass_004" ID="{9000E797-A8C0-43D1-AB3C-AF6110B7C7FC}" ShortID="85589226">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Grass_004" ID="{DB2AD991-9A29-45F6-832C-AB2EC7BFC1DA}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="813385922"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Grass_004" ID="{DB2AD991-9A29-45F6-832C-AB2EC7BFC1DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Toxic_000" ID="{D446DB7F-E80D-40CD-BDA5-5442A0A86CA8}" ShortID="548492844">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_000" ID="{79E82DE4-3CE0-497B-9F5B-4E2AD3909FB6}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="41315139"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Toxic_000" ID="{79E82DE4-3CE0-497B-9F5B-4E2AD3909FB6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Toxic_001" ID="{328E40A3-3F31-4B5E-A07D-467801EF2EF1}" ShortID="154856061">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_001" ID="{81BC11B4-2D68-4D62-8B8F-06F5ABA38791}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="524888384"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Toxic_001" ID="{81BC11B4-2D68-4D62-8B8F-06F5ABA38791}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Toxic_002" ID="{470D7891-5A30-4E02-B686-F41B42EED42E}" ShortID="467353568">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_002" ID="{4277E555-35B6-4A02-9FBD-9EC7FB37C62C}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="26333508"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Toxic_002" ID="{4277E555-35B6-4A02-9FBD-9EC7FB37C62C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Toxic_003" ID="{120F99F4-68E3-4AB8-B8BE-794B832757A4}" ShortID="874667194">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_003" ID="{63B36DE2-65D0-4D49-8C97-BA28499DF197}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1023237856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Toxic_003" ID="{63B36DE2-65D0-4D49-8C97-BA28499DF197}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Jump_Toxic_004" ID="{639E0412-32C8-4C75-87B1-72F987363DF4}" ShortID="796357454">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_004" ID="{F17D7E21-4821-4D27-B617-AE27AA8FAAF8}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="361730811"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Jump_Toxic_004" ID="{F17D7E21-4821-4D27-B617-AE27AA8FAAF8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_000" ID="{12C88679-E436-4108-B2C5-0C9361F0813D}" ShortID="24205284">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_000" ID="{686B067A-6FD8-462B-9E66-C60027915D25}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="509142165"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_000" ID="{686B067A-6FD8-462B-9E66-C60027915D25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_001" ID="{EC28873B-DC48-4C84-9F3A-C63C1DFFA4F9}" ShortID="146543214">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_001" ID="{5CC6E034-DA8B-4556-92F3-0349B9195BB8}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="441071616"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_001" ID="{5CC6E034-DA8B-4556-92F3-0349B9195BB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_002" ID="{0BAB137A-0AE0-4D11-9F08-D779E304E902}" ShortID="823929143">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_002" ID="{55D3F94A-C22D-4CBB-83AF-F4C9B4008D49}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="58418014"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_002" ID="{55D3F94A-C22D-4CBB-83AF-F4C9B4008D49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_003" ID="{5B036832-99F8-45A8-B8D5-DE6EA9D2EE02}" ShortID="384193209">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7E098E47-F82C-43FC-8440-17017153602A}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="50026599"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7E098E47-F82C-43FC-8440-17017153602A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_004" ID="{C934968D-EF73-4276-9306-64402BDD938C}" ShortID="890948849">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_004" ID="{B2B08FD3-A158-48BB-A0D9-32C6CA039F5A}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="621209291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_004" ID="{B2B08FD3-A158-48BB-A0D9-32C6CA039F5A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_005" ID="{70C5AF41-B7AD-4333-98CB-4A0DD4C8466D}" ShortID="1054769817">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_005" ID="{636B7896-8533-4661-A89B-A2061EEC7F24}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="254338830"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_005" ID="{636B7896-8533-4661-A89B-A2061EEC7F24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_006" ID="{ED5534E3-3753-4DAB-B8D4-A8424DE243A3}" ShortID="45250558">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_006" ID="{5E04C9CA-8317-491D-AF61-15DEA2BCFC25}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="749308714"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_006" ID="{5E04C9CA-8317-491D-AF61-15DEA2BCFC25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_007" ID="{7F64A1B4-B185-48FD-AC34-2F933131A670}" ShortID="681770382">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_007" ID="{BA1E2D90-19F1-4435-B9B0-514E55CE0CF4}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="975789224"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_007" ID="{BA1E2D90-19F1-4435-B9B0-514E55CE0CF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_008" ID="{6557C3A2-DACE-4063-A48A-D35AF6EB9B52}" ShortID="621832356">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_008" ID="{61D48823-0468-418A-85F9-454482CED32F}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929865488"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_008" ID="{61D48823-0468-418A-85F9-454482CED32F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Char_Landing_Grass_010" ID="{39E5A67B-03B2-49FA-A676-E0CC1DED0C8C}" ShortID="650453041">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Char_Landing_Grass_010" ID="{F42C14BC-46D8-4535-A00E-4ADDC3298AFA}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_010.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="437293510"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Char_Landing_Grass_010" ID="{F42C14BC-46D8-4535-A00E-4ADDC3298AFA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Weapon" ID="{3698311D-ED40-48DD-A29B-41CEEEB7A119}" ShortID="357895636">
@@ -149,6 +963,842 @@
 										</BlendContainer>
 									</ChildrenList>
 								</ActorMixer>
+								<Sound Name="FOLEYS_Pulverisator_LevelUp_Level_1" ID="{F2A52E24-6BC5-4C8E-B051-0B4EE978C19D}" ShortID="851418639">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_LevelUp_Level_1" ID="{170834E9-0FDB-41B3-BD33-1A63645896F0}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_LevelUp_Level_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="155252560"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_LevelUp_Level_1" ID="{170834E9-0FDB-41B3-BD33-1A63645896F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_0_001" ID="{7B710F63-7F46-466B-8E50-E0FBEB5F656A}" ShortID="620158529">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_0_001" ID="{09DEB52C-5998-4650-A4DA-12067BF0BF4B}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_0_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="222252648"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_0_001" ID="{09DEB52C-5998-4650-A4DA-12067BF0BF4B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_0_002" ID="{B2BA61C2-BFBE-458C-B6C5-7A3F4C0CC420}" ShortID="80647241">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_0_002" ID="{19A7CD16-524E-48F3-8C32-EBB0E6E2B573}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_0_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="572556921"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_0_002" ID="{19A7CD16-524E-48F3-8C32-EBB0E6E2B573}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_0_003" ID="{E6EE67B0-8EBE-444F-B50F-6BF051517907}" ShortID="1001979947">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_0_003" ID="{232B1DBF-36C6-4AE1-8D87-B35EB75594B6}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_0_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="164746728"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_0_003" ID="{232B1DBF-36C6-4AE1-8D87-B35EB75594B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_0_004" ID="{DC888C4F-C97D-46AB-B0C0-0A07772E247D}" ShortID="1040848938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_0_004" ID="{C6FA646B-12CA-4A97-BDC5-CBBD5744468D}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_0_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="5903315"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_0_004" ID="{C6FA646B-12CA-4A97-BDC5-CBBD5744468D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_1_001" ID="{E2CBBE4A-01BC-49A8-AA92-4DC9D98BD261}" ShortID="506440716">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_1_001" ID="{A3AC6737-86AD-45D0-A198-99FFAB1C61DB}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_1_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="801314974"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_1_001" ID="{A3AC6737-86AD-45D0-A198-99FFAB1C61DB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_1_002" ID="{B9378CBE-7490-490B-AB7E-B0919031DD8B}" ShortID="826765762">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_1_002" ID="{79526450-31D6-4F04-AE12-C50A9FD4191C}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_1_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="49093341"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_1_002" ID="{79526450-31D6-4F04-AE12-C50A9FD4191C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_1_003" ID="{25B1575E-6B98-486F-AEFB-98347B688853}" ShortID="721214443">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_1_003" ID="{5515AD85-0176-49F4-BBA4-6CE1515EFD87}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_1_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="572247919"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_1_003" ID="{5515AD85-0176-49F4-BBA4-6CE1515EFD87}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_1_004" ID="{F5298F25-3C76-402F-B00C-AB8CFE38F08E}" ShortID="404038711">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_1_004" ID="{790A36E5-5E2E-4988-A7EA-7EE38E32C3CB}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_1_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="533102210"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_1_004" ID="{790A36E5-5E2E-4988-A7EA-7EE38E32C3CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_2_001" ID="{978B7230-B0A6-47D9-ABB9-984009A111AA}" ShortID="902716118">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_2_001" ID="{B723DFF5-8772-45A2-896B-3C11D8C35F4D}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_2_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="831797335"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_2_001" ID="{B723DFF5-8772-45A2-896B-3C11D8C35F4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_2_002" ID="{8EDAFFA6-383D-4E07-9796-68383F2F92A3}" ShortID="595863736">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_2_002" ID="{0E2E2852-C43C-4873-B8FA-F230EC1DE5FC}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_2_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="227346749"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_2_002" ID="{0E2E2852-C43C-4873-B8FA-F230EC1DE5FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_2_003" ID="{CD10B869-B07A-4DD4-B21A-2BC24D2BBA9A}" ShortID="8159460">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_2_003" ID="{3730C2A4-0697-401D-A67E-CD8B8F50C303}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_2_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="681782767"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_2_003" ID="{3730C2A4-0697-401D-A67E-CD8B8F50C303}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_2_004" ID="{58E09078-EC95-4840-B7D1-EA5A651C0391}" ShortID="788031257">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_2_004" ID="{649EE7A3-97F8-47C8-89D5-93F57742E406}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_2_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="288268184"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_2_004" ID="{649EE7A3-97F8-47C8-89D5-93F57742E406}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_3_001" ID="{F2990AEB-AF6E-4360-8128-907BCA3B7977}" ShortID="932318032">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_3_001" ID="{802CCF1F-6E26-4B91-B24E-CD246413A818}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_3_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1063687986"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_3_001" ID="{802CCF1F-6E26-4B91-B24E-CD246413A818}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_3_002" ID="{235CD880-7DAE-4FB9-9AC2-65C66B6E676E}" ShortID="581314066">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_3_002" ID="{5DA2E6F2-C61D-426B-A07D-B7BF31150534}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_3_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1071218456"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_3_002" ID="{5DA2E6F2-C61D-426B-A07D-B7BF31150534}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_3_003" ID="{A8CEBFE6-632C-4847-8C79-F56EF4F3E136}" ShortID="308653335">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_3_003" ID="{B405BE1A-4FF2-4C77-BEE0-A2622F75B4FE}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_3_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="972126390"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_3_003" ID="{B405BE1A-4FF2-4C77-BEE0-A2622F75B4FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_3_004" ID="{4FFF4D43-A9DD-42D9-B22E-3F7D4F68F49C}" ShortID="1004263751">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_3_004" ID="{75126047-EECF-4747-9586-BEA6F7B8A165}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_3_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="591697232"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_3_004" ID="{75126047-EECF-4747-9586-BEA6F7B8A165}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_4_001" ID="{09A1ABAF-892C-4BFB-A566-495492A65845}" ShortID="1030051536">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_4_001" ID="{B77381CB-1795-4C73-A36A-9895C60BCC61}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_4_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1068811021"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_4_001" ID="{B77381CB-1795-4C73-A36A-9895C60BCC61}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_4_002" ID="{F5733DB7-072E-4692-A844-C2CC36024F2E}" ShortID="851880634">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_4_002" ID="{0C3ED9A3-2CC9-46A3-86FD-DC00012F6F0F}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_4_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="567961054"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_4_002" ID="{0C3ED9A3-2CC9-46A3-86FD-DC00012F6F0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_4_003" ID="{4F05554E-4161-4ECE-9D0C-2BBD5BC21A07}" ShortID="588649319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_4_003" ID="{D3E52F57-0120-4979-A5FF-F95F0D7C0CB0}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_4_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="107272846"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_4_003" ID="{D3E52F57-0120-4979-A5FF-F95F0D7C0CB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Reload_Level_4_004" ID="{9FF9F038-9801-42EB-ABF4-11C977C175D7}" ShortID="771464644">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Reload_Level_4_004" ID="{8547D33D-B4C9-4E17-AC39-CA5947A5244B}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Reload_Level_4_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="363185712"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Reload_Level_4_004" ID="{8547D33D-B4C9-4E17-AC39-CA5947A5244B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_0" ID="{68678169-6333-49CD-8192-20F4B8F2C733}" ShortID="1011464805">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_0" ID="{D49E9603-63DA-4FFF-854B-1C3671196122}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="749458008"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_0" ID="{D49E9603-63DA-4FFF-854B-1C3671196122}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_1" ID="{FC386737-6B6C-4BF7-B6F0-C20B68EFD099}" ShortID="337644179">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_1" ID="{35B287C2-A66D-42CB-9E6F-C8B95FABA95F}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="173547767"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_1" ID="{35B287C2-A66D-42CB-9E6F-C8B95FABA95F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_2_001" ID="{987E2340-5FDC-4216-AEEF-37F6993A6F45}" ShortID="87933944">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_2_001" ID="{FEA073E6-BFDA-4664-8B45-05D54ADA2A84}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_2_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="656607921"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_2_001" ID="{FEA073E6-BFDA-4664-8B45-05D54ADA2A84}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_2_002" ID="{F7F7EB22-8F2D-4CA0-A884-9A2CF69CD02C}" ShortID="94848337">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_2_002" ID="{665EC86D-82AE-45D3-A4E7-BAC4161AFBE9}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_2_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="187255341"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_2_002" ID="{665EC86D-82AE-45D3-A4E7-BAC4161AFBE9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_2_003" ID="{5B3FFC93-33BE-41CE-B2EC-CBFA441A6FA5}" ShortID="776270247">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_2_003" ID="{C8DE0184-98B7-41B7-96B0-A71BA82153A3}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_2_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="849781014"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_2_003" ID="{C8DE0184-98B7-41B7-96B0-A71BA82153A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_2_004" ID="{8C4E927E-AA39-4D58-A277-AF857A247706}" ShortID="202968293">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_2_004" ID="{69156EC0-06D2-4686-828B-326808CF85D7}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_2_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="822169542"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_2_004" ID="{69156EC0-06D2-4686-828B-326808CF85D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_3_001" ID="{9F9E9FD6-0B71-4907-9D5E-C7B9D16EA967}" ShortID="1028292230">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_3_001" ID="{8D693A52-3704-4580-B58D-38BD74088F37}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_3_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="340285146"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_3_001" ID="{8D693A52-3704-4580-B58D-38BD74088F37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_3_002" ID="{1CF8C900-53C2-4B48-823C-1F11CE6DB5BD}" ShortID="763337207">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_3_002" ID="{FBC15110-C810-4A24-9DAA-8BA87E21E7DC}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_3_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="39213100"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_3_002" ID="{FBC15110-C810-4A24-9DAA-8BA87E21E7DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_3_003" ID="{F29DD505-EEE0-4461-A378-D73D5D446DA8}" ShortID="581329873">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_3_003" ID="{4465449E-0BE4-4E81-B6B7-14B8C19AD847}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_3_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="390879386"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_3_003" ID="{4465449E-0BE4-4E81-B6B7-14B8C19AD847}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_3_004" ID="{64D3907B-B7FF-4014-B450-7DF384D48336}" ShortID="309509133">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_3_004" ID="{7949AE9B-CD0D-4C88-B509-349743C76DAF}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_3_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="808546732"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_3_004" ID="{7949AE9B-CD0D-4C88-B509-349743C76DAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Level_4" ID="{D77353FD-775A-4DEE-AEBC-130C4340903D}" ShortID="478568641">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Level_4" ID="{FF06A242-291F-4CEE-A00B-1F3F136C792B}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Level_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="13975280"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Level_4" ID="{FF06A242-291F-4CEE-A00B-1F3F136C792B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Shoot_Low" ID="{4BA94C43-9C3C-4B6F-B010-E2FB5AACD588}" ShortID="298487454">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Shoot_Low" ID="{0A647EE1-DC6E-4B17-B679-6FDAE245D7E7}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Shoot_Low.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710799525"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Shoot_Low" ID="{0A647EE1-DC6E-4B17-B679-6FDAE245D7E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Trigger_Level_0" ID="{88B1EA74-35A6-4CDB-BC17-AB6F9C401167}" ShortID="136935154">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Trigger_Level_0" ID="{2FE700E3-B84E-4000-AED5-6BE14B94E3C8}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Trigger_Level_0.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="189798243"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Trigger_Level_0" ID="{2FE700E3-B84E-4000-AED5-6BE14B94E3C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Trigger_Level_1" ID="{36FB24E8-56C5-4046-84F4-6F62248A8DB6}" ShortID="144676927">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Trigger_Level_1" ID="{AB0A236B-3934-451B-96BE-A735D4F38923}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Trigger_Level_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="838105235"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Trigger_Level_1" ID="{AB0A236B-3934-451B-96BE-A735D4F38923}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Trigger_Level_2" ID="{EF22D77F-5B6B-4215-8EC7-4A615FCE7D85}" ShortID="223652849">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Trigger_Level_2" ID="{65290198-195E-4659-AA20-DCEE2DF70E7F}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Trigger_Level_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="722059888"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Trigger_Level_2" ID="{65290198-195E-4659-AA20-DCEE2DF70E7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Trigger_Level_3" ID="{A80D2ED8-46BE-446C-BD02-D7B4619D56F5}" ShortID="906431727">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Trigger_Level_3" ID="{77497F95-FD6A-43F1-908A-C26DFC713B6A}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Trigger_Level_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="586691704"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Trigger_Level_3" ID="{77497F95-FD6A-43F1-908A-C26DFC713B6A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOLEYS_Pulverisator_Trigger_Level_4" ID="{FE46BFAB-79FF-40EF-8BB9-EEDA16F62CD9}" ShortID="840246612">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLEYS_Pulverisator_Trigger_Level_4" ID="{6AA35EAE-8927-4856-8E9B-6231C8652AC0}">
+											<Language>SFX</Language>
+											<AudioFile>Foleys\Weapon\FOLEYS_Pulverisator_Trigger_Level_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="470861768"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLEYS_Pulverisator_Trigger_Level_4" ID="{6AA35EAE-8927-4856-8E9B-6231C8652AC0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Tile" ID="{4FB6CD31-BA19-41BA-BFE3-5C662E9860C2}" ShortID="71293919">
