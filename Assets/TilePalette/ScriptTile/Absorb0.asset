@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 546b505ecc769a544ad28ffba79cf27d, type: 3}
-  m_Name: AbsorbantTile
+  m_Name: Absorb0
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: a3af64889fa8b5c4487e52fe1f94da77, type: 3}
-  m_Color: {r: 0.19351768, g: 0.8679245, b: 0.13510147, a: 1}
+  m_Color: {r: 0.41388416, g: 1, b: 0, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -40,13 +40,14 @@ MonoBehaviour:
   damagePerTick: 10
   tickCooldDown: 0.5
   indestructible: 0
-  transformTo: {fileID: 11400000, guid: ff2c6f1f5dffba14b82338f448f8e47f, type: 2}
-  indestructibleTile: {fileID: 0}
+  transformTo: {fileID: 11400000, guid: 1adfa12d68393af4e98be2a3b2f5f926, type: 2}
+  indestructibleTile: {fileID: 11400000, guid: 99c6d3b629a99094891807e75d101439, type: 2}
   resistanceLevelSprites:
   - {fileID: 11400000, guid: 6950cc243a7e7f94ca08c239c25c0cea, type: 2}
   - {fileID: 11400000, guid: 56bb5b26fd04707418bc71b55610c38a, type: 2}
-  - {fileID: 11400000, guid: 815ad27f8b0ae924ebb80711070e05d8, type: 2}
   damageLevelSprites:
+  - {fileID: 11400000, guid: a93e813a455cde04a812f2d47de1bc31, type: 2}
+  - {fileID: 11400000, guid: 0784a19c5fa66924db566a5f14d2226b, type: 2}
   - {fileID: 11400000, guid: 88e2a5a190709e244ba7a0263b9b71c9, type: 2}
   vfxDamageTile: {fileID: 11400000, guid: a63385673b529b449bc5aacc9a2d1956, type: 2}
-  backgroundTile: {fileID: 11400000, guid: 1a0a614abfed46342860965393da4582, type: 2}
+  backgroundTile: {fileID: 0}

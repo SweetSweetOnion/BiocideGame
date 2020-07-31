@@ -13,6 +13,9 @@ public class TileManager : MonoBehaviour
 	public static Tilemap damageTilemap => instance._damageTilemap;
 	public static Tilemap vfxTile => instance._vfxTile;
 	public static Tilemap backgroundTilemap => instance._backgroundTilemap;
+	public static Tilemap scriptTilemap => instance._scriptTilemap;
+
+	public TileType defautTiletype;
 
 	[SerializeField]
 	private Tilemap _mainTilemap;
@@ -24,6 +27,8 @@ public class TileManager : MonoBehaviour
 	private Tilemap _vfxTile;
 	[SerializeField]
 	private Tilemap _backgroundTilemap;
+	[SerializeField]
+	private Tilemap _scriptTilemap;
 
 
 
@@ -55,13 +60,13 @@ public class TileManager : MonoBehaviour
 
 	private void DisplayResistance()
 	{
-		var bounds = mainTilemap.cellBounds;
+		var bounds = _scriptTilemap.cellBounds;
 		for (int x = bounds.xMin; x < bounds.xMax; x++)
 		{
 			for (int y = bounds.yMin; y < bounds.yMax; y++)
 			{
 				var pos = new Vector3Int(x, y, 0);
-				var t = mainTilemap.GetTileType(pos);
+				var t = GetTileType(pos);
 				if (t )
 				{
 					if(t.indestructible){
@@ -83,12 +88,19 @@ public class TileManager : MonoBehaviour
 		}
 	}
 
+	private static TileType GetTileType(Vector3Int pos){
+		if (!mainTilemap.HasTile(pos)) return null;
+		var t = scriptTilemap.GetTileType(pos);
+		if (!t) return instance.defautTiletype;
+		return t;
+	}
+
 	public static EnvironementTile GetOrCreateEnvironementTile(Vector3Int position)
 	{
-		if (!mainTilemap.GetTileType(position)) return null;
+		if (!GetTileType(position)) return null;
 		if (!tiles.ContainsKey(position))
 		{
-			TileType t = mainTilemap.GetTileType(position);
+			TileType t = GetTileType(position);
 			EnvironementTile tile = new EnvironementTile(t, position);
 			tiles.Add(position, tile);
 			if (t.doDamage)
@@ -101,6 +113,7 @@ public class TileManager : MonoBehaviour
 
 	public static void OnTileHit(Vector3Int position, Bullet bullet)
 	{
+		//Debug.DrawRay(mainTilemap.GetCellCenterWorld(position), Vector3.up * 10, Color.red,1) ;
 		var t = GetOrCreateEnvironementTile(position);
 		if (!t.CanResist(bullet))
 		{
@@ -122,7 +135,7 @@ public class TileManager : MonoBehaviour
 
 	public static void RemoveTile(Vector3Int position)
 	{
-		backgroundTilemap.SetTile(position, mainTilemap.GetTileType(position).backgroundTile);
+		backgroundTilemap.SetTile(position, GetTileType(position).backgroundTile);
 
 		if (tiles.ContainsKey(position))
 		{
@@ -132,6 +145,7 @@ public class TileManager : MonoBehaviour
 		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
 		mainTilemap.SetTile(position, null);
+		scriptTilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
 	}
 
@@ -139,7 +153,7 @@ public class TileManager : MonoBehaviour
 	{
 		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
-		mainTilemap.SetTile(position, type);
+		scriptTilemap.SetTile(position, type);
 		if (tiles.ContainsKey(position))
 		{
 			tiles.Remove(position);

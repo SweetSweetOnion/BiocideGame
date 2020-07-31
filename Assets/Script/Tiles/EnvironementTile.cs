@@ -72,7 +72,7 @@ public class EnvironementTile
 
 	public bool CanResist(Bullet b)
 	{
-		return _tile.resistanceLevel > b.weaponLevel;
+		return _tile.resistanceLevel > b.weaponLevel || _tile.indestructible;
 	}
 
 	private void Flash(){
