@@ -69,7 +69,7 @@
 						</MusicCue>
 					</CueList>
 				</MusicSegment>
-				<MusicSwitchContainer Name="Main" ID="{2A67C9E5-7490-4312-AD9E-194DA1007188}" ShortID="1070009717">
+				<MusicSwitchContainer Name="MUSIC_Main" ID="{2A67C9E5-7490-4312-AD9E-194DA1007188}" ShortID="1070009717">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="98"/>
 					</PropertyList>
@@ -78,11 +78,18 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+							<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="Introduction" ID="{A96E6C3E-42A9-4B00-8D75-820F9DB480B4}" ShortID="680942894">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -149,7 +156,7 @@
 										<MusicCue Name="Exit Cue" ID="{C30684A4-5D02-45E3-9D9B-8DE7F157BE8D}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="57551.0208333333"/>
+												<Property Name="TimeMs" Type="Real64" Value="48979.5918367347"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9FE3FF24-E95B-4295-BED4-6A123C9F4846}" SchemaVersion="97" RootDocumentID="{7E58BEE4-1D7F-4D09-8E0F-D45B5B67A6A8}">
+	<SoundBanks>
+		<WorkUnit Name="FOLEYS SNB" ID="{9FE3FF24-E95B-4295-BED4-6A123C9F4846}" OwnerID="{5CD9515F-663D-443A-A75D-F7C962E84493}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundBank Name="FOLEYS_MAIN" ID="{DB981513-4CAD-4551-8193-91AA21B473B7}">
+					<ObjectInclusionList>
+						<ObjectRef Name="FOLEYS EVENTS" ID="{8F06FB46-DE49-4975-A90C-336E4500397C}" WorkUnitID="{8F06FB46-DE49-4975-A90C-336E4500397C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

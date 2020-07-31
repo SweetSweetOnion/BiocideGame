@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FA4D04E0-F7BD-436D-871A-0EBC5CFC835E}" SchemaVersion="97" RootDocumentID="{7E58BEE4-1D7F-4D09-8E0F-D45B5B67A6A8}">
+	<SoundBanks>
+		<WorkUnit Name="AMB SNB" ID="{FA4D04E0-F7BD-436D-871A-0EBC5CFC835E}" OwnerID="{5CD9515F-663D-443A-A75D-F7C962E84493}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundBank Name="AMB_MAIN" ID="{76F23E42-36CD-418D-85D4-7212DC849326}">
+					<ObjectInclusionList>
+						<ObjectRef Name="AMBIANCES EVENTS" ID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
