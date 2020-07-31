@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
 	private Vector3 _externalForce;
 	private float _lastJump;
 	private bool _isFlip = false;
+	private bool _lastGrounded = false;
+	private float _fallDuration = 0;
 
 	private BoxCollider2D _boxCollider;
 	private CharacterController2D _controller2D;
@@ -61,6 +63,8 @@ public class PlayerController : MonoBehaviour
 	//events
 	public delegate void TeleportEvent(Vector2 previous, Vector2 newPos);
 	public event TeleportEvent OnTeleport;
+	public delegate void FloatEvent(float f);
+	public event FloatEvent OnLanded;
 
 	private void Awake()
 	{
@@ -170,7 +174,14 @@ public class PlayerController : MonoBehaviour
 		_controller2D.move(_velocity * Time.deltaTime + _externalForce);
 
 		_externalForce = Vector3.zero;
-		
+		if(!isGrounded){
+			_fallDuration += Time.deltaTime;
+		}
+		if(!_lastGrounded && isGrounded){
+			OnLanded?.Invoke(_fallDuration);
+			_fallDuration = 0;
+		}
+		_lastGrounded = isGrounded;
 	}
 
 	private void UpdateCurrentTiles(){
