@@ -72,8 +72,11 @@ public class TileManager : MonoBehaviour
 					if(t.indestructible){
 						resistanceTilemap.SetTile(pos, t.indestructibleTile);
 					}else{
-						if(t.resistanceLevel> 0 && t.resistanceLevel < t.resistanceLevelSprites.Length)
-							resistanceTilemap.SetTile(pos, t.resistanceLevelSprites[t.resistanceLevel-1]);
+						if(t.resistanceLevel == 1){
+							resistanceTilemap.SetTile(pos, t.resistanceLevelSprites[0]);
+						}else 
+						if(t.resistanceLevel > 1)
+							resistanceTilemap.SetTile(pos, t.resistanceLevelSprites[1]);
 					}
 				}
 			}
@@ -115,7 +118,7 @@ public class TileManager : MonoBehaviour
 	{
 		//Debug.DrawRay(mainTilemap.GetCellCenterWorld(position), Vector3.up * 10, Color.red,1) ;
 		var t = GetOrCreateEnvironementTile(position);
-		if (!t.CanResist(bullet))
+		if (t!= null && !t.CanResist(bullet))
 		{
 			t.ReceiveDamage(bullet.damage);
 			OnTileDamage?.Invoke(position, t);
@@ -152,13 +155,14 @@ public class TileManager : MonoBehaviour
 	public static void TransformTile(Vector3Int position, TileType type)
 	{
 		resistanceTilemap.SetTile(position, null);
-		damageTilemap.SetTile(position, null);
+		damageTilemap.SetTile(position, type.toxicTile);
 		scriptTilemap.SetTile(position, type);
 		if (tiles.ContainsKey(position))
 		{
 			tiles.Remove(position);
 			GetOrCreateEnvironementTile(position);
 		}
+		//mainTilemap.SetTile(position, type.toxicTile);
 	}
 
 }

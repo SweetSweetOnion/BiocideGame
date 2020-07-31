@@ -35,7 +35,7 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   startHp: {x: 90, y: 110}
-  resistanceLevel: 0
+  resistanceLevel: 1
   doDamage: 0
   damagePerTick: 10
   tickCooldDown: 0.5
@@ -51,3 +51,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 88e2a5a190709e244ba7a0263b9b71c9, type: 2}
   vfxDamageTile: {fileID: 11400000, guid: a63385673b529b449bc5aacc9a2d1956, type: 2}
   backgroundTile: {fileID: 0}
+  toxicTile: {fileID: 11400000, guid: 90032c9714519d4428c2b2252e261110, type: 2}

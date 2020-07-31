@@ -23,7 +23,7 @@ public class EnvironementTile
 		_startColor = TileManager.mainTilemap.GetColor(pos);
 		_doDamage = t.doDamage;
 		_tickTime = Random.Range(0, _tile.tickCooldDown);
-		if (_tile.indestructible)
+		if (_tile.indestructible && !_tile.doDamage)
 			TileManager.resistanceTilemap.SetTile(pos, _tile.indestructibleTile);
 	}
 
@@ -50,7 +50,7 @@ public class EnvironementTile
 	{
 		
 		_hp -= damageAmount;
-		TileManager.damageTilemap.SetTile(_position, _tile.damageLevelSprites[0]);
+		
 		if (_hp <= 0)
 		{
 			if(_tile.transformTo){
@@ -61,6 +61,12 @@ public class EnvironementTile
 		}
 		else{
 			Flash();
+			float normDamage = _tile.startHp.y / _hp;
+			int damageId = 0;
+			if (normDamage > 0.4f) damageId = 1;
+			if (normDamage > 0.7f) damageId = 2;
+
+			TileManager.damageTilemap.SetTile(_position, _tile.damageLevelSprites[damageId]);
 		}
 	}
 
