@@ -23,7 +23,7 @@ public class EnvironementTile
 		_startColor = TileManager.mainTilemap.GetColor(pos);
 		_doDamage = t.doDamage;
 		_tickTime = Random.Range(0, _tile.tickCooldDown);
-		if (_tile.indestructible)
+		if (_tile.indestructible && !_tile.doDamage)
 			TileManager.resistanceTilemap.SetTile(pos, _tile.indestructibleTile);
 	}
 
@@ -50,7 +50,7 @@ public class EnvironementTile
 	{
 		
 		_hp -= damageAmount;
-		TileManager.damageTilemap.SetTile(_position, _tile.damageLevelSprites[0]);
+		
 		if (_hp <= 0)
 		{
 			if(_tile.transformTo){
@@ -61,6 +61,12 @@ public class EnvironementTile
 		}
 		else{
 			Flash();
+			float normHp = _hp / (float)(_tile.startHp.y);
+			int damageId = 0;
+			if (normHp < 0.7f) damageId = 1;
+			if (normHp < 0.3f) damageId = 2;
+
+			TileManager.damageTilemap.SetTile(_position, _tile.damageLevelSprites[damageId]);
 		}
 	}
 
@@ -75,7 +81,7 @@ public class EnvironementTile
 		return _tile.resistanceLevel > b.weaponLevel || _tile.indestructible;
 	}
 
-	private void Flash(){
+	public void Flash(){
 		TileManager.instance.StartCoroutine(FlashRoutine());
 		flashCount++;
 	}
