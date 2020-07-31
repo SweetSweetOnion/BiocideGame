@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviour
 	public float damageRecoil = 1;
 	public float recoilDuration = 0.3f;
 
+	public float landedLockDuration = 1f;
+	public float aerialTimeToLock = 1;
+
 	//Accessors
 	public bool isGrounded => _controller2D.isGrounded;
 	public Vector3 velocity => _controller2D.velocity;
@@ -53,6 +56,8 @@ public class PlayerController : MonoBehaviour
 	private bool _isFlip = false;
 	private bool _lastGrounded = false;
 	private float _fallDuration = 0;
+	private float _groundedDuration = 0;
+	private bool _shouldLock;
 
 	private BoxCollider2D _boxCollider;
 	private CharacterController2D _controller2D;
@@ -151,7 +156,16 @@ public class PlayerController : MonoBehaviour
 		UpdateCurrentTiles();
 		UpdateJump();
 
-		if (_moveInput != 0)
+		float currentInput = _moveInput;
+
+		if(isGrounded && _groundedDuration < landedLockDuration){
+			if(_shouldLock)
+			currentInput = 0;
+		}else{
+			_shouldLock = false;
+		}
+
+		if (currentInput != 0 )
 		{
 			if (isGrounded)
 			{
@@ -179,9 +193,13 @@ public class PlayerController : MonoBehaviour
 		_externalForce = Vector3.zero;
 		if(!isGrounded){
 			_fallDuration += Time.deltaTime;
+			_groundedDuration = 0;
+		}else{
+			_groundedDuration += Time.deltaTime;
 		}
 		if(!_lastGrounded && isGrounded){
 			OnLanded?.Invoke(_fallDuration);
+			if (_fallDuration > aerialTimeToLock) _shouldLock = true;
 			_fallDuration = 0;
 		}
 		_lastGrounded = isGrounded;
