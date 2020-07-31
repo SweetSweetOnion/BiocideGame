@@ -50,5 +50,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0784a19c5fa66924db566a5f14d2226b, type: 2}
   - {fileID: 11400000, guid: 88e2a5a190709e244ba7a0263b9b71c9, type: 2}
   vfxDamageTile: {fileID: 11400000, guid: a63385673b529b449bc5aacc9a2d1956, type: 2}
-  backgroundTile: {fileID: 0}
+  backgroundTile: {fileID: 11400000, guid: 1a0a614abfed46342860965393da4582, type: 2}
   toxicTile: {fileID: 11400000, guid: 90032c9714519d4428c2b2252e261110, type: 2}

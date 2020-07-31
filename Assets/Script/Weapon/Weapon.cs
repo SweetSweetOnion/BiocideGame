@@ -40,7 +40,7 @@ public class Weapon : ScriptableObject
 			
 			Vector2 finalDir = Vector2.ClampMagnitude(Rotate(baseDirection,Random.Range(-directionSpread,directionSpread) * Mathf.Deg2Rad) , 1);
 
-			Bullet bullet = Instantiate(bulletPrefab, position + new Vector3(spawnOffset.x, spawnOffset.y, 0), Quaternion.identity);
+			Bullet bullet = Instantiate(bulletPrefab, position + new Vector3(spawnOffset.x * Mathf.Sign(direction.x), spawnOffset.y, 0) , Quaternion.identity);
 			bullet.speed = bulletSpeed + Mathf.Abs(playerVel.x/10);
 			bullet.direction = finalDir;
 			bullet.gravity = bulletGravity;

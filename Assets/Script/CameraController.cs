@@ -32,7 +32,8 @@ public class CameraController : MonoBehaviour
 
 	private void OnLanded(float fallDuration)
 	{
-		AddShake(0, fallDuration *2);
+		if(fallDuration >= 1f)
+		AddShake(0, 0.5f);
 	}
 
 	private void OnTileDestroy(Vector3Int position, float experience)
@@ -42,7 +43,7 @@ public class CameraController : MonoBehaviour
 
 	private void OnTileDamage(Vector3Int position, EnvironementTile envTile)
 	{
-		AddShake(0.01f);
+		//AddShake(0.01f);
 	}
 
 	private void OnDisable()
