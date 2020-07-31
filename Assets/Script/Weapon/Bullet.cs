@@ -43,16 +43,16 @@ public class Bullet : MonoBehaviour
 			Debug.Log("yo");
 		}*/
 		Vector3 hitPosition = Vector3.zero;
-		if (GameManager.tilemap != null && GameManager.tilemap.gameObject == collision.gameObject)
+		if (TileManager.mainTilemap != null && TileManager.mainTilemap.gameObject == collision.gameObject)
 		{
 			foreach (ContactPoint2D hit in collision.contacts)
 			{
 				hitPosition.x = hit.point.x - 0.01f * hit.normal.x;
 				hitPosition.y = hit.point.y - 0.01f * hit.normal.y;
 				
-				Vector3Int coord = GameManager.tilemap.WorldToCell(hitPosition);
+				Vector3Int coord = TileManager.mainTilemap.WorldToCell(hitPosition);
 				
-				TileType t = GameManager.tilemap.GetTileType(coord);
+				TileType t = TileManager.mainTilemap.GetTileType(coord);
 				if(t){
 					TileManager.OnTileHit(coord,this);
 				}
