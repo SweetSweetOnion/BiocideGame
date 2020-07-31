@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1216325478	UI_Menu_Submit			\BIOCIDE_EVENTS\SFX EVENTS\UI EVENTS\UI_Menu_Submit	
+	3474566310	UI_Menu_Select			\BIOCIDE_EVENTS\SFX EVENTS\UI EVENTS\UI_Menu_Select	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	112460998	UI__Menu_Submit	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\UI\UI__Menu_Submit_755F56E2.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\UI\UI\Menus\Submit\UI_Menu_Submit\UI__Menu_Submit		14716
+	611464467	UI_Menu_Select	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\UI\UI_Menu_Select_755F56E2.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\UI\UI\Menus\Select\UI_Menu_Select\UI_Menu_Select		10568
+

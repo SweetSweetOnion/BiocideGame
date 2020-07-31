@@ -21,6 +21,213 @@
     "Path": "MUSIC_MAIN.bnk",
     "IncludedEvents": [
      {
+      "Id": "1615767906",
+      "Name": "MUSIC_Main",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\MUSIC EVENTS\\MUSIC_Main",
+      "GUID": "{CF2C8A3B-4081-4BCA-960C-9E44EE1129DD}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "25953484",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level3_005.wav",
+        "Path": "SFX\\Music\\Music_Core_Level3_005_073B4D0C.wem"
+       },
+       {
+        "Id": "57967361",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level3_002.wav",
+        "Path": "SFX\\Music\\Music_Core_Level3_002_073B4D0C.wem"
+       },
+       {
+        "Id": "156852415",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level3_001.wav",
+        "Path": "SFX\\Music\\Music_Core_Level3_001_073B4D0C.wem"
+       },
+       {
+        "Id": "238057640",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level2_004.wav",
+        "Path": "SFX\\Music\\Music_Core_Level2_004_073B4D0C.wem"
+       },
+       {
+        "Id": "264572187",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Launch.wav",
+        "Path": "SFX\\Music\\Music_Core_Launch_073B4D0C.wem"
+       },
+       {
+        "Id": "274576765",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_End.wav",
+        "Path": "SFX\\Music\\Music_Core_End_073B4D0C.wem"
+       },
+       {
+        "Id": "279315649",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level2_001.wav",
+        "Path": "SFX\\Music\\Music_Core_Level2_001_073B4D0C.wem"
+       },
+       {
+        "Id": "288853103",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level1_004.wav",
+        "Path": "SFX\\Music\\Music_Core_Level1_004_073B4D0C.wem"
+       },
+       {
+        "Id": "358422168",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level1_000.wav",
+        "Path": "SFX\\Music\\Music_Core_Level1_000_073B4D0C.wem"
+       },
+       {
+        "Id": "397573448",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level1_001.wav",
+        "Path": "SFX\\Music\\Music_Core_Level1_001_073B4D0C.wem"
+       },
+       {
+        "Id": "419045490",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level3_004.wav",
+        "Path": "SFX\\Music\\Music_Core_Level3_004_073B4D0C.wem"
+       },
+       {
+        "Id": "477168586",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level2_002.wav",
+        "Path": "SFX\\Music\\Music_Core_Level2_002_073B4D0C.wem"
+       },
+       {
+        "Id": "522515480",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level2_000.wav",
+        "Path": "SFX\\Music\\Music_Core_Level2_000_073B4D0C.wem"
+       },
+       {
+        "Id": "643945891",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level3_003.wav",
+        "Path": "SFX\\Music\\Music_Core_Level3_003_073B4D0C.wem"
+       },
+       {
+        "Id": "653738480",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level2_003.wav",
+        "Path": "SFX\\Music\\Music_Core_Level2_003_073B4D0C.wem"
+       },
+       {
+        "Id": "887449326",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level1_003.wav",
+        "Path": "SFX\\Music\\Music_Core_Level1_003_073B4D0C.wem"
+       },
+       {
+        "Id": "911791777",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Introduction.wav",
+        "Path": "SFX\\Music\\Music_Introduction_073B4D0C.wem"
+       },
+       {
+        "Id": "990558758",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level3_000.wav",
+        "Path": "SFX\\Music\\Music_Core_Level3_000_073B4D0C.wem"
+       },
+       {
+        "Id": "1046536498",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_Level1_002.wav",
+        "Path": "SFX\\Music\\Music_Core_Level1_002_073B4D0C.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{98F37E2A-B520-43FD-9BB4-5E26E00B9623}",
+        "Media": [
+         {
+          "Id": "274576765"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{6E2DCA28-2923-44DA-BEDF-ACFCD348AC53}",
+        "Media": [
+         {
+          "Id": "911791777"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{1FF9BB1D-DFDD-49A8-B081-DF5A3881AFB6}",
+        "Media": [
+         {
+          "Id": "264572187"
+         },
+         {
+          "Id": "288853103"
+         },
+         {
+          "Id": "358422168"
+         },
+         {
+          "Id": "887449326"
+         },
+         {
+          "Id": "1046536498"
+         },
+         {
+          "Id": "397573448"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{ECD7AF2A-2AB5-4920-BF3E-869E541CE57D}",
+        "Media": [
+         {
+          "Id": "279315649"
+         },
+         {
+          "Id": "477168586"
+         },
+         {
+          "Id": "238057640"
+         },
+         {
+          "Id": "522515480"
+         },
+         {
+          "Id": "653738480"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{2FAE39AB-4031-4234-8B73-93D21FEC9F1F}",
+        "Media": [
+         {
+          "Id": "419045490"
+         },
+         {
+          "Id": "643945891"
+         },
+         {
+          "Id": "156852415"
+         },
+         {
+          "Id": "25953484"
+         },
+         {
+          "Id": "990558758"
+         },
+         {
+          "Id": "57967361"
+         }
+        ]
+       }
+      ]
+     },
+     {
       "Id": "1414448543",
       "Name": "Play_MusicTest",
       "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\MUSIC EVENTS\\Play_MusicTest",
@@ -34,6 +241,52 @@
         "Language": "SFX",
         "ShortName": "Music\\02 - The Shire.wav",
         "Path": "SFX\\Music\\02 - The Shire_073B4D0C.wem"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3161908922",
+      "Name": "Main",
+      "ObjectPath": "\\States\\BIOCIDE_STATES\\MUSIC STATES\\Main",
+      "GUID": "{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\MUSIC STATES\\Main\\None",
+        "GUID": "{47E1800A-9C1A-48A7-8F7F-02AC29EE4BB7}"
+       },
+       {
+        "Id": "1034344105",
+        "Name": "Introduction",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\MUSIC STATES\\Main\\Introduction",
+        "GUID": "{6E2DCA28-2923-44DA-BEDF-ACFCD348AC53}"
+       },
+       {
+        "Id": "987635873",
+        "Name": "Level_01",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\MUSIC STATES\\Main\\Level_01",
+        "GUID": "{1FF9BB1D-DFDD-49A8-B081-DF5A3881AFB6}"
+       },
+       {
+        "Id": "987635874",
+        "Name": "Level_02",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\MUSIC STATES\\Main\\Level_02",
+        "GUID": "{ECD7AF2A-2AB5-4920-BF3E-869E541CE57D}"
+       },
+       {
+        "Id": "987635875",
+        "Name": "Level_03",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\MUSIC STATES\\Main\\Level_03",
+        "GUID": "{2FAE39AB-4031-4234-8B73-93D21FEC9F1F}"
+       },
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\MUSIC STATES\\Main\\End",
+        "GUID": "{98F37E2A-B520-43FD-9BB4-5E26E00B9623}"
        }
       ]
      }

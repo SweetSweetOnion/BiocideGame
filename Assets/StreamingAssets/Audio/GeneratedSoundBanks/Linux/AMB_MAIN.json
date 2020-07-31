@@ -1,0 +1,57 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\",
+   "SourceFilesRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\.cache\\Linux\\",
+   "SoundBanksRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Linux\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\GeneratedSoundBanks\\Linux"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3004847309",
+    "GUID": "{76F23E42-36CD-418D-85D4-7212DC849326}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\BIOCIDE_SNB\\SFX SNB\\AMB SNB\\AMB_MAIN",
+    "ShortName": "AMB_MAIN",
+    "Path": "AMB_MAIN.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1549451067",
+      "Name": "AMB_Destroyed",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\AMB_Destroyed",
+      "GUID": "{3B7859F3-0152-47BB-9E74-80CB81BD0727}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "49279505",
+        "Language": "SFX",
+        "ShortName": "Ambiance\\AMB_Destroyed.wav",
+        "Path": "SFX\\Ambiance\\AMB_Destroyed_EEE5CF11.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2327484403",
+      "Name": "AMB_Nature",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\AMB_Nature",
+      "GUID": "{B93A1BE6-0147-41E6-967F-5F92627CB4C0}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "91119290",
+        "Language": "SFX",
+        "ShortName": "Ambiance\\AMB_Nature.wav",
+        "Path": "SFX\\Ambiance\\AMB_Nature_C79A30FC.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

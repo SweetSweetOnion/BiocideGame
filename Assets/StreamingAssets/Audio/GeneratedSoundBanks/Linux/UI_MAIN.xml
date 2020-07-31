@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="2963962765" GUID="{E1CD5B77-D973-45FA-B67A-26987719CA9F}" Language="SFX">
+			<ObjectPath>\SoundBanks\BIOCIDE_SNB\SFX SNB\UI SNB\UI_MAIN</ObjectPath>
+			<ShortName>UI_MAIN</ShortName>
+			<Path>UI_MAIN.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3474566310" Name="UI_Menu_Select" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\UI EVENTS\UI_Menu_Select" GUID="{9FFFDEBC-A639-489D-A23F-B7227CC2FFC1}" DurationType="OneShot" DurationMin="0.186750" DurationMax="0.186750">
+					<IncludedMemoryFiles>
+						<File Id="611464467" Language="SFX">
+							<ShortName>UI\UI_Menu_Select.wav</ShortName>
+							<Path>SFX\UI\UI_Menu_Select_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1216325478" Name="UI_Menu_Submit" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\UI EVENTS\UI_Menu_Submit" GUID="{5FA3A699-4053-4C52-BADA-6D7412618372}" DurationType="OneShot" DurationMin="0.351208" DurationMax="0.351208">
+					<IncludedMemoryFiles>
+						<File Id="112460998" Language="SFX">
+							<ShortName>UI\UI__Menu_Submit.wav</ShortName>
+							<Path>SFX\UI\UI__Menu_Submit_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

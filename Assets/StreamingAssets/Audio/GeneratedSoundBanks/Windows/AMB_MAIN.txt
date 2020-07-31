@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1549451067	AMB_Destroyed			\BIOCIDE_EVENTS\SFX EVENTS\AMBIANCES EVENTS\AMB_Destroyed	
+	2327484403	AMB_Nature			\BIOCIDE_EVENTS\SFX EVENTS\AMBIANCES EVENTS\AMB_Nature	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	49279505	AMB_Destroyed	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Windows\SFX\Ambiance\AMB_Destroyed_EEE5CF11.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\AMBIANCES\Ambiances\MainAmbiance\AMB_Destroyed\AMB_Destroyed		1052513
+	91119290	AMB_Nature	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Windows\SFX\Ambiance\AMB_Nature_C79A30FC.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\AMBIANCES\Ambiances\MainAmbiance\AMB_Nature\AMB_Nature		3069709
+

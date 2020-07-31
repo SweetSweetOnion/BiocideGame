@@ -1,3 +1,30 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1296044485	WeaponLevel			\BIOCIDE_STATES\GENERAL STATES\WeaponLevel	
+	1381176751	DestructionLevel			\BIOCIDE_STATES\GENERAL STATES\DestructionLevel	
+	3161908922	Main			\BIOCIDE_STATES\MUSIC STATES\Main	
+	4173766728	OverralAmb			\BIOCIDE_STATES\GENERAL STATES\OverralAmb	
+
+State	ID	Name	State Group			Notes
+	748895195	None	WeaponLevel			
+	987635872	Level_00	WeaponLevel			
+	987635873	Level_01	WeaponLevel			
+	987635874	Level_02	WeaponLevel			
+	987635875	Level_03	WeaponLevel			
+	987635876	Level_04	WeaponLevel			
+	748895195	None	DestructionLevel			
+	1290008369	Level_1	DestructionLevel			
+	1290008370	Level_2	DestructionLevel			
+	1290008371	Level_3	DestructionLevel			
+	529726532	End	Main			
+	748895195	None	Main			
+	987635873	Level_01	Main			
+	987635874	Level_02	Main			
+	987635875	Level_03	Main			
+	1034344105	Introduction	Main			
+	748895195	None	OverralAmb			
+	1359166010	Destroyed	OverralAmb			
+	3501062356	Nature	OverralAmb			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	

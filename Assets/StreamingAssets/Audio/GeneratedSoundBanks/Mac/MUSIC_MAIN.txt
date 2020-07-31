@@ -1,6 +1,37 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1414448543	Play_MusicTest			\BIOCIDE_EVENTS\MUSIC EVENTS\Play_MusicTest	
+	1615767906	MUSIC_Main			\BIOCIDE_EVENTS\MUSIC EVENTS\MUSIC_Main	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3161908922	Main			\BIOCIDE_STATES\MUSIC STATES\Main	
+
+State	ID	Name	State Group			Notes
+	529726532	End	Main			
+	748895195	None	Main			
+	987635873	Level_01	Main			
+	987635874	Level_02	Main			
+	987635875	Level_03	Main			
+	1034344105	Introduction	Main			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	25953484	Music_Core_Level3_005	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level3_005_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_005\Music_Core_Level3_005		1052135
+	57967361	Music_Core_Level3_002	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level3_002_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_002\Music_Core_Level3_002		879747
+	156852415	Music_Core_Level3_001	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level3_001_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_001\Music_Core_Level3_001		875165
 	213904705	02 - The Shire	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\02 - The Shire_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MusicTest\02 - The Shire		8455999
+	238057640	Music_Core_Level2_004	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level2_004_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level2\Music_Core_Level2_004\Music_Core_Level2_004		855271
+	264572187	Music_Core_Launch	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Launch_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Launch\Music_Core_Launch		2025485
+	274576765	Music_Core_End	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_End_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\End\Music_Core_End\Music_Core_End		1478833
+	279315649	Music_Core_Level2_001	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level2_001_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level2\Music_Core_Level2_001\Music_Core_Level2_001		832011
+	288853103	Music_Core_Level1_004	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level1_004_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Level1_004\Music_Core_Level1_004		941961
+	358422168	Music_Core_Level1_000	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level1_000_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Level1_000\Music_Core_Level1_000		922855
+	397573448	Music_Core_Level1_001	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level1_001_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Level1_001\Music_Core_Level1_001		909470
+	419045490	Music_Core_Level3_004	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level3_004_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_004\Music_Core_Level3_004		1046360
+	477168586	Music_Core_Level2_002	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level2_002_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level2\Music_Core_Level2_002\Music_Core_Level2_002		809366
+	522515480	Music_Core_Level2_000	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level2_000_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level2\Music_Core_Level2_000\Music_Core_Level2_000		915330
+	643945891	Music_Core_Level3_003	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level3_003_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_003\Music_Core_Level3_003		835209
+	653738480	Music_Core_Level2_003	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level2_003_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level2\Music_Core_Level2_003\Music_Core_Level2_003		813157
+	887449326	Music_Core_Level1_003	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level1_003_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Level1_003\Music_Core_Level1_003		903810
+	911791777	Music_Introduction	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Introduction_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Introduction\Music_Introduction\Music_Introduction		2876861
+	990558758	Music_Core_Level3_000	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level3_000_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_000\Music_Core_Level3_000		989182
+	1046536498	Music_Core_Level1_002	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level1_002_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Level1_002\Music_Core_Level1_002		909627
 

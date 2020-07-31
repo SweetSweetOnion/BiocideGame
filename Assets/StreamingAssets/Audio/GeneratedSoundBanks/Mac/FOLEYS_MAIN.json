@@ -1,0 +1,1473 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\",
+   "SourceFilesRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3906669067",
+    "GUID": "{DB981513-4CAD-4551-8193-91AA21B473B7}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\BIOCIDE_SNB\\SFX SNB\\FOLEYS SNB\\FOLEYS_MAIN",
+    "ShortName": "FOLEYS_MAIN",
+    "Path": "FOLEYS_MAIN.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1962994296",
+      "Name": "FOLEYS_Char_Footsteps",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Char_Footsteps",
+      "GUID": "{5423F9DE-24B0-4D19-B7EB-E38D74CAB511}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.247865",
+      "DurationMax": "0.728094",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "171009811",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_003_755F56E2.wem"
+       },
+       {
+        "Id": "194862144",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_000_755F56E2.wem"
+       },
+       {
+        "Id": "342569084",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_004.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_004_755F56E2.wem"
+       },
+       {
+        "Id": "414720820",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_003.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_003_755F56E2.wem"
+       },
+       {
+        "Id": "427722980",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_000.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_000_755F56E2.wem"
+       },
+       {
+        "Id": "493482129",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_002.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_002_755F56E2.wem"
+       },
+       {
+        "Id": "494501753",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_005.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_005_755F56E2.wem"
+       },
+       {
+        "Id": "607544915",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "634379850",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "750921527",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_007.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_007_755F56E2.wem"
+       },
+       {
+        "Id": "885310517",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_004.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_004_755F56E2.wem"
+       },
+       {
+        "Id": "899669772",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_006.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Grass_006_755F56E2.wem"
+       },
+       {
+        "Id": "993310014",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_001.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_001_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{25668535-5119-473F-A7E4-04A38A683D52}",
+        "Media": [
+         {
+          "Id": "342569084"
+         },
+         {
+          "Id": "607544915"
+         },
+         {
+          "Id": "634379850"
+         },
+         {
+          "Id": "171009811"
+         },
+         {
+          "Id": "194862144"
+         },
+         {
+          "Id": "494501753"
+         },
+         {
+          "Id": "750921527"
+         },
+         {
+          "Id": "899669772"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}",
+        "Media": [
+         {
+          "Id": "342569084"
+         },
+         {
+          "Id": "607544915"
+         },
+         {
+          "Id": "634379850"
+         },
+         {
+          "Id": "171009811"
+         },
+         {
+          "Id": "194862144"
+         },
+         {
+          "Id": "494501753"
+         },
+         {
+          "Id": "750921527"
+         },
+         {
+          "Id": "899669772"
+         },
+         {
+          "Id": "493482129"
+         },
+         {
+          "Id": "414720820"
+         },
+         {
+          "Id": "885310517"
+         },
+         {
+          "Id": "427722980"
+         },
+         {
+          "Id": "993310014"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2368415702",
+      "Name": "FOLEYS_Char_Hit",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Char_Hit",
+      "GUID": "{BBDD1C6C-2981-429F-A143-9D72655BA8D7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.220729",
+      "DurationMax": "0.358927",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "112944646",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Hit_001.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Hit_001_755F56E2.wem"
+       },
+       {
+        "Id": "291015539",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Hit_002.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Hit_002_755F56E2.wem"
+       },
+       {
+        "Id": "553222752",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Hit_000.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Hit_000_755F56E2.wem"
+       },
+       {
+        "Id": "1065839264",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Hit_003.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Hit_003_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3542894396",
+      "Name": "FOLEYS_Char_Landing",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Char_Landing",
+      "GUID": "{6D4BEE40-124E-4C09-80AD-5DC83065BFA2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.258720",
+      "DurationMax": "0.884585",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "50026599",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_003_755F56E2.wem"
+       },
+       {
+        "Id": "58418014",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "254338830",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_005.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_005_755F56E2.wem"
+       },
+       {
+        "Id": "437293510",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_010.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_010_755F56E2.wem"
+       },
+       {
+        "Id": "441071616",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "509142165",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_000_755F56E2.wem"
+       },
+       {
+        "Id": "621209291",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_004.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_004_755F56E2.wem"
+       },
+       {
+        "Id": "749308714",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_006.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_006_755F56E2.wem"
+       },
+       {
+        "Id": "929865488",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_008.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_008_755F56E2.wem"
+       },
+       {
+        "Id": "975789224",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_007.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_007_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{25668535-5119-473F-A7E4-04A38A683D52}",
+        "Media": [
+         {
+          "Id": "441071616"
+         },
+         {
+          "Id": "58418014"
+         },
+         {
+          "Id": "50026599"
+         },
+         {
+          "Id": "621209291"
+         },
+         {
+          "Id": "509142165"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}",
+        "Media": [
+         {
+          "Id": "441071616"
+         },
+         {
+          "Id": "58418014"
+         },
+         {
+          "Id": "50026599"
+         },
+         {
+          "Id": "621209291"
+         },
+         {
+          "Id": "509142165"
+         },
+         {
+          "Id": "254338830"
+         },
+         {
+          "Id": "749308714"
+         },
+         {
+          "Id": "975789224"
+         },
+         {
+          "Id": "929865488"
+         },
+         {
+          "Id": "437293510"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1417297257",
+      "Name": "FOLEYS_Char_TakeOff",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Char_TakeOff",
+      "GUID": "{C239EF41-7F46-4A82-A506-EB37F9CE9285}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.189168",
+      "DurationMax": "0.470998",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "26333508",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Toxic_002.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Toxic_002_755F56E2.wem"
+       },
+       {
+        "Id": "41315139",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Toxic_000.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Toxic_000_755F56E2.wem"
+       },
+       {
+        "Id": "53071694",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Grass_000_755F56E2.wem"
+       },
+       {
+        "Id": "63976718",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "198385611",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Grass_003_755F56E2.wem"
+       },
+       {
+        "Id": "306447583",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "361730811",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Toxic_004.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Toxic_004_755F56E2.wem"
+       },
+       {
+        "Id": "524888384",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Toxic_001.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Toxic_001_755F56E2.wem"
+       },
+       {
+        "Id": "813385922",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Grass_004.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Grass_004_755F56E2.wem"
+       },
+       {
+        "Id": "1023237856",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Toxic_003.wav",
+        "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Toxic_003_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{25668535-5119-473F-A7E4-04A38A683D52}",
+        "Media": [
+         {
+          "Id": "53071694"
+         },
+         {
+          "Id": "306447583"
+         },
+         {
+          "Id": "813385922"
+         },
+         {
+          "Id": "198385611"
+         },
+         {
+          "Id": "63976718"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}",
+        "Media": [
+         {
+          "Id": "53071694"
+         },
+         {
+          "Id": "306447583"
+         },
+         {
+          "Id": "813385922"
+         },
+         {
+          "Id": "198385611"
+         },
+         {
+          "Id": "63976718"
+         },
+         {
+          "Id": "41315139"
+         },
+         {
+          "Id": "524888384"
+         },
+         {
+          "Id": "26333508"
+         },
+         {
+          "Id": "1023237856"
+         },
+         {
+          "Id": "361730811"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2560249231",
+      "Name": "FOLEYS_Tile_Destroy",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Tile_Destroy",
+      "GUID": "{91C5420B-2701-4AD4-8C9C-82B784C04C49}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.393950",
+      "DurationMax": "1.306826",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "118878907",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_000_755F56E2.wem"
+       },
+       {
+        "Id": "138299531",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_002_755F56E2.wem"
+       },
+       {
+        "Id": "149998500",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_001_755F56E2.wem"
+       },
+       {
+        "Id": "166568042",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_003_755F56E2.wem"
+       },
+       {
+        "Id": "292677520",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_002_755F56E2.wem"
+       },
+       {
+        "Id": "396770019",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_001_755F56E2.wem"
+       },
+       {
+        "Id": "431832940",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_002_755F56E2.wem"
+       },
+       {
+        "Id": "576347533",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level1_000_755F56E2.wem"
+       },
+       {
+        "Id": "612445275",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level2_003_755F56E2.wem"
+       },
+       {
+        "Id": "660087933",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_003_755F56E2.wem"
+       },
+       {
+        "Id": "683568669",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_000_755F56E2.wem"
+       },
+       {
+        "Id": "844574578",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Destruction_Level3_001_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{E3D391CE-13AB-4462-B533-C50842D0A5B1}",
+        "Media": [
+         {
+          "Id": "576347533"
+         },
+         {
+          "Id": "431832940"
+         },
+         {
+          "Id": "166568042"
+         },
+         {
+          "Id": "396770019"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{8AF6CF57-816B-46BD-8633-F450B4C84300}",
+        "Media": [
+         {
+          "Id": "118878907"
+         },
+         {
+          "Id": "612445275"
+         },
+         {
+          "Id": "138299531"
+         },
+         {
+          "Id": "149998500"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{C403E5B8-6D0B-404B-896F-8C3B7A1463E1}",
+        "Media": [
+         {
+          "Id": "660087933"
+         },
+         {
+          "Id": "683568669"
+         },
+         {
+          "Id": "844574578"
+         },
+         {
+          "Id": "292677520"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "3547271382",
+      "Name": "FOLEYS_Tile_Hit",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Tile_Hit",
+      "GUID": "{B3691EBE-234E-45A7-B794-99B8C8B770C4}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.492152",
+      "DurationMax": "1.064915",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "25467263",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_002_755F56E2.wem"
+       },
+       {
+        "Id": "113438492",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_001_755F56E2.wem"
+       },
+       {
+        "Id": "317559199",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_002_755F56E2.wem"
+       },
+       {
+        "Id": "377105024",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_003_755F56E2.wem"
+       },
+       {
+        "Id": "386601981",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_001_755F56E2.wem"
+       },
+       {
+        "Id": "529815956",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_002_755F56E2.wem"
+       },
+       {
+        "Id": "621947941",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_000_755F56E2.wem"
+       },
+       {
+        "Id": "720057105",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_003_755F56E2.wem"
+       },
+       {
+        "Id": "828283852",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_001_755F56E2.wem"
+       },
+       {
+        "Id": "848952979",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_000_755F56E2.wem"
+       },
+       {
+        "Id": "952126531",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_003_755F56E2.wem"
+       },
+       {
+        "Id": "957377358",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level1_002_755F56E2.wem"
+       },
+       {
+        "Id": "1000183008",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level3_003_755F56E2.wem"
+       },
+       {
+        "Id": "1003660996",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_000_755F56E2.wem"
+       },
+       {
+        "Id": "1023055102",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_Level2_001_755F56E2.wem"
+       },
+       {
+        "Id": "1044516861",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Impact_ToxicLayer_000_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{E3D391CE-13AB-4462-B533-C50842D0A5B1}",
+        "Media": [
+         {
+          "Id": "828283852"
+         },
+         {
+          "Id": "952126531"
+         },
+         {
+          "Id": "621947941"
+         },
+         {
+          "Id": "957377358"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{8AF6CF57-816B-46BD-8633-F450B4C84300}",
+        "Media": [
+         {
+          "Id": "1003660996"
+         },
+         {
+          "Id": "317559199"
+         },
+         {
+          "Id": "1023055102"
+         },
+         {
+          "Id": "720057105"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{C403E5B8-6D0B-404B-896F-8C3B7A1463E1}",
+        "Media": [
+         {
+          "Id": "848952979"
+         },
+         {
+          "Id": "529815956"
+         },
+         {
+          "Id": "386601981"
+         },
+         {
+          "Id": "1000183008"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1448405397",
+      "Name": "FOLEYS_Tile_Resist",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Tile_Resist",
+      "GUID": "{4D133339-ADCA-4915-AC8D-6F9CDBFA04FD}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.187064",
+      "DurationMax": "0.660708",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "23728125",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_001_755F56E2.wem"
+       },
+       {
+        "Id": "85570332",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_003_755F56E2.wem"
+       },
+       {
+        "Id": "183993230",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_002_755F56E2.wem"
+       },
+       {
+        "Id": "509807600",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_002_755F56E2.wem"
+       },
+       {
+        "Id": "624465067",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_002.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_002_755F56E2.wem"
+       },
+       {
+        "Id": "686572312",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_000_755F56E2.wem"
+       },
+       {
+        "Id": "813063844",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level2_000_755F56E2.wem"
+       },
+       {
+        "Id": "825364210",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_003_755F56E2.wem"
+       },
+       {
+        "Id": "827240712",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_003.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_003_755F56E2.wem"
+       },
+       {
+        "Id": "902277489",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_001_755F56E2.wem"
+       },
+       {
+        "Id": "906092933",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_000.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level1_000_755F56E2.wem"
+       },
+       {
+        "Id": "968597774",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_001.wav",
+        "Path": "SFX\\Foleys\\Tiles\\FOLEYS_Tile_Resist_Level3_001_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{E3D391CE-13AB-4462-B533-C50842D0A5B1}",
+        "Media": [
+         {
+          "Id": "827240712"
+         },
+         {
+          "Id": "509807600"
+         },
+         {
+          "Id": "902277489"
+         },
+         {
+          "Id": "906092933"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{8AF6CF57-816B-46BD-8633-F450B4C84300}",
+        "Media": [
+         {
+          "Id": "183993230"
+         },
+         {
+          "Id": "23728125"
+         },
+         {
+          "Id": "813063844"
+         },
+         {
+          "Id": "85570332"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{C403E5B8-6D0B-404B-896F-8C3B7A1463E1}",
+        "Media": [
+         {
+          "Id": "686572312"
+         },
+         {
+          "Id": "624465067"
+         },
+         {
+          "Id": "825364210"
+         },
+         {
+          "Id": "968597774"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1212767844",
+      "Name": "FOLEYS_Weapon_Reload",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Weapon_Reload",
+      "GUID": "{1C71D9B3-7B2E-4BE7-B60C-30A14EDD5EFE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.308608",
+      "DurationMax": "0.613230",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "121873251",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_3_001.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_3_001_755F56E2.wem"
+       },
+       {
+        "Id": "122187002",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_0_002.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_0_002_755F56E2.wem"
+       },
+       {
+        "Id": "258815211",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_4_002.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_4_002_755F56E2.wem"
+       },
+       {
+        "Id": "287620177",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_4_003.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_4_003_755F56E2.wem"
+       },
+       {
+        "Id": "301426272",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_4_001.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_4_001_755F56E2.wem"
+       },
+       {
+        "Id": "316286149",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_2_002.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_2_002_755F56E2.wem"
+       },
+       {
+        "Id": "332204549",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_1_003.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_1_003_755F56E2.wem"
+       },
+       {
+        "Id": "454429987",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_2_000.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_2_000_755F56E2.wem"
+       },
+       {
+        "Id": "463336788",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_0_001.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_0_001_755F56E2.wem"
+       },
+       {
+        "Id": "467735108",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_3_002.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_3_002_755F56E2.wem"
+       },
+       {
+        "Id": "468067470",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_1_002.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_1_002_755F56E2.wem"
+       },
+       {
+        "Id": "488152484",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_0_000.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_0_000_755F56E2.wem"
+       },
+       {
+        "Id": "512881644",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_3_000.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_3_000_755F56E2.wem"
+       },
+       {
+        "Id": "587909290",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_3_003.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_3_003_755F56E2.wem"
+       },
+       {
+        "Id": "632461324",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_2_001.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_2_001_755F56E2.wem"
+       },
+       {
+        "Id": "730670061",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_1_001.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_1_001_755F56E2.wem"
+       },
+       {
+        "Id": "737764995",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_2_003.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_2_003_755F56E2.wem"
+       },
+       {
+        "Id": "749010140",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_0_003.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_0_003_755F56E2.wem"
+       },
+       {
+        "Id": "928873003",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_4_000.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_4_000_755F56E2.wem"
+       },
+       {
+        "Id": "970345207",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Reload_Level_1_000.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Reload_Level_1_000_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{846C4F76-6196-414F-81BD-28C753D7865D}",
+        "Media": [
+         {
+          "Id": "463336788"
+         },
+         {
+          "Id": "749010140"
+         },
+         {
+          "Id": "122187002"
+         },
+         {
+          "Id": "488152484"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{1CE8358C-CDA0-4379-BD79-DF7F069094B8}",
+        "Media": [
+         {
+          "Id": "970345207"
+         },
+         {
+          "Id": "730670061"
+         },
+         {
+          "Id": "332204549"
+         },
+         {
+          "Id": "468067470"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{49A6BD0C-78A6-4C54-B709-7199392E3087}",
+        "Media": [
+         {
+          "Id": "454429987"
+         },
+         {
+          "Id": "632461324"
+         },
+         {
+          "Id": "737764995"
+         },
+         {
+          "Id": "316286149"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{FD0FFD66-3DAD-4232-A87B-868CED6AD005}",
+        "Media": [
+         {
+          "Id": "121873251"
+         },
+         {
+          "Id": "467735108"
+         },
+         {
+          "Id": "587909290"
+         },
+         {
+          "Id": "512881644"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{671F6BED-BFC7-4553-AA29-8AB8D0FCAFC0}",
+        "Media": [
+         {
+          "Id": "258815211"
+         },
+         {
+          "Id": "287620177"
+         },
+         {
+          "Id": "928873003"
+         },
+         {
+          "Id": "301426272"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "917610224",
+      "Name": "FOLEYS_Weapon_Shoot",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Weapon_Shoot",
+      "GUID": "{71BA262A-D577-4B2F-BD84-59A8F24F2D3B}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "143998299",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_2_001.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_2_001_755F56E2.wem"
+       },
+       {
+        "Id": "188114180",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_3_002.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_3_002_755F56E2.wem"
+       },
+       {
+        "Id": "321093674",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_2_002.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_2_002_755F56E2.wem"
+       },
+       {
+        "Id": "389973960",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_3_001.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_3_001_755F56E2.wem"
+       },
+       {
+        "Id": "500760550",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_2_000.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_2_000_755F56E2.wem"
+       },
+       {
+        "Id": "688486048",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_3_003.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_3_003_755F56E2.wem"
+       },
+       {
+        "Id": "762045752",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_4.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_4_684200C3.wem"
+       },
+       {
+        "Id": "853328376",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_3_000.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_3_000_755F56E2.wem"
+       },
+       {
+        "Id": "916234400",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_1.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_1_AA160F19.wem"
+       },
+       {
+        "Id": "966909306",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Low.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Low_A758B4CF.wem"
+       },
+       {
+        "Id": "1021599171",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_0.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_0_4CE36052.wem"
+       },
+       {
+        "Id": "1058939958",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Shoot_Level_2_003.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Shoot_Level_2_003_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{846C4F76-6196-414F-81BD-28C753D7865D}",
+        "Media": [
+         {
+          "Id": "1021599171"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{1CE8358C-CDA0-4379-BD79-DF7F069094B8}",
+        "Media": [
+         {
+          "Id": "916234400"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{49A6BD0C-78A6-4C54-B709-7199392E3087}",
+        "Media": [
+         {
+          "Id": "500760550"
+         },
+         {
+          "Id": "1058939958"
+         },
+         {
+          "Id": "143998299"
+         },
+         {
+          "Id": "321093674"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{FD0FFD66-3DAD-4232-A87B-868CED6AD005}",
+        "Media": [
+         {
+          "Id": "853328376"
+         },
+         {
+          "Id": "389973960"
+         },
+         {
+          "Id": "688486048"
+         },
+         {
+          "Id": "188114180"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{671F6BED-BFC7-4553-AA29-8AB8D0FCAFC0}",
+        "Media": [
+         {
+          "Id": "762045752"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "672917745",
+      "Name": "FOLEYS_Weapon_Trigger",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Weapon_Trigger",
+      "GUID": "{F6A48422-3DD1-4C30-B7EE-FDD1AA08C04C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.450396",
+      "DurationMax": "0.751271",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "86300606",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Trigger_Level_4.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Trigger_Level_4_755F56E2.wem"
+       },
+       {
+        "Id": "225569840",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Trigger_Level_1.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Trigger_Level_1_755F56E2.wem"
+       },
+       {
+        "Id": "857234290",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Trigger_Level_3.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Trigger_Level_3_755F56E2.wem"
+       },
+       {
+        "Id": "875581582",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Trigger_Level_2.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Trigger_Level_2_755F56E2.wem"
+       },
+       {
+        "Id": "1014895974",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Weapon\\Pulverisator_Trigger_Level_0.wav",
+        "Path": "SFX\\Foleys\\Weapon\\Pulverisator_Trigger_Level_0_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{846C4F76-6196-414F-81BD-28C753D7865D}",
+        "Media": [
+         {
+          "Id": "1014895974"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{1CE8358C-CDA0-4379-BD79-DF7F069094B8}",
+        "Media": [
+         {
+          "Id": "225569840"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{49A6BD0C-78A6-4C54-B709-7199392E3087}",
+        "Media": [
+         {
+          "Id": "875581582"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{FD0FFD66-3DAD-4232-A87B-868CED6AD005}",
+        "Media": [
+         {
+          "Id": "857234290"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{671F6BED-BFC7-4553-AA29-8AB8D0FCAFC0}",
+        "Media": [
+         {
+          "Id": "86300606"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2682751840",
+      "Name": "RTPC_ToxicTileHP",
+      "ObjectPath": "\\Game Parameters\\BIOCIDE_RTPC\\GENERAL RTPC\\RTPC_ToxicTileHP",
+      "GUID": "{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}"
+     },
+     {
+      "Id": "2807485413",
+      "Name": "WeaponCharge",
+      "ObjectPath": "\\Game Parameters\\BIOCIDE_RTPC\\SFX RTPC\\FOLEYS RTPC\\WeaponCharge",
+      "GUID": "{ABF41A08-5D07-4151-8FD8-E2057B025511}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1296044485",
+      "Name": "WeaponLevel",
+      "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\WeaponLevel",
+      "GUID": "{A01DE212-96E6-43C9-9D44-44A3D403A25D}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\WeaponLevel\\None",
+        "GUID": "{B87AAC0B-EC37-4A11-A20B-F3AC8EE29D31}"
+       },
+       {
+        "Id": "987635872",
+        "Name": "Level_00",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\WeaponLevel\\Level_00",
+        "GUID": "{846C4F76-6196-414F-81BD-28C753D7865D}"
+       },
+       {
+        "Id": "987635873",
+        "Name": "Level_01",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\WeaponLevel\\Level_01",
+        "GUID": "{1CE8358C-CDA0-4379-BD79-DF7F069094B8}"
+       },
+       {
+        "Id": "987635874",
+        "Name": "Level_02",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\WeaponLevel\\Level_02",
+        "GUID": "{49A6BD0C-78A6-4C54-B709-7199392E3087}"
+       },
+       {
+        "Id": "987635875",
+        "Name": "Level_03",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\WeaponLevel\\Level_03",
+        "GUID": "{FD0FFD66-3DAD-4232-A87B-868CED6AD005}"
+       },
+       {
+        "Id": "987635876",
+        "Name": "Level_04",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\WeaponLevel\\Level_04",
+        "GUID": "{671F6BED-BFC7-4553-AA29-8AB8D0FCAFC0}"
+       }
+      ]
+     },
+     {
+      "Id": "1381176751",
+      "Name": "DestructionLevel",
+      "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\DestructionLevel",
+      "GUID": "{F66141A9-1E78-46B8-A8A1-58B01C75BBD0}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\DestructionLevel\\None",
+        "GUID": "{81135210-0084-452D-BFFF-CA7022523806}"
+       },
+       {
+        "Id": "1290008369",
+        "Name": "Level_1",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\DestructionLevel\\Level_1",
+        "GUID": "{E3D391CE-13AB-4462-B533-C50842D0A5B1}"
+       },
+       {
+        "Id": "1290008370",
+        "Name": "Level_2",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\DestructionLevel\\Level_2",
+        "GUID": "{8AF6CF57-816B-46BD-8633-F450B4C84300}"
+       },
+       {
+        "Id": "1290008371",
+        "Name": "Level_3",
+        "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\DestructionLevel\\Level_3",
+        "GUID": "{C403E5B8-6D0B-404B-896F-8C3B7A1463E1}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2460634474",
+      "Name": "Texture",
+      "ObjectPath": "\\Switches\\BIOCIDE_SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\Texture",
+      "GUID": "{518E7FD8-4F04-4C66-8D54-B361B2636EA9}",
+      "Switches": [
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\BIOCIDE_SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\Texture\\Grass",
+        "GUID": "{25668535-5119-473F-A7E4-04A38A683D52}"
+       },
+       {
+        "Id": "1400550014",
+        "Name": "Toxic",
+        "ObjectPath": "\\Switches\\BIOCIDE_SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\Texture\\Toxic",
+        "GUID": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
