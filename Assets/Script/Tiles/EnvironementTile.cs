@@ -61,10 +61,10 @@ public class EnvironementTile
 		}
 		else{
 			Flash();
-			float normDamage = _tile.startHp.y / _hp;
+			float normHp = _hp / (float)(_tile.startHp.y);
 			int damageId = 0;
-			if (normDamage > 0.4f) damageId = 1;
-			if (normDamage > 0.7f) damageId = 2;
+			if (normHp < 0.7f) damageId = 1;
+			if (normHp < 0.3f) damageId = 2;
 
 			TileManager.damageTilemap.SetTile(_position, _tile.damageLevelSprites[damageId]);
 		}
