@@ -937,7 +937,7 @@ GameObject:
   - component: {fileID: 833840852}
   - component: {fileID: 833840854}
   m_Layer: 0
-  m_Name: step0101
+  m_Name: playerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,6 +1039,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1683257919}
+  weaponManager: {fileID: 1683257927}
+  animatorControllers:
+  - {fileID: 9100000, guid: a3bd9dd77cb8c1543a6af9a586fee278, type: 2}
+  - {fileID: 22100000, guid: 3d86184fac9a8a84fb512a1fe8297f29, type: 2}
+  - {fileID: 22100000, guid: 143879ffee63b2f4aaecacf97f514a64, type: 2}
+  - {fileID: 22100000, guid: b22417f67f4338d449f7d4ab18bbb835, type: 2}
+  - {fileID: 22100000, guid: 38051a54a5b986d4291997b8e220989d, type: 2}
 --- !u!1 &854725535
 GameObject:
   m_ObjectHideFlags: 0
@@ -52246,7 +52253,7 @@ GameObject:
   - component: {fileID: 1007670904}
   - component: {fileID: 1007670903}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: background floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
