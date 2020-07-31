@@ -81,7 +81,7 @@ public class EnvironementTile
 		return _tile.resistanceLevel > b.weaponLevel || _tile.indestructible;
 	}
 
-	private void Flash(){
+	public void Flash(){
 		TileManager.instance.StartCoroutine(FlashRoutine());
 		flashCount++;
 	}

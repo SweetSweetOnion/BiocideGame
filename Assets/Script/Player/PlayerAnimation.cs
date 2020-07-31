@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class PlayerAnimation : MonoBehaviour
 {
 	public PlayerController controller;
 	public WeaponManager weaponManager;
+	public PlayerHealth health;
+
 	private SpriteRenderer spriteRenderer;
 	private Animator animator;
 
@@ -22,14 +25,17 @@ public class PlayerAnimation : MonoBehaviour
 	{
 		controller.OnJump += OnJump;
 		weaponManager.OnLevelUp += OnLevelUp;
+		health.OnDamage += OnDamage;
 	}
 
-
+	
 
 	private void OnDisable()
 	{
 		controller.OnJump -= OnJump;
 		weaponManager.OnLevelUp -= OnLevelUp;
+		health.OnDamage -= OnDamage;
+
 
 	}
 
@@ -57,5 +63,23 @@ public class PlayerAnimation : MonoBehaviour
 	private void OnLevelUp(int newLevel)
 	{
 		animator.runtimeAnimatorController = animatorControllers[newLevel];
+	}
+
+	private void OnDamage(int amount, Vector3 worldOrigin)
+	{
+		StopAllCoroutines();
+		StartCoroutine(BlinkRoutine(5, 0.1f));
+	}
+
+	private IEnumerator  BlinkRoutine(int blinkCount, float blinkDuration){
+		int t = 0;
+		while(t < blinkCount)
+		{
+			spriteRenderer.enabled = false;
+			yield return new WaitForSeconds(blinkDuration);
+			spriteRenderer.enabled = true;
+			yield return new WaitForSeconds(blinkDuration);
+			t++;
+		}
 	}
 }
