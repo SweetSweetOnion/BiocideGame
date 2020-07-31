@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Prime31;
 using UnityEngine.InputSystem;
+using System.Runtime.CompilerServices;
 
 [RequireComponent(typeof(BoxCollider2D), typeof(CharacterController2D))]
 public class PlayerController : MonoBehaviour
@@ -65,6 +66,8 @@ public class PlayerController : MonoBehaviour
 	public event TeleportEvent OnTeleport;
 	public delegate void FloatEvent(float f);
 	public event FloatEvent OnLanded;
+	public delegate void JumpEvent();
+	public event JumpEvent OnJump;
 
 	private void Awake()
 	{
@@ -214,6 +217,7 @@ public class PlayerController : MonoBehaviour
 				_canJump = false;
 				_hasJump = true;
 				_lastJump = Time.time;
+				OnJump?.Invoke();
 			}else{
 				_hasJump = false;
 			}
