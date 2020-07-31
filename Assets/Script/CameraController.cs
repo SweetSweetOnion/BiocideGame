@@ -120,6 +120,7 @@ public class CameraController : MonoBehaviour
 
 	}
 
+	//Vector3 shakeAdd;
 	private void UpdateShake()
 	{
 		if(shakeDuration.x > 0 || shakeDuration.y >0)
@@ -128,11 +129,14 @@ public class CameraController : MonoBehaviour
 			float quakeY = shakeAmountOverTime.Evaluate(shakeDuration.y / maxDuration) * maxShake;
 			Vector3 shakeDir = new Vector3(Random.Range(-1f, 1f) * quakeX, Random.Range(-1f, 1f), 0) * quakeY;
 			transform.position += shakeDir ;
+			//shakeAdd += shakeDir;
 			shakeDuration.x -= Time.deltaTime;
 			shakeDuration.y -= Time.deltaTime;
 		}
 		else{
 			shakeDuration = Vector2.zero;
+			//transform.position -= shakeAdd;
+			//shakeAdd = Vector3.zero;
 		}
 	}
 
