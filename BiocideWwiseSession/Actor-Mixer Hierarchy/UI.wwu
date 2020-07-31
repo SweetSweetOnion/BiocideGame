@@ -46,6 +46,30 @@
 													<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="UI_Menu_Select" ID="{1F541219-BD08-4477-89C2-0DFAD7820004}" ShortID="644643447">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_UI" ID="{69470E49-9364-4C12-8392-110B5FB84052}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="UI_Menu_Select" ID="{B5DAA5C0-8A1D-439A-8034-C76F5D34A026}">
+															<Language>SFX</Language>
+															<AudioFile>UI\UI_Menu_Select.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="611464467"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="UI_Menu_Select" ID="{B5DAA5C0-8A1D-439A-8034-C76F5D34A026}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</BlendContainer>
 									</ChildrenList>
 								</ActorMixer>
@@ -68,6 +92,30 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="UI__Menu_Submit" ID="{BBB5C454-BE87-4FBB-A5C9-0B999D5EA952}" ShortID="300993594">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_UI" ID="{69470E49-9364-4C12-8392-110B5FB84052}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="UI__Menu_Submit" ID="{A96FFD98-B85F-42A4-AC19-6BBD49E93022}">
+															<Language>SFX</Language>
+															<AudioFile>UI\UI__Menu_Submit.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="112460998"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="UI__Menu_Submit" ID="{A96FFD98-B85F-42A4-AC19-6BBD49E93022}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</BlendContainer>
 									</ChildrenList>
 								</ActorMixer>
