@@ -11,8 +11,10 @@ public class EnvironementTile
 	private Color _startColor;
 	private bool _doDamage;
 	private float _tickTime;
+	private float _startHp;
 	//accesors
 	public Color color => _startColor;
+	public float hp => _hp;
 	private int flashCount = 0;
 
 	public EnvironementTile(TileType t, Vector3Int pos)
@@ -20,11 +22,16 @@ public class EnvironementTile
 		_tile = t;
 		_position = pos;
 		_hp = Random.Range(t.startHp.x, t.startHp.y);
+		_startHp = _hp;
 		_startColor = TileManager.mainTilemap.GetColor(pos);
 		_doDamage = t.doDamage;
 		_tickTime = Random.Range(0, _tile.tickCooldDown);
 		if (_tile.indestructible && !_tile.doDamage)
 			TileManager.resistanceTilemap.SetTile(pos, _tile.indestructibleTile);
+	}
+
+	public float GetNormHp(){
+		return _hp / _startHp;
 	}
 
 	public void UpdateToxicTiles(){

@@ -15,8 +15,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 325166070, guid: 06b75dc9452dbbd46bd8dd6112b6442a, type: 3}
   maxBulletSpeed: 12
   minBulletSpeed: 6
-  bulletDamage: 2
-  bulletGravity: 3000
+  bulletDamage: 4
+  bulletGravity: 2000
   bulletLifetime: 10
   bulletLevel: 0
   maxSpawnCount: {x: 1, y: 1}
@@ -24,12 +24,12 @@ MonoBehaviour:
   maxSpawnCooldown: 0.04
   minSpawnCooldown: 0.2
   directionSpread: 1
-  directionOffsetY: 0.2
+  directionOffsetY: 0.5
   spawnOffset: {x: 1.02, y: -0.09}
   recoil: {x: 0, y: 0}
   pressureAddPerUse: -2
   pressureAddEverySecond: 0
-  pressureAddPerReload: 10
+  pressureAddPerReload: 30
   pressureCurve:
     serializedVersion: 2
     m_Curve:
