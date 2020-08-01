@@ -18,14 +18,14 @@ MonoBehaviour:
   bulletDamage: 10
   bulletGravity: 3000
   bulletLifetime: 15
-  bulletLevel: 0
+  bulletLevel: 1
   maxSpawnCount: {x: 5, y: 10}
   minSpawnCount: {x: 1, y: 4}
   maxSpawnCooldown: 0.2
   minSpawnCooldown: 0.4
-  directionSpread: 15
-  directionOffsetY: 0.5
-  spawnOffset: {x: 0.1, y: 0.1}
+  directionSpread: 30
+  directionOffsetY: 0
+  spawnOffset: {x: 1.02, y: -0.09}
   recoil: {x: 0, y: 0}
   pressureAddPerUse: -1
   pressureAddEverySecond: 0

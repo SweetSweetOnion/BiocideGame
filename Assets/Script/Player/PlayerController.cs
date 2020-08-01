@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Prime31;
 using UnityEngine.InputSystem;
+using System.Runtime.CompilerServices;
 
 [RequireComponent(typeof(BoxCollider2D), typeof(CharacterController2D))]
 public class PlayerController : MonoBehaviour
@@ -28,6 +29,9 @@ public class PlayerController : MonoBehaviour
 	public float damageRecoil = 1;
 	public float recoilDuration = 0.3f;
 
+	public float landedLockDuration = 1f;
+	public float aerialTimeToLock = 1;
+
 	//Accessors
 	public bool isGrounded => _controller2D.isGrounded;
 	public Vector3 velocity => _controller2D.velocity;
@@ -50,6 +54,10 @@ public class PlayerController : MonoBehaviour
 	private Vector3 _externalForce;
 	private float _lastJump;
 	private bool _isFlip = false;
+	private bool _lastGrounded = false;
+	private float _fallDuration = 0;
+	private float _groundedDuration = 0;
+	private bool _shouldLock;
 
 	private BoxCollider2D _boxCollider;
 	private CharacterController2D _controller2D;
@@ -61,6 +69,10 @@ public class PlayerController : MonoBehaviour
 	//events
 	public delegate void TeleportEvent(Vector2 previous, Vector2 newPos);
 	public event TeleportEvent OnTeleport;
+	public delegate void FloatEvent(float f);
+	public event FloatEvent OnLanded;
+	public delegate void JumpEvent();
+	public event JumpEvent OnJump;
 
 	private void Awake()
 	{
@@ -144,7 +156,16 @@ public class PlayerController : MonoBehaviour
 		UpdateCurrentTiles();
 		UpdateJump();
 
-		if (_moveInput != 0)
+		float currentInput = _moveInput;
+
+		if(isGrounded && _groundedDuration < landedLockDuration){
+			if(_shouldLock)
+			currentInput = 0;
+		}else{
+			_shouldLock = false;
+		}
+
+		if (currentInput != 0 )
 		{
 			if (isGrounded)
 			{
@@ -170,12 +191,23 @@ public class PlayerController : MonoBehaviour
 		_controller2D.move(_velocity * Time.deltaTime + _externalForce);
 
 		_externalForce = Vector3.zero;
-		
+		if(!isGrounded){
+			_fallDuration += Time.deltaTime;
+			_groundedDuration = 0;
+		}else{
+			_groundedDuration += Time.deltaTime;
+		}
+		if(!_lastGrounded && isGrounded){
+			OnLanded?.Invoke(_fallDuration);
+			if (_fallDuration > aerialTimeToLock) _shouldLock = true;
+			_fallDuration = 0;
+		}
+		_lastGrounded = isGrounded;
 	}
 
 	private void UpdateCurrentTiles(){
-		Vector3 bottomLeftPos = transform.position - Vector3.up * transform.localScale.y / 2 + Vector3.left * transform.localScale.x/2;
-		Vector3 bottomRightPos = transform.position - Vector3.up * transform.localScale.y / 2 - Vector3.left * transform.localScale.x/2;
+		Vector3 bottomLeftPos = transform.position - Vector3.up * _boxCollider.size.y / 2 + Vector3.left * _boxCollider.size.x /2;
+		Vector3 bottomRightPos = transform.position - Vector3.up * _boxCollider.size.y / 2 - Vector3.left * _boxCollider.size.x /2;
 		currentTiles[0] = TileManager.mainTilemap.WorldToCell(bottomLeftPos - Vector3.up *0.1f);
 		currentTiles[1] = TileManager.mainTilemap.WorldToCell(bottomRightPos - Vector3.up * 0.1f);
 		if(isGrounded){
@@ -203,6 +235,7 @@ public class PlayerController : MonoBehaviour
 				_canJump = false;
 				_hasJump = true;
 				_lastJump = Time.time;
+				OnJump?.Invoke();
 			}else{
 				_hasJump = false;
 			}

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Tilemaps;
+using System;
 
 public class Bullet : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class Bullet : MonoBehaviour
 
 	private Rigidbody2D rb;
 	private bool applyForce = true;
+
+	public delegate void BulletHit(Vector3 pos);
+	public static event BulletHit OnBulletHit;
+
 
 	private void Awake()
 	{
@@ -52,12 +57,14 @@ public class Bullet : MonoBehaviour
 				
 				Vector3Int coord = TileManager.mainTilemap.WorldToCell(hitPosition);
 				
-				TileType t = TileManager.mainTilemap.GetTileType(coord);
+				TileType t = TileManager.scriptTilemap.GetTileType(coord);
 				if(t){
 					TileManager.OnTileHit(coord,this);
 				}
 			}
 		}
+
+		OnBulletHit?.Invoke(transform.position);
 
 	}
 }
