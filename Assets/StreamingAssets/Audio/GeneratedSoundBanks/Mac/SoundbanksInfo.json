@@ -463,7 +463,7 @@
       "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Char_Footsteps",
       "GUID": "{5423F9DE-24B0-4D19-B7EB-E38D74CAB511}",
       "DurationType": "OneShot",
-      "DurationMin": "0.247865",
+      "DurationMin": "0.550023",
       "DurationMax": "0.728094",
       "IncludedMemoryFiles": [
        {
@@ -543,81 +543,6 @@
         "Language": "SFX",
         "ShortName": "Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_001.wav",
         "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Footsteps_Toxic_001_755F56E2.wem"
-       }
-      ],
-      "SwitchContainers": [
-       {
-        "SwitchValue": "{25668535-5119-473F-A7E4-04A38A683D52}",
-        "Media": [
-         {
-          "Id": "342569084"
-         },
-         {
-          "Id": "607544915"
-         },
-         {
-          "Id": "634379850"
-         },
-         {
-          "Id": "171009811"
-         },
-         {
-          "Id": "194862144"
-         },
-         {
-          "Id": "494501753"
-         },
-         {
-          "Id": "750921527"
-         },
-         {
-          "Id": "899669772"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}",
-        "Media": [
-         {
-          "Id": "342569084"
-         },
-         {
-          "Id": "607544915"
-         },
-         {
-          "Id": "634379850"
-         },
-         {
-          "Id": "171009811"
-         },
-         {
-          "Id": "194862144"
-         },
-         {
-          "Id": "494501753"
-         },
-         {
-          "Id": "750921527"
-         },
-         {
-          "Id": "899669772"
-         },
-         {
-          "Id": "493482129"
-         },
-         {
-          "Id": "414720820"
-         },
-         {
-          "Id": "885310517"
-         },
-         {
-          "Id": "427722980"
-         },
-         {
-          "Id": "993310014"
-         }
-        ]
        }
       ]
      },
@@ -1792,9 +1717,9 @@
     ],
     "GameParameters": [
      {
-      "Id": "2682751840",
-      "Name": "RTPC_ToxicTileHP",
-      "ObjectPath": "\\Game Parameters\\BIOCIDE_RTPC\\GENERAL RTPC\\RTPC_ToxicTileHP",
+      "Id": "1354861859",
+      "Name": "RTPC_TileHP",
+      "ObjectPath": "\\Game Parameters\\BIOCIDE_RTPC\\GENERAL RTPC\\RTPC_TileHP",
       "GUID": "{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}"
      },
      {

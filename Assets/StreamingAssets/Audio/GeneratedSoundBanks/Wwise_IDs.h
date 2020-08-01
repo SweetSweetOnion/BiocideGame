@@ -110,8 +110,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID RTPC_PLAYERHP = 4091700968U;
-        static const AkUniqueID RTPC_STANDARDTILEHP = 324242700U;
-        static const AkUniqueID RTPC_TOXICTILEHP = 2682751840U;
+        static const AkUniqueID RTPC_TILEHP = 1354861859U;
         static const AkUniqueID WEAPONCHARGE = 2807485413U;
     } // namespace GAME_PARAMETERS
 

@@ -13,7 +13,7 @@
 			<ShortName>FOLEYS_MAIN</ShortName>
 			<Path>FOLEYS_MAIN.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1962994296" Name="FOLEYS_Char_Footsteps" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Footsteps" GUID="{5423F9DE-24B0-4D19-B7EB-E38D74CAB511}" DurationType="OneShot" DurationMin="0.247865" DurationMax="0.728094">
+				<Event Id="1962994296" Name="FOLEYS_Char_Footsteps" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Footsteps" GUID="{5423F9DE-24B0-4D19-B7EB-E38D74CAB511}" DurationType="OneShot" DurationMin="0.550023" DurationMax="0.728094">
 					<IncludedMemoryFiles>
 						<File Id="171009811" Language="SFX">
 							<ShortName>Foleys\Character\FOLEYS_Char_Footsteps_Grass_003.wav</ShortName>
@@ -68,37 +68,6 @@
 							<Path>SFX\Foleys\Character\FOLEYS_Char_Footsteps_Toxic_001_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{25668535-5119-473F-A7E4-04A38A683D52}">
-							<Media>
-								<File Id="342569084"/>
-								<File Id="607544915"/>
-								<File Id="634379850"/>
-								<File Id="171009811"/>
-								<File Id="194862144"/>
-								<File Id="494501753"/>
-								<File Id="750921527"/>
-								<File Id="899669772"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}">
-							<Media>
-								<File Id="342569084"/>
-								<File Id="607544915"/>
-								<File Id="634379850"/>
-								<File Id="171009811"/>
-								<File Id="194862144"/>
-								<File Id="494501753"/>
-								<File Id="750921527"/>
-								<File Id="899669772"/>
-								<File Id="493482129"/>
-								<File Id="414720820"/>
-								<File Id="885310517"/>
-								<File Id="427722980"/>
-								<File Id="993310014"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 				<Event Id="2368415702" Name="FOLEYS_Char_Hit" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Hit" GUID="{BBDD1C6C-2981-429F-A143-9D72655BA8D7}" DurationType="OneShot" DurationMin="0.220729" DurationMax="0.358927">
 					<IncludedMemoryFiles>
@@ -772,7 +741,7 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
-				<GameParameter Id="2682751840" Name="RTPC_ToxicTileHP" ObjectPath="\Game Parameters\BIOCIDE_RTPC\GENERAL RTPC\RTPC_ToxicTileHP" GUID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}"/>
+				<GameParameter Id="1354861859" Name="RTPC_TileHP" ObjectPath="\Game Parameters\BIOCIDE_RTPC\GENERAL RTPC\RTPC_TileHP" GUID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}"/>
 				<GameParameter Id="2807485413" Name="WeaponCharge" ObjectPath="\Game Parameters\BIOCIDE_RTPC\SFX RTPC\FOLEYS RTPC\WeaponCharge" GUID="{ABF41A08-5D07-4151-8FD8-E2057B025511}"/>
 			</GameParameters>
 			<StateGroups>

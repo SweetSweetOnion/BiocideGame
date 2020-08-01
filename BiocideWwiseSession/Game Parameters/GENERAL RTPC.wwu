@@ -8,14 +8,10 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="RTPC_StandardTileHP" ID="{76AB9FE8-11A7-4DCF-B475-A7AB2095C46C}">
+				<GameParameter Name="RTPC_TileHP" ID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="RTPC_ToxicTileHP" ID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
