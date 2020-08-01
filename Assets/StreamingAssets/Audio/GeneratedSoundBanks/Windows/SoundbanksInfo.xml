@@ -11,6 +11,14 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="133642231" GUID="{53BEF8EA-5368-48E0-8032-A2723CACCB6E}" Language="SFX">
+			<ObjectPath>\SoundBanks\BIOCIDE_SNB\GENERAL SNB\GENERAL</ObjectPath>
+			<ShortName>GENERAL</ShortName>
+			<Path>GENERAL.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2904546416" Name="STOP_Event" ObjectPath="\Events\BIOCIDE_EVENTS\GENERAL EVENTS\STOP_Event" GUID="{1BD53384-4F61-44D0-804C-171DF4387DAE}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="520556019" GUID="{3582558E-8D8B-45C4-9BA5-F82FCCE719FC}" Language="SFX">
 			<ObjectPath>\SoundBanks\BIOCIDE_SNB\SFX SNB\EFFECTS SNB\EFFECTS_MAIN</ObjectPath>
 			<ShortName>EFFECTS_MAIN</ShortName>
@@ -926,6 +934,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="4018722132" Name="Stop_Weapon" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\Stop_Weapon" GUID="{F6B9F105-47BA-465C-B9EB-888EA9BED671}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1354861859" Name="RTPC_TileHP" ObjectPath="\Game Parameters\BIOCIDE_RTPC\GENERAL RTPC\RTPC_TileHP" GUID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}"/>

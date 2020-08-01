@@ -121,6 +121,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Weapon" ID="{F6B9F105-47BA-465C-B9EB-888EA9BED671}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

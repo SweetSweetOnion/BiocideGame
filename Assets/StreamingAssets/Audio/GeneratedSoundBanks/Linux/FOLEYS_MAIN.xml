@@ -689,6 +689,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="4018722132" Name="Stop_Weapon" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\Stop_Weapon" GUID="{F6B9F105-47BA-465C-B9EB-888EA9BED671}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1354861859" Name="RTPC_TileHP" ObjectPath="\Game Parameters\BIOCIDE_RTPC\GENERAL RTPC\RTPC_TileHP" GUID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}"/>

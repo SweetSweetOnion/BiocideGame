@@ -29,6 +29,8 @@ namespace AK
         static const AkUniqueID FOLEYS_WEAPON_TRIGGER = 672917745U;
         static const AkUniqueID MUSIC_MAIN = 1615767906U;
         static const AkUniqueID PLAY_MUSICTEST = 1414448543U;
+        static const AkUniqueID STOP_EVENT = 2904546416U;
+        static const AkUniqueID STOP_WEAPON = 4018722132U;
         static const AkUniqueID UI_MENU_SELECT = 3474566310U;
         static const AkUniqueID UI_MENU_SUBMIT = 1216325478U;
     } // namespace EVENTS
@@ -120,6 +122,7 @@ namespace AK
         static const AkUniqueID AMB_MAIN = 3004847309U;
         static const AkUniqueID EFFECTS_MAIN = 520556019U;
         static const AkUniqueID FOLEYS_MAIN = 3906669067U;
+        static const AkUniqueID GENERAL = 133642231U;
         static const AkUniqueID MUSIC_MAIN = 1615767906U;
         static const AkUniqueID UI_MAIN = 2963962765U;
     } // namespace BANKS

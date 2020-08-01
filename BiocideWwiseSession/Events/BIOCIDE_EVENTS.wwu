@@ -10,6 +10,7 @@
 				<WorkUnit Name="MUSIC EVENTS" ID="{3F549426-8D43-4D50-A1E2-B33D682C511B}" PersistMode="Reference"/>
 				<WorkUnit Name="SFX EVENTS" ID="{2CA8F888-22F6-4161-9E5B-6BDA0C978825}" PersistMode="Reference"/>
 				<WorkUnit Name="VOICE EVENTS" ID="{519CD9F9-8786-4082-B3D5-5650017A2FEA}" PersistMode="Reference"/>
+				<WorkUnit Name="GENERAL EVENTS" ID="{9AA906FA-BC95-44EC-B961-43A206529DCC}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
