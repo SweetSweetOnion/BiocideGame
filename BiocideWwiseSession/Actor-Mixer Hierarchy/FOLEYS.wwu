@@ -1846,7 +1846,7 @@
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-2</Value>
 													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{9936F5C0-D1C0-4D36-A956-3A2DF0D58F45}" ShortID="488065775">
@@ -2452,7 +2452,7 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-4</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -4513,13 +4513,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<BlendContainer Name="FOLEYS_Tile_Destroy" ID="{D7623CCB-8352-4A98-B483-950A57C7CB9C}" ShortID="44860743">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
