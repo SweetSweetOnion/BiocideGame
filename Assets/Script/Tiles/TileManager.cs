@@ -179,6 +179,7 @@ public class TileManager : MonoBehaviour
 			tiles.Remove(position);
 			GetOrCreateEnvironementTile(position);
 		}
+		OnTileDestroy?.Invoke(position, 2);
 		//mainTilemap.SetTile(position, type.toxicTile);
 	}
 

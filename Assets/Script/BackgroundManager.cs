@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Tilemaps;
 
 public class BackgroundManager : MonoBehaviour
 {
@@ -9,22 +10,35 @@ public class BackgroundManager : MonoBehaviour
 	public Color[] backColorStart;
 	public Color[] backColorEnd;
 
+	
 	public float minX = 0;
 	public float maxX = 100;
 
 	public PlayerController controller;
 
+	
+
+
 	[Range(0,1),SerializeField]
 	private float f = 0;
 
 
-	
+	public Tilemap[] tilemapColor;
+	public Color[] tilemapStart;
+	public Color[] tilemapEnd;
+
 	private void Update()
 	{
-		float x =  Mathf.Sin(Mathf.InverseLerp(minX,maxX,controller.transform.position.x) * Mathf.PI);
+		float x =  Mathf.Abs(Mathf.Sin(Mathf.Clamp01(Mathf.InverseLerp(minX, maxX, controller.transform.position.x )) * Mathf.PI ));
 
 		for(int i = 0; i< background.Length; i++){
 			background[i].color = Color.Lerp(backColorStart[i], backColorEnd[i], x);
+
+		}
+
+		for (int i = 0; i < tilemapColor.Length; i++)
+		{
+			tilemapColor[i].color = Color.Lerp(tilemapStart[i], tilemapEnd[i], x);
 
 		}
 
@@ -36,6 +50,11 @@ public class BackgroundManager : MonoBehaviour
 		for (int i = 0; i < background.Length; i++)
 		{
 			background[i].color = Color.Lerp(backColorStart[i], backColorEnd[i], f);
+
+		}
+		for (int i = 0; i < tilemapColor.Length; i++)
+		{
+			tilemapColor[i].color = Color.Lerp(tilemapStart[i], tilemapEnd[i], f);
 
 		}
 	}
