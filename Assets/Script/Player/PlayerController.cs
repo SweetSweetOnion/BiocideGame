@@ -74,7 +74,10 @@ public class PlayerController : MonoBehaviour
 	public delegate void JumpEvent();
 	public event JumpEvent OnJump;
 
-	private void Awake()
+    private float tile1Hp = 0;
+    private float tile2Hp = 0;
+
+    private void Awake()
 	{
 		_boxCollider = GetComponent<BoxCollider2D>();
 		_controller2D = GetComponent<CharacterController2D>();
@@ -119,7 +122,7 @@ public class PlayerController : MonoBehaviour
 	private void JumpStart(InputAction.CallbackContext obj)
 	{
 		_jumpInput = true;
-	}
+    }
 
 	private void JumpEnd(InputAction.CallbackContext obj)
 	{
@@ -153,10 +156,12 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
-		UpdateCurrentTiles();
-		UpdateJump();
+        UpdateCurrentTiles();
+        if (isGrounded)
+            UpdateRTPC();
+        UpdateJump();
 
-		float currentInput = _moveInput;
+        float currentInput = _moveInput;
 
 		if(isGrounded && _groundedDuration < landedLockDuration){
 			if(_shouldLock)
@@ -199,11 +204,14 @@ public class PlayerController : MonoBehaviour
 		}
 		if(!_lastGrounded && isGrounded){
 			OnLanded?.Invoke(_fallDuration);
-			if (_fallDuration > aerialTimeToLock) _shouldLock = true;
+            //SOUND
+            AudioManager.instance.FOLEYS_Char_Landing.Post(gameObject);
+            //SOUND
+            if (_fallDuration > aerialTimeToLock) _shouldLock = true;
 			_fallDuration = 0;
 		}
 		_lastGrounded = isGrounded;
-	}
+    }
 
 	private void UpdateCurrentTiles(){
 		Vector3 bottomLeftPos = transform.position - Vector3.up * _boxCollider.size.y / 2 + Vector3.left * _boxCollider.size.x /2;
@@ -236,7 +244,11 @@ public class PlayerController : MonoBehaviour
 				_hasJump = true;
 				_lastJump = Time.time;
 				OnJump?.Invoke();
-			}else{
+                //SOUND
+                AudioManager.instance.FOLEYS_Char_TakeOff.Post(gameObject);
+                //SOUND
+            }
+            else{
 				_hasJump = false;
 			}
 		}
@@ -261,5 +273,20 @@ public class PlayerController : MonoBehaviour
 
 		_velocity.y += _gravity * Time.deltaTime;
 	}
+
+    private void UpdateRTPC()
+    {
+        var tile1 = TileManager.GetOrCreateEnvironementTile(currentTiles[0]);
+        var tile2 = TileManager.GetOrCreateEnvironementTile(currentTiles[1]);
+
+        if (tile1 != null)
+            tile1Hp = tile1.GetNormHp();
+
+        if (tile2 != null)
+            tile2Hp = tile2.GetNormHp();
+
+        float rtpcValue = Mathf.Max(tile1Hp, tile2Hp);
+        AkSoundEngine.SetRTPCValue("RTPC_TileHP", rtpcValue, gameObject);
+    }
 
 }

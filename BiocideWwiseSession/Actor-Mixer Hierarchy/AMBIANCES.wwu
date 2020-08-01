@@ -78,13 +78,6 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="AMB_Destroyed" ID="{7B1DA218-2DA1-4A2F-891B-0D0B07B90C2A}" ShortID="664523225">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>

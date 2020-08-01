@@ -587,7 +587,7 @@
       "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Char_Landing",
       "GUID": "{6D4BEE40-124E-4C09-80AD-5DC83065BFA2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.258720",
+      "DurationMin": "0.558105",
       "DurationMax": "0.884585",
       "IncludedMemoryFiles": [
        {
@@ -650,63 +650,6 @@
         "ShortName": "Foleys\\Character\\FOLEYS_Char_Landing_Grass_007.wav",
         "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Landing_Grass_007_755F56E2.wem"
        }
-      ],
-      "SwitchContainers": [
-       {
-        "SwitchValue": "{25668535-5119-473F-A7E4-04A38A683D52}",
-        "Media": [
-         {
-          "Id": "441071616"
-         },
-         {
-          "Id": "58418014"
-         },
-         {
-          "Id": "50026599"
-         },
-         {
-          "Id": "621209291"
-         },
-         {
-          "Id": "509142165"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}",
-        "Media": [
-         {
-          "Id": "441071616"
-         },
-         {
-          "Id": "58418014"
-         },
-         {
-          "Id": "50026599"
-         },
-         {
-          "Id": "621209291"
-         },
-         {
-          "Id": "509142165"
-         },
-         {
-          "Id": "254338830"
-         },
-         {
-          "Id": "749308714"
-         },
-         {
-          "Id": "975789224"
-         },
-         {
-          "Id": "929865488"
-         },
-         {
-          "Id": "437293510"
-         }
-        ]
-       }
       ]
      },
      {
@@ -715,7 +658,7 @@
       "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\FOLEYS_Char_TakeOff",
       "GUID": "{C239EF41-7F46-4A82-A506-EB37F9CE9285}",
       "DurationType": "OneShot",
-      "DurationMin": "0.189168",
+      "DurationMin": "0.339264",
       "DurationMax": "0.470998",
       "IncludedMemoryFiles": [
        {
@@ -777,63 +720,6 @@
         "Language": "SFX",
         "ShortName": "Foleys\\Character\\FOLEYS_Char_Jump_Toxic_003.wav",
         "Path": "SFX\\Foleys\\Character\\FOLEYS_Char_Jump_Toxic_003_755F56E2.wem"
-       }
-      ],
-      "SwitchContainers": [
-       {
-        "SwitchValue": "{25668535-5119-473F-A7E4-04A38A683D52}",
-        "Media": [
-         {
-          "Id": "53071694"
-         },
-         {
-          "Id": "306447583"
-         },
-         {
-          "Id": "813385922"
-         },
-         {
-          "Id": "198385611"
-         },
-         {
-          "Id": "63976718"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}",
-        "Media": [
-         {
-          "Id": "53071694"
-         },
-         {
-          "Id": "306447583"
-         },
-         {
-          "Id": "813385922"
-         },
-         {
-          "Id": "198385611"
-         },
-         {
-          "Id": "63976718"
-         },
-         {
-          "Id": "41315139"
-         },
-         {
-          "Id": "524888384"
-         },
-         {
-          "Id": "26333508"
-         },
-         {
-          "Id": "1023237856"
-         },
-         {
-          "Id": "361730811"
-         }
-        ]
        }
       ]
      },
@@ -1803,28 +1689,6 @@
         "Name": "Level_3",
         "ObjectPath": "\\States\\BIOCIDE_STATES\\GENERAL STATES\\DestructionLevel\\Level_3",
         "GUID": "{C403E5B8-6D0B-404B-896F-8C3B7A1463E1}"
-       }
-      ]
-     }
-    ],
-    "SwitchGroups": [
-     {
-      "Id": "2460634474",
-      "Name": "Texture",
-      "ObjectPath": "\\Switches\\BIOCIDE_SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\Texture",
-      "GUID": "{518E7FD8-4F04-4C66-8D54-B361B2636EA9}",
-      "Switches": [
-       {
-        "Id": "4248645337",
-        "Name": "Grass",
-        "ObjectPath": "\\Switches\\BIOCIDE_SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\Texture\\Grass",
-        "GUID": "{25668535-5119-473F-A7E4-04A38A683D52}"
-       },
-       {
-        "Id": "1400550014",
-        "Name": "Toxic",
-        "ObjectPath": "\\Switches\\BIOCIDE_SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\Texture\\Toxic",
-        "GUID": "{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}"
        }
       ]
      }

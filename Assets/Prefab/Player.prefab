@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175328307}
   - component: {fileID: 175328308}
+  - component: {fileID: 175328309}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -42,8 +43,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.749215, b: 0.4009434, a: 1}
-  m_Intensity: 15.06
+  m_Color: {r: 1, g: 0.27978843, b: 0, a: 1}
+  m_Intensity: 50
   m_Range: 1.11
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -92,6 +93,20 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &175328309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175328306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de2ed3d32b367741ada2fedfcbe57ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponController: {fileID: 1580252708464739270}
+  playerController: {fileID: 1580252708464739261}
 --- !u!1 &833840850
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,6 +119,7 @@ GameObject:
   - component: {fileID: 833840853}
   - component: {fileID: 833840852}
   - component: {fileID: 833840854}
+  - component: {fileID: 6166688171087400016}
   m_Layer: 0
   m_Name: playerSprite
   m_TagString: Untagged
@@ -208,12 +224,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1580252708464739261}
   weaponManager: {fileID: 1580252708464739269}
+  health: {fileID: 6012639778994978233}
   animatorControllers:
   - {fileID: 9100000, guid: a3bd9dd77cb8c1543a6af9a586fee278, type: 2}
   - {fileID: 22100000, guid: 3d86184fac9a8a84fb512a1fe8297f29, type: 2}
   - {fileID: 22100000, guid: 143879ffee63b2f4aaecacf97f514a64, type: 2}
   - {fileID: 22100000, guid: b22417f67f4338d449f7d4ab18bbb835, type: 2}
   - {fileID: 22100000, guid: 38051a54a5b986d4291997b8e220989d, type: 2}
+--- !u!114 &6166688171087400016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833840850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45944ec7f4198a5479ecfa8a255619c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentObject: {fileID: 1580252708464739260}
 --- !u!1 &1587742877
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +547,7 @@ MonoBehaviour:
     m_Bits: 567
   triggerMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 5120
   oneWayPlatformMask:
     serializedVersion: 2
     m_Bits: 0

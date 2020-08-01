@@ -10,6 +10,10 @@
 				<Event Name="AMB_Destroyed" ID="{3B7859F3-0152-47BB-9E74-80CB81BD0727}">
 					<ChildrenList>
 						<Action Name="" ID="{2EC11ECD-7D6C-41C8-95BE-08A64BB68E80}" ShortID="97304250">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="10"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="AMB_Destroyed" ID="{7B1DA218-2DA1-4A2F-891B-0D0B07B90C2A}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>

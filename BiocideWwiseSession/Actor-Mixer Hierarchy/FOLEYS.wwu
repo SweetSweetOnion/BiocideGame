@@ -21,6 +21,12 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -32,6 +38,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Footsteps" ID="{96D07294-7472-4734-A712-60D1DD520652}" ShortID="506401139">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -311,7 +324,7 @@
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>2</Value>
+																		<Value>3</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -475,6 +488,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="Landing" ID="{97F09040-A70B-4BA5-9190-226CE0687CFB}" ShortID="228622572">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -501,23 +521,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SwitchContainer Name="Texture" ID="{896B6AB0-D2AE-4E49-A844-5CF5436B79D3}" ShortID="308411485">
+												<BlendContainer Name="Toxic" ID="{0085311D-9617-4036-8E37-F2EC8BF8C6BB}" ShortID="831451469">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Grass" ID="{25668535-5119-473F-A7E4-04A38A683D52}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
-														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Texture" ID="{518E7FD8-4F04-4C66-8D54-B361B2636EA9}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
-														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<RandomSequenceContainer Name="Grass" ID="{7EE84F25-3F92-4638-B55E-7641BD5C212C}" ShortID="381027229">
+														<RandomSequenceContainer Name="Grass" ID="{B49BBDFD-5848-4994-981D-3A7FBCB8803E}" ShortID="1030387058">
 															<PropertyList>
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
@@ -528,7 +545,7 @@
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
-																			<Modifier Name="" ID="{FB31AD24-91CE-4E43-9A9D-6603F0E91218}">
+																			<Modifier Name="" ID="{FA8EA6A2-1A49-42D5-AB88-9CF39179F4BD}">
 																				<PropertyList>
 																					<Property Name="Enabled" Type="bool" Value="True"/>
 																					<Property Name="Max" Type="Real64" Value="100"/>
@@ -554,7 +571,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="FOLEYS_Char_Landing_Grass_001" ID="{2DDA464E-A13E-4F81-9755-97B903D177EC}" ShortID="1025284221">
+																<Sound Name="FOLEYS_Char_Landing_Grass_001" ID="{EC28873B-DC48-4C84-9F3A-C63C1DFFA4F9}" ShortID="146543214">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -564,7 +581,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_001" ID="{8B07D9E5-76B7-4E31-A07F-BC9B6196AC6B}">
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_001" ID="{5CC6E034-DA8B-4556-92F3-0349B9195BB8}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_001.wav</AudioFile>
 																			<MediaIDList>
@@ -573,10 +590,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_001" ID="{8B07D9E5-76B7-4E31-A07F-BC9B6196AC6B}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_001" ID="{5CC6E034-DA8B-4556-92F3-0349B9195BB8}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Landing_Grass_002" ID="{E640FE76-41F6-4C99-9B0C-AD761B71BC6B}" ShortID="343162933">
+																<Sound Name="FOLEYS_Char_Landing_Grass_002" ID="{0BAB137A-0AE0-4D11-9F08-D779E304E902}" ShortID="823929143">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -586,7 +603,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_002" ID="{1F87F9D2-C566-48FA-8706-D87B7CD1D4EA}">
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_002" ID="{55D3F94A-C22D-4CBB-83AF-F4C9B4008D49}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_002.wav</AudioFile>
 																			<MediaIDList>
@@ -595,10 +612,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_002" ID="{1F87F9D2-C566-48FA-8706-D87B7CD1D4EA}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_002" ID="{55D3F94A-C22D-4CBB-83AF-F4C9B4008D49}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Landing_Grass_003" ID="{FC519A37-964B-476F-A411-40F422961269}" ShortID="331441197">
+																<Sound Name="FOLEYS_Char_Landing_Grass_003" ID="{5B036832-99F8-45A8-B8D5-DE6EA9D2EE02}" ShortID="384193209">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -608,7 +625,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7A7748E0-0E46-48AF-9B27-3C22ED8F5527}">
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7E098E47-F82C-43FC-8440-17017153602A}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_003.wav</AudioFile>
 																			<MediaIDList>
@@ -617,10 +634,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7A7748E0-0E46-48AF-9B27-3C22ED8F5527}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7E098E47-F82C-43FC-8440-17017153602A}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Landing_Grass_004" ID="{F09A838A-293C-4A23-84F3-2005AA2D8A11}" ShortID="667024288">
+																<Sound Name="FOLEYS_Char_Landing_Grass_004" ID="{C934968D-EF73-4276-9306-64402BDD938C}" ShortID="890948849">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -630,7 +647,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_004" ID="{E973AB5F-6558-4F33-BF54-93E246C06547}">
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_004" ID="{B2B08FD3-A158-48BB-A0D9-32C6CA039F5A}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_004.wav</AudioFile>
 																			<MediaIDList>
@@ -639,10 +656,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_004" ID="{E973AB5F-6558-4F33-BF54-93E246C06547}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_004" ID="{B2B08FD3-A158-48BB-A0D9-32C6CA039F5A}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Landing_Grass_000" ID="{2C597F4E-4579-4700-BB20-031F8CE3AE76}" ShortID="529684927">
+																<Sound Name="FOLEYS_Char_Landing_Grass_000" ID="{12C88679-E436-4108-B2C5-0C9361F0813D}" ShortID="24205284">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -652,7 +669,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_000" ID="{EFF594A1-3BED-4AE0-8535-A86D0CEEFD6B}">
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_000" ID="{686B067A-6FD8-462B-9E66-C60027915D25}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_000.wav</AudioFile>
 																			<MediaIDList>
@@ -661,12 +678,39 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_000" ID="{EFF594A1-3BED-4AE0-8535-A86D0CEEFD6B}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_000" ID="{686B067A-6FD8-462B-9E66-C60027915D25}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
 														</RandomSequenceContainer>
-														<BlendContainer Name="Toxic" ID="{0085311D-9617-4036-8E37-F2EC8BF8C6BB}" ShortID="831451469">
+														<RandomSequenceContainer Name="Toxic" ID="{D0F2EB22-66BE-40DF-9761-19F3C411318C}" ShortID="916273826">
+															<PropertyList>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{E4248D8E-9093-4216-A9A2-B836134536A3}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -676,34 +720,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<RandomSequenceContainer Name="Grass" ID="{B49BBDFD-5848-4994-981D-3A7FBCB8803E}" ShortID="1030387058">
-																	<PropertyList>
-																		<Property Name="Highpass" Type="int16">
-																			<ValueList>
-																				<Value>16</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{FA8EA6A2-1A49-42D5-AB88-9CF39179F4BD}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Max" Type="Real64" Value="100"/>
-																							<Property Name="Min" Type="Real64" Value="-100"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>3</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
+																<Sound Name="FOLEYS_Char_Landing_Toxic_005" ID="{70C5AF41-B7AD-4333-98CB-4A0DD4C8466D}" ShortID="1054769817">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -713,146 +730,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="FOLEYS_Char_Landing_Grass_001" ID="{EC28873B-DC48-4C84-9F3A-C63C1DFFA4F9}" ShortID="146543214">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_001" ID="{5CC6E034-DA8B-4556-92F3-0349B9195BB8}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_001.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="441071616"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_001" ID="{5CC6E034-DA8B-4556-92F3-0349B9195BB8}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Grass_002" ID="{0BAB137A-0AE0-4D11-9F08-D779E304E902}" ShortID="823929143">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_002" ID="{55D3F94A-C22D-4CBB-83AF-F4C9B4008D49}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_002.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="58418014"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_002" ID="{55D3F94A-C22D-4CBB-83AF-F4C9B4008D49}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Grass_003" ID="{5B036832-99F8-45A8-B8D5-DE6EA9D2EE02}" ShortID="384193209">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7E098E47-F82C-43FC-8440-17017153602A}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_003.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="50026599"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_003" ID="{7E098E47-F82C-43FC-8440-17017153602A}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Grass_004" ID="{C934968D-EF73-4276-9306-64402BDD938C}" ShortID="890948849">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_004" ID="{B2B08FD3-A158-48BB-A0D9-32C6CA039F5A}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_004.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="621209291"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_004" ID="{B2B08FD3-A158-48BB-A0D9-32C6CA039F5A}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Grass_000" ID="{12C88679-E436-4108-B2C5-0C9361F0813D}" ShortID="24205284">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_000" ID="{686B067A-6FD8-462B-9E66-C60027915D25}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_000.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="509142165"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_000" ID="{686B067A-6FD8-462B-9E66-C60027915D25}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_005" ID="{636B7896-8533-4661-A89B-A2061EEC7F24}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_005.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="254338830"/>
+																			</MediaIDList>
+																		</AudioFileSource>
 																	</ChildrenList>
-																</RandomSequenceContainer>
-																<RandomSequenceContainer Name="Toxic" ID="{D0F2EB22-66BE-40DF-9761-19F3C411318C}" ShortID="916273826">
-																	<PropertyList>
-																		<Property Name="Highpass" Type="int16">
-																			<ValueList>
-																				<Value>5</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{E4248D8E-9093-4216-A9A2-B836134536A3}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Max" Type="Real64" Value="100"/>
-																							<Property Name="Min" Type="Real64" Value="-100"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>2</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_005" ID="{636B7896-8533-4661-A89B-A2061EEC7F24}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Landing_Toxic_006" ID="{ED5534E3-3753-4DAB-B8D4-A8424DE243A3}" ShortID="45250558">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -862,183 +752,132 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="FOLEYS_Char_Landing_Toxic_005" ID="{70C5AF41-B7AD-4333-98CB-4A0DD4C8466D}" ShortID="1054769817">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_005" ID="{636B7896-8533-4661-A89B-A2061EEC7F24}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_005.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="254338830"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_005" ID="{636B7896-8533-4661-A89B-A2061EEC7F24}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Toxic_006" ID="{ED5534E3-3753-4DAB-B8D4-A8424DE243A3}" ShortID="45250558">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_006" ID="{5E04C9CA-8317-491D-AF61-15DEA2BCFC25}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_006.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="749308714"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_006" ID="{5E04C9CA-8317-491D-AF61-15DEA2BCFC25}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Toxic_007" ID="{7F64A1B4-B185-48FD-AC34-2F933131A670}" ShortID="681770382">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_007" ID="{BA1E2D90-19F1-4435-B9B0-514E55CE0CF4}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_007.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="975789224"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_007" ID="{BA1E2D90-19F1-4435-B9B0-514E55CE0CF4}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Toxic_008" ID="{6557C3A2-DACE-4063-A48A-D35AF6EB9B52}" ShortID="621832356">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_008" ID="{61D48823-0468-418A-85F9-454482CED32F}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_008.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="929865488"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_008" ID="{61D48823-0468-418A-85F9-454482CED32F}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Landing_Toxic_010" ID="{39E5A67B-03B2-49FA-A676-E0CC1DED0C8C}" ShortID="650453041">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Landing_Grass_010" ID="{F42C14BC-46D8-4535-A00E-4ADDC3298AFA}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_010.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="437293510"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Landing_Grass_010" ID="{F42C14BC-46D8-4535-A00E-4ADDC3298AFA}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_006" ID="{5E04C9CA-8317-491D-AF61-15DEA2BCFC25}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_006.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="749308714"/>
+																			</MediaIDList>
+																		</AudioFileSource>
 																	</ChildrenList>
-																</RandomSequenceContainer>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_006" ID="{5E04C9CA-8317-491D-AF61-15DEA2BCFC25}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Landing_Toxic_007" ID="{7F64A1B4-B185-48FD-AC34-2F933131A670}" ShortID="681770382">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_007" ID="{BA1E2D90-19F1-4435-B9B0-514E55CE0CF4}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_007.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="975789224"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_007" ID="{BA1E2D90-19F1-4435-B9B0-514E55CE0CF4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Landing_Toxic_008" ID="{6557C3A2-DACE-4063-A48A-D35AF6EB9B52}" ShortID="621832356">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_008" ID="{61D48823-0468-418A-85F9-454482CED32F}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_008.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="929865488"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_008" ID="{61D48823-0468-418A-85F9-454482CED32F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Landing_Toxic_010" ID="{39E5A67B-03B2-49FA-A676-E0CC1DED0C8C}" ShortID="650453041">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOLEYS_Char_Landing_Grass_010" ID="{F42C14BC-46D8-4535-A00E-4ADDC3298AFA}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Landing_Grass_010.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="437293510"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Landing_Grass_010" ID="{F42C14BC-46D8-4535-A00E-4ADDC3298AFA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<BlendTrackList>
-																<BlendTrack Name="New Blend Track" ID="{5C1EB2AE-2556-4D7A-BC4E-A991EE7E00B7}" ShortID="563934282">
-																	<PropertyList>
-																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="LayerCrossFadeControlInput">
-																			<ObjectRef Name="RTPC_TileHP" ID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<BlendTrackAssocList>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Toxic" ID="{D0F2EB22-66BE-40DF-9761-19F3C411318C}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.8</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Grass" ID="{B49BBDFD-5848-4994-981D-3A7FBCB8803E}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.2</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>1</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																	</BlendTrackAssocList>
-																</BlendTrack>
-															</BlendTrackList>
-														</BlendContainer>
+														</RandomSequenceContainer>
 													</ChildrenList>
-													<GroupingInfo>
-														<GroupingBehaviorList>
-															<GroupingBehavior>
-																<ItemRef Name="Toxic" ID="{0085311D-9617-4036-8E37-F2EC8BF8C6BB}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="Grass" ID="{7EE84F25-3F92-4638-B55E-7641BD5C212C}"/>
-															</GroupingBehavior>
-														</GroupingBehaviorList>
-														<GroupingList>
-															<Grouping>
-																<SwitchRef Name="Grass" ID="{25668535-5119-473F-A7E4-04A38A683D52}"/>
-																<ItemList>
-																	<ItemRef Name="Grass" ID="{7EE84F25-3F92-4638-B55E-7641BD5C212C}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
-																<SwitchRef Name="Toxic" ID="{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}"/>
-																<ItemList>
-																	<ItemRef Name="Toxic" ID="{0085311D-9617-4036-8E37-F2EC8BF8C6BB}"/>
-																</ItemList>
-															</Grouping>
-														</GroupingList>
-													</GroupingInfo>
-												</SwitchContainer>
+													<BlendTrackList>
+														<BlendTrack Name="New Blend Track" ID="{5C1EB2AE-2556-4D7A-BC4E-A991EE7E00B7}" ShortID="563934282">
+															<PropertyList>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="RTPC_TileHP" ID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																</Reference>
+															</ReferenceList>
+															<BlendTrackAssocList>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Toxic" ID="{D0F2EB22-66BE-40DF-9761-19F3C411318C}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>0</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>0.8</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Grass" ID="{B49BBDFD-5848-4994-981D-3A7FBCB8803E}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>0.2</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>1</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+															</BlendTrackAssocList>
+														</BlendTrack>
+													</BlendTrackList>
+												</BlendContainer>
 											</ChildrenList>
 										</BlendContainer>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="TakeOff" ID="{986C79B7-7717-439D-B6B6-AB94AF92077D}" ShortID="140645809">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1065,23 +904,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SwitchContainer Name="Texture" ID="{3576A160-A82B-4498-B3A0-088F84156B29}" ShortID="639073753">
+												<BlendContainer Name="Toxic" ID="{744787F9-1A8B-434C-9232-D5A657EF3063}" ShortID="504281918">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Grass" ID="{25668535-5119-473F-A7E4-04A38A683D52}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
-														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Texture" ID="{518E7FD8-4F04-4C66-8D54-B361B2636EA9}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
-														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<RandomSequenceContainer Name="Grass" ID="{4A4AF193-D3AF-4BA4-B0B3-E1C81F758ABA}" ShortID="464790203">
+														<RandomSequenceContainer Name="Grass" ID="{E9F4AC21-4491-42AD-89C9-EAB8D8E062D8}" ShortID="10348238">
 															<PropertyList>
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
@@ -1092,7 +928,7 @@
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
-																			<Modifier Name="" ID="{D34C1B7E-8CE5-429F-9100-2F748485C4DC}">
+																			<Modifier Name="" ID="{7587919A-05A2-4630-8288-75CE7E908EA1}">
 																				<PropertyList>
 																					<Property Name="Enabled" Type="bool" Value="True"/>
 																					<Property Name="Max" Type="Real64" Value="100"/>
@@ -1118,7 +954,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="FOLEYS_Char_Jump_Grass_000" ID="{33A9661D-4A65-4CDC-A0B4-084F9C61525A}" ShortID="718068585">
+																<Sound Name="FOLEYS_Char_Jump_Grass_000" ID="{9B7BA40F-23F0-4337-A8F2-8DD789329A2F}" ShortID="77083337">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1128,7 +964,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_000" ID="{77D57FA8-9829-4847-932C-DFF8B3DC3343}">
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_000" ID="{ED5E5C15-31E5-46E2-8051-828C0FB3DADD}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_000.wav</AudioFile>
 																			<MediaIDList>
@@ -1137,10 +973,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_000" ID="{77D57FA8-9829-4847-932C-DFF8B3DC3343}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_000" ID="{ED5E5C15-31E5-46E2-8051-828C0FB3DADD}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Jump_Grass_002" ID="{C74AB0DF-AF31-46F5-A863-6AB696A1883E}" ShortID="794435544">
+																<Sound Name="FOLEYS_Char_Jump_Grass_002" ID="{38A19D84-6AAA-4FA3-B7AB-3186C392FC57}" ShortID="243219946">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1150,7 +986,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_002" ID="{4FD04371-7036-4A87-82FD-7E0C92B79ACA}">
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_002" ID="{F85A044F-E63B-4C71-A693-C919EC87E962}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_002.wav</AudioFile>
 																			<MediaIDList>
@@ -1159,10 +995,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_002" ID="{4FD04371-7036-4A87-82FD-7E0C92B79ACA}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_002" ID="{F85A044F-E63B-4C71-A693-C919EC87E962}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Jump_Grass_004" ID="{BFE8F7AA-568A-4F3D-AD11-3E9B1AE87958}" ShortID="637646954">
+																<Sound Name="FOLEYS_Char_Jump_Grass_004" ID="{9000E797-A8C0-43D1-AB3C-AF6110B7C7FC}" ShortID="85589226">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1172,7 +1008,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_004" ID="{53229698-F658-4282-AF4D-C33169F0D2F8}">
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_004" ID="{DB2AD991-9A29-45F6-832C-AB2EC7BFC1DA}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_004.wav</AudioFile>
 																			<MediaIDList>
@@ -1181,10 +1017,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_004" ID="{53229698-F658-4282-AF4D-C33169F0D2F8}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_004" ID="{DB2AD991-9A29-45F6-832C-AB2EC7BFC1DA}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Jump_Grass_003" ID="{F21C2641-06F0-4D8D-947F-EC3D795F0F25}" ShortID="1069768626">
+																<Sound Name="FOLEYS_Char_Jump_Grass_003" ID="{189D68FB-02D5-40F4-8F4B-B6833F87F3E0}" ShortID="564149332">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1194,7 +1030,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_003" ID="{0DFC00F2-0AB6-47E8-A27C-29FA2C5EBCF0}">
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_003" ID="{93D722AF-3329-4D05-9D93-CFB54CF773C5}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_003.wav</AudioFile>
 																			<MediaIDList>
@@ -1203,10 +1039,10 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_003" ID="{0DFC00F2-0AB6-47E8-A27C-29FA2C5EBCF0}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_003" ID="{93D722AF-3329-4D05-9D93-CFB54CF773C5}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="FOLEYS_Char_Jump_Grass_001" ID="{64828BCC-9CA3-40BA-8C8F-B6B4572805DE}" ShortID="61496057">
+																<Sound Name="FOLEYS_Char_Jump_Grass_001" ID="{FEC2851C-3E35-49C0-9282-C8775AE51FCE}" ShortID="886860467">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1216,7 +1052,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_001" ID="{21931054-F15C-4C42-A97A-2BC11437AC1F}">
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Grass_001" ID="{3964C5EA-5949-4140-B5A6-4244EBEE613C}">
 																			<Language>SFX</Language>
 																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_001.wav</AudioFile>
 																			<MediaIDList>
@@ -1225,12 +1061,39 @@
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_001" ID="{21931054-F15C-4C42-A97A-2BC11437AC1F}" Platform="Linked"/>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Grass_001" ID="{3964C5EA-5949-4140-B5A6-4244EBEE613C}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
 														</RandomSequenceContainer>
-														<BlendContainer Name="Toxic" ID="{744787F9-1A8B-434C-9232-D5A657EF3063}" ShortID="504281918">
+														<RandomSequenceContainer Name="Toxic" ID="{82E95849-FFC2-49A8-973A-D572DB4489C6}" ShortID="440710870">
+															<PropertyList>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{B0FC3A98-F6AB-4B8B-90ED-80FC13834F3D}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1240,34 +1103,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<RandomSequenceContainer Name="Grass" ID="{E9F4AC21-4491-42AD-89C9-EAB8D8E062D8}" ShortID="10348238">
-																	<PropertyList>
-																		<Property Name="Highpass" Type="int16">
-																			<ValueList>
-																				<Value>16</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{7587919A-05A2-4630-8288-75CE7E908EA1}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Max" Type="Real64" Value="100"/>
-																							<Property Name="Min" Type="Real64" Value="-100"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>3</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
+																<Sound Name="FOLEYS_Char_Jump_Toxic_000" ID="{D446DB7F-E80D-40CD-BDA5-5442A0A86CA8}" ShortID="548492844">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1277,146 +1113,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="FOLEYS_Char_Jump_Grass_000" ID="{9B7BA40F-23F0-4337-A8F2-8DD789329A2F}" ShortID="77083337">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Grass_000" ID="{ED5E5C15-31E5-46E2-8051-828C0FB3DADD}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_000.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="53071694"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Grass_000" ID="{ED5E5C15-31E5-46E2-8051-828C0FB3DADD}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Grass_002" ID="{38A19D84-6AAA-4FA3-B7AB-3186C392FC57}" ShortID="243219946">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Grass_002" ID="{F85A044F-E63B-4C71-A693-C919EC87E962}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_002.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="306447583"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Grass_002" ID="{F85A044F-E63B-4C71-A693-C919EC87E962}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Grass_004" ID="{9000E797-A8C0-43D1-AB3C-AF6110B7C7FC}" ShortID="85589226">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Grass_004" ID="{DB2AD991-9A29-45F6-832C-AB2EC7BFC1DA}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_004.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="813385922"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Grass_004" ID="{DB2AD991-9A29-45F6-832C-AB2EC7BFC1DA}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Grass_003" ID="{189D68FB-02D5-40F4-8F4B-B6833F87F3E0}" ShortID="564149332">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Grass_003" ID="{93D722AF-3329-4D05-9D93-CFB54CF773C5}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_003.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="198385611"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Grass_003" ID="{93D722AF-3329-4D05-9D93-CFB54CF773C5}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Grass_001" ID="{FEC2851C-3E35-49C0-9282-C8775AE51FCE}" ShortID="886860467">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Grass_001" ID="{3964C5EA-5949-4140-B5A6-4244EBEE613C}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Grass_001.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="63976718"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Grass_001" ID="{3964C5EA-5949-4140-B5A6-4244EBEE613C}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_000" ID="{79E82DE4-3CE0-497B-9F5B-4E2AD3909FB6}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_000.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="41315139"/>
+																			</MediaIDList>
+																		</AudioFileSource>
 																	</ChildrenList>
-																</RandomSequenceContainer>
-																<RandomSequenceContainer Name="Toxic" ID="{82E95849-FFC2-49A8-973A-D572DB4489C6}" ShortID="440710870">
-																	<PropertyList>
-																		<Property Name="Highpass" Type="int16">
-																			<ValueList>
-																				<Value>5</Value>
-																			</ValueList>
-																		</Property>
-																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{B0FC3A98-F6AB-4B8B-90ED-80FC13834F3D}">
-																						<PropertyList>
-																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Max" Type="Real64" Value="100"/>
-																							<Property Name="Min" Type="Real64" Value="-100"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>2</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Toxic_000" ID="{79E82DE4-3CE0-497B-9F5B-4E2AD3909FB6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Jump_Toxic_001" ID="{328E40A3-3F31-4B5E-A07D-467801EF2EF1}" ShortID="154856061">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1426,178 +1135,120 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="FOLEYS_Char_Jump_Toxic_000" ID="{D446DB7F-E80D-40CD-BDA5-5442A0A86CA8}" ShortID="548492844">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_000" ID="{79E82DE4-3CE0-497B-9F5B-4E2AD3909FB6}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_000.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="41315139"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Toxic_000" ID="{79E82DE4-3CE0-497B-9F5B-4E2AD3909FB6}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Toxic_001" ID="{328E40A3-3F31-4B5E-A07D-467801EF2EF1}" ShortID="154856061">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_001" ID="{81BC11B4-2D68-4D62-8B8F-06F5ABA38791}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_001.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="524888384"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Toxic_001" ID="{81BC11B4-2D68-4D62-8B8F-06F5ABA38791}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Toxic_002" ID="{470D7891-5A30-4E02-B686-F41B42EED42E}" ShortID="467353568">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_002" ID="{4277E555-35B6-4A02-9FBD-9EC7FB37C62C}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_002.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="26333508"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Toxic_002" ID="{4277E555-35B6-4A02-9FBD-9EC7FB37C62C}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Toxic_003" ID="{120F99F4-68E3-4AB8-B8BE-794B832757A4}" ShortID="874667194">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_003" ID="{63B36DE2-65D0-4D49-8C97-BA28499DF197}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_003.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="1023237856"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Toxic_003" ID="{63B36DE2-65D0-4D49-8C97-BA28499DF197}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FOLEYS_Char_Jump_Toxic_004" ID="{639E0412-32C8-4C75-87B1-72F987363DF4}" ShortID="796357454">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_004" ID="{F17D7E21-4821-4D27-B617-AE27AA8FAAF8}">
-																					<Language>SFX</Language>
-																					<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_004.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="361730811"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="FOLEYS_Char_Jump_Toxic_004" ID="{F17D7E21-4821-4D27-B617-AE27AA8FAAF8}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_001" ID="{81BC11B4-2D68-4D62-8B8F-06F5ABA38791}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_001.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="524888384"/>
+																			</MediaIDList>
+																		</AudioFileSource>
 																	</ChildrenList>
-																</RandomSequenceContainer>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Toxic_001" ID="{81BC11B4-2D68-4D62-8B8F-06F5ABA38791}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Jump_Toxic_002" ID="{470D7891-5A30-4E02-B686-F41B42EED42E}" ShortID="467353568">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_002" ID="{4277E555-35B6-4A02-9FBD-9EC7FB37C62C}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_002.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="26333508"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Toxic_002" ID="{4277E555-35B6-4A02-9FBD-9EC7FB37C62C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Jump_Toxic_003" ID="{120F99F4-68E3-4AB8-B8BE-794B832757A4}" ShortID="874667194">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_003" ID="{63B36DE2-65D0-4D49-8C97-BA28499DF197}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_003.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1023237856"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Toxic_003" ID="{63B36DE2-65D0-4D49-8C97-BA28499DF197}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOLEYS_Char_Jump_Toxic_004" ID="{639E0412-32C8-4C75-87B1-72F987363DF4}" ShortID="796357454">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOLEYS_Char_Jump_Toxic_004" ID="{F17D7E21-4821-4D27-B617-AE27AA8FAAF8}">
+																			<Language>SFX</Language>
+																			<AudioFile>Foleys\Character\FOLEYS_Char_Jump_Toxic_004.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="361730811"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOLEYS_Char_Jump_Toxic_004" ID="{F17D7E21-4821-4D27-B617-AE27AA8FAAF8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<BlendTrackList>
-																<BlendTrack Name="New Blend Track" ID="{C5DFDFCC-2394-49F8-86B7-679BC4B5F3B1}" ShortID="45597315">
-																	<PropertyList>
-																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="LayerCrossFadeControlInput">
-																			<ObjectRef Name="RTPC_TileHP" ID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<BlendTrackAssocList>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Toxic" ID="{82E95849-FFC2-49A8-973A-D572DB4489C6}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>0.8</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																		<BlendTrackAssoc>
-																			<ItemRef Name="Grass" ID="{E9F4AC21-4491-42AD-89C9-EAB8D8E062D8}"/>
-																			<CrossfadingInfo>
-																				<LeftEdgePos>0.2</LeftEdgePos>
-																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>1</RightEdgePos>
-																				<RightFadingMode>Automatic</RightFadingMode>
-																			</CrossfadingInfo>
-																		</BlendTrackAssoc>
-																	</BlendTrackAssocList>
-																</BlendTrack>
-															</BlendTrackList>
-														</BlendContainer>
+														</RandomSequenceContainer>
 													</ChildrenList>
-													<GroupingInfo>
-														<GroupingBehaviorList>
-															<GroupingBehavior>
-																<ItemRef Name="Grass" ID="{4A4AF193-D3AF-4BA4-B0B3-E1C81F758ABA}"/>
-															</GroupingBehavior>
-															<GroupingBehavior>
-																<ItemRef Name="Toxic" ID="{744787F9-1A8B-434C-9232-D5A657EF3063}"/>
-															</GroupingBehavior>
-														</GroupingBehaviorList>
-														<GroupingList>
-															<Grouping>
-																<SwitchRef Name="Grass" ID="{25668535-5119-473F-A7E4-04A38A683D52}"/>
-																<ItemList>
-																	<ItemRef Name="Grass" ID="{4A4AF193-D3AF-4BA4-B0B3-E1C81F758ABA}"/>
-																</ItemList>
-															</Grouping>
-															<Grouping>
-																<SwitchRef Name="Toxic" ID="{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}"/>
-																<ItemList>
-																	<ItemRef Name="Toxic" ID="{744787F9-1A8B-434C-9232-D5A657EF3063}"/>
-																</ItemList>
-															</Grouping>
-														</GroupingList>
-													</GroupingInfo>
-												</SwitchContainer>
+													<BlendTrackList>
+														<BlendTrack Name="New Blend Track" ID="{C5DFDFCC-2394-49F8-86B7-679BC4B5F3B1}" ShortID="45597315">
+															<PropertyList>
+																<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="LayerCrossFadeControlInput">
+																	<ObjectRef Name="RTPC_TileHP" ID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																</Reference>
+															</ReferenceList>
+															<BlendTrackAssocList>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Toxic" ID="{82E95849-FFC2-49A8-973A-D572DB4489C6}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>0</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>0.8</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+																<BlendTrackAssoc>
+																	<ItemRef Name="Grass" ID="{E9F4AC21-4491-42AD-89C9-EAB8D8E062D8}"/>
+																	<CrossfadingInfo>
+																		<LeftEdgePos>0.2</LeftEdgePos>
+																		<LeftFadingMode>Automatic</LeftFadingMode>
+																		<RightEdgePos>1</RightEdgePos>
+																		<RightFadingMode>Automatic</RightFadingMode>
+																	</CrossfadingInfo>
+																</BlendTrackAssoc>
+															</BlendTrackAssocList>
+														</BlendTrack>
+													</BlendTrackList>
+												</BlendContainer>
 											</ChildrenList>
 										</BlendContainer>
 									</ChildrenList>
@@ -1617,6 +1268,11 @@
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>560</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1843,7 +1499,7 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
-												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="40"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -1891,6 +1547,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<SwitchContainer Name="Shooting" ID="{8A3E18C4-8B8D-41B1-B31B-F587BA72E24B}" ShortID="920434073">
+													<PropertyList>
+														<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -2012,7 +1671,7 @@
 															<PropertyList>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>6</Value>
+																		<Value>8</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2131,7 +1790,7 @@
 															<PropertyList>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>1</Value>
+																		<Value>3</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2450,9 +2109,10 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>-1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2469,7 +2129,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2753,7 +2413,19 @@
 								<ActorMixer Name="Reload" ID="{29FDD954-A822-47FA-BEE7-1472552D7678}" ShortID="556423816">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3486,7 +3158,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3912,7 +3584,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>1</Value>
+																<Value>6</Value>
 															</ValueList>
 															<RTPCList>
 																<RTPC Name="" ID="{5D35750B-DCD0-4F1A-B8CB-5041CB2F6169}" ShortID="904661117">
@@ -4089,7 +3761,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-14</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

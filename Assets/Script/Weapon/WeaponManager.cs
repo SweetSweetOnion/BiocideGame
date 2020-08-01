@@ -64,6 +64,11 @@ public class WeaponManager : MonoBehaviour
                 AudioManager.instance.FOLEYS_Weapon_Shoot.Stop(_weaponController.gameObject);
                 AkSoundEngine.SetState("WeaponLevel", "Level_0" + _currentWeaponIndex.ToString());
                 AkSoundEngine.SetState("DestructionLevel", "Level_" + (GetCurrentWeapon().bulletLevel + 1).ToString());
+                if (GetCurrentWeapon().bulletLevel == 2)
+                {
+                    AudioManager.instance.AMB_Nature.Stop(AudioManager.instance.gameObject, 10, AkCurveInterpolation.AkCurveInterpolation_SCurve);
+                    AudioManager.instance.AMB_Destroyed.Post(AudioManager.instance.gameObject);
+                }
                 //Sound
             }
 		}

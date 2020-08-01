@@ -23,7 +23,7 @@ public class TileAudioManager : MonoBehaviour
         Instantiate(_audioSource, gameObject.transform);
         _audioSource.transform.position = position;
 
-        AkSoundEngine.SetRTPCValue("TileHP", tileHP, _audioSource);
+        AkSoundEngine.SetRTPCValue("RTPC_TileHP", tileHP, _audioSource);
 
         if (damaged)
             _audioSource.GetComponent<TileSound>().eventToPost = AudioManager.instance.FOLEYS_Tile_Hit;

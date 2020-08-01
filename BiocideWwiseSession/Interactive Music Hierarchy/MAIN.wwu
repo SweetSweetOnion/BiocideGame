@@ -83,13 +83,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="Introduction" ID="{A96E6C3E-42A9-4B00-8D75-820F9DB480B4}" ShortID="680942894">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>

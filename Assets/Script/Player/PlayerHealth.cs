@@ -24,6 +24,9 @@ public class PlayerHealth : MonoBehaviour
 		if(_currentHp <= 0){
 			OnDead?.Invoke();
 		}
+        //SOUND
+        AudioManager.instance.FOLEYS_Char_Hit.Post(gameObject);
+        //SOUND
 	}
 
 	public void ResetHp(){

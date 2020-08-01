@@ -89,7 +89,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3542894396" Name="FOLEYS_Char_Landing" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Landing" GUID="{6D4BEE40-124E-4C09-80AD-5DC83065BFA2}" DurationType="OneShot" DurationMin="0.258720" DurationMax="0.884585">
+				<Event Id="3542894396" Name="FOLEYS_Char_Landing" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Landing" GUID="{6D4BEE40-124E-4C09-80AD-5DC83065BFA2}" DurationType="OneShot" DurationMin="0.558105" DurationMax="0.884585">
 					<IncludedMemoryFiles>
 						<File Id="50026599" Language="SFX">
 							<ShortName>Foleys\Character\FOLEYS_Char_Landing_Grass_003.wav</ShortName>
@@ -132,33 +132,8 @@
 							<Path>SFX\Foleys\Character\FOLEYS_Char_Landing_Grass_007_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{25668535-5119-473F-A7E4-04A38A683D52}">
-							<Media>
-								<File Id="441071616"/>
-								<File Id="58418014"/>
-								<File Id="50026599"/>
-								<File Id="621209291"/>
-								<File Id="509142165"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}">
-							<Media>
-								<File Id="441071616"/>
-								<File Id="58418014"/>
-								<File Id="50026599"/>
-								<File Id="621209291"/>
-								<File Id="509142165"/>
-								<File Id="254338830"/>
-								<File Id="749308714"/>
-								<File Id="975789224"/>
-								<File Id="929865488"/>
-								<File Id="437293510"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
-				<Event Id="1417297257" Name="FOLEYS_Char_TakeOff" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_TakeOff" GUID="{C239EF41-7F46-4A82-A506-EB37F9CE9285}" DurationType="OneShot" DurationMin="0.189168" DurationMax="0.470998">
+				<Event Id="1417297257" Name="FOLEYS_Char_TakeOff" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_TakeOff" GUID="{C239EF41-7F46-4A82-A506-EB37F9CE9285}" DurationType="OneShot" DurationMin="0.339264" DurationMax="0.470998">
 					<IncludedMemoryFiles>
 						<File Id="26333508" Language="SFX">
 							<ShortName>Foleys\Character\FOLEYS_Char_Jump_Toxic_002.wav</ShortName>
@@ -201,31 +176,6 @@
 							<Path>SFX\Foleys\Character\FOLEYS_Char_Jump_Toxic_003_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{25668535-5119-473F-A7E4-04A38A683D52}">
-							<Media>
-								<File Id="53071694"/>
-								<File Id="306447583"/>
-								<File Id="813385922"/>
-								<File Id="198385611"/>
-								<File Id="63976718"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}">
-							<Media>
-								<File Id="53071694"/>
-								<File Id="306447583"/>
-								<File Id="813385922"/>
-								<File Id="198385611"/>
-								<File Id="63976718"/>
-								<File Id="41315139"/>
-								<File Id="524888384"/>
-								<File Id="26333508"/>
-								<File Id="1023237856"/>
-								<File Id="361730811"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 				<Event Id="2560249231" Name="FOLEYS_Tile_Destroy" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Destroy" GUID="{91C5420B-2701-4AD4-8C9C-82B784C04C49}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.393950" DurationMax="1.306826">
 					<IncludedMemoryFiles>
@@ -764,14 +714,6 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
-			<SwitchGroups>
-				<SwitchGroup Id="2460634474" Name="Texture" ObjectPath="\Switches\BIOCIDE_SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\Texture" GUID="{518E7FD8-4F04-4C66-8D54-B361B2636EA9}">
-					<Switches>
-						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\BIOCIDE_SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\Texture\Grass" GUID="{25668535-5119-473F-A7E4-04A38A683D52}"/>
-						<Switch Id="1400550014" Name="Toxic" ObjectPath="\Switches\BIOCIDE_SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\Texture\Toxic" GUID="{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

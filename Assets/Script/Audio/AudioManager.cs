@@ -40,5 +40,6 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         MUSIC_Main.Post(gameObject);
+        AMB_Nature.Post(gameObject);
     }
 }
