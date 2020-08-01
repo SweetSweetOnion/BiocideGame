@@ -13,7 +13,7 @@
 			<ShortName>FOLEYS_MAIN</ShortName>
 			<Path>FOLEYS_MAIN.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3710739246" Name="FOLEYS_Bird_Death" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Bird_Death" GUID="{17C11B1C-9AD7-4882-BD34-2447743E7417}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.521569" DurationMax="2.182715">
+				<Event Id="3710739246" Name="FOLEYS_Bird_Death" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Bird_Death" GUID="{17C11B1C-9AD7-4882-BD34-2447743E7417}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.523064" DurationMax="2.181788">
 					<IncludedMemoryFiles>
 						<File Id="102082554" Language="SFX">
 							<ShortName>FOLEYS_Bird_Death_001.wav</ShortName>

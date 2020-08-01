@@ -27,8 +27,8 @@
       "GUID": "{17C11B1C-9AD7-4882-BD34-2447743E7417}",
       "MaxAttenuation": "30.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.521569",
-      "DurationMax": "2.182715",
+      "DurationMin": "0.523064",
+      "DurationMax": "2.181788",
       "IncludedMemoryFiles": [
        {
         "Id": "102082554",

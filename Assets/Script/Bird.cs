@@ -66,6 +66,10 @@ public class Bird : MonoBehaviour
 	public void Kill(){
 		OiseauManager.birds.Remove(this);
 
+        //SOUND
+        AudioManager.instance.FOLEYS_Bird_Death.Post(gameObject);
+        //SOUND
+
 		Destroy(gameObject);
 	}
 }
