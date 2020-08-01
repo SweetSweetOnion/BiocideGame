@@ -447,18 +447,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 242795343642545798, guid: f9145dc2127a94740b7d688e57a37e2c,
-        type: 3}
-      propertyPath: FOLEYS_Char_Death.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 582688d8008d00b46ab0db1bf084e2c4,
-        type: 2}
-    - target: {fileID: 242795343642545798, guid: f9145dc2127a94740b7d688e57a37e2c,
-        type: 3}
-      propertyPath: FOLEYS_Bird_Death.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 25e929d5a8d943b4899a340beabbae4e,
-        type: 2}
     - target: {fileID: 242795343642545799, guid: f9145dc2127a94740b7d688e57a37e2c,
         type: 3}
       propertyPath: m_LocalPosition.x

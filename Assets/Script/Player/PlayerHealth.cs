@@ -30,8 +30,8 @@ public class PlayerHealth : MonoBehaviour
 		OnDamage?.Invoke(amount, worldOrigin);
 		if(_currentHp <= 0){
 			_isDead = true;
-			OnDead?.Invoke();
             AudioManager.instance.FOLEYS_Char_Death.Post(gameObject);
+            OnDead?.Invoke();
 		}
         //SOUND
         AudioManager.instance.FOLEYS_Char_Hit.Post(gameObject);
