@@ -3,15 +3,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	1615767906	MUSIC_Main			\BIOCIDE_EVENTS\MUSIC EVENTS\MUSIC_Main	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	3161908922	Main			\BIOCIDE_STATES\MUSIC STATES\Main	
+	3479155863	MainMusic			\BIOCIDE_STATES\MUSIC STATES\MainMusic	
 
 State	ID	Name	State Group			Notes
-	529726532	End	Main			
-	748895195	None	Main			
-	987635873	Level_01	Main			
-	987635874	Level_02	Main			
-	987635875	Level_03	Main			
-	1034344105	Introduction	Main			
+	529726532	End	MainMusic			
+	748895195	None	MainMusic			
+	987635873	Level_01	MainMusic			
+	987635874	Level_02	MainMusic			
+	987635875	Level_03	MainMusic			
+	1034344105	Introduction	MainMusic			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	25953484	Music_Core_Level3_005	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\Music\Music_Core_Level3_005_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_005\Music_Core_Level3_005		1052135

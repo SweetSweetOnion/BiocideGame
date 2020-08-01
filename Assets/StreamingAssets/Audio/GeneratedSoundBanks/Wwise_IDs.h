@@ -48,9 +48,9 @@ namespace AK
             } // namespace STATE
         } // namespace DESTRUCTIONLEVEL
 
-        namespace MAIN
+        namespace MAINMUSIC
         {
-            static const AkUniqueID GROUP = 3161908922U;
+            static const AkUniqueID GROUP = 3479155863U;
 
             namespace STATE
             {
@@ -61,7 +61,7 @@ namespace AK
                 static const AkUniqueID LEVEL_03 = 987635875U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace MAIN
+        } // namespace MAINMUSIC
 
         namespace OVERRALAMB
         {

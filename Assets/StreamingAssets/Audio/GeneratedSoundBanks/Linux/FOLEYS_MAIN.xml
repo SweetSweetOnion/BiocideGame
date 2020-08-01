@@ -227,7 +227,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2560249231" Name="FOLEYS_Tile_Destroy" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Destroy" GUID="{91C5420B-2701-4AD4-8C9C-82B784C04C49}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.393950" DurationMax="1.306826">
+				<Event Id="2560249231" Name="FOLEYS_Tile_Destroy" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Destroy" GUID="{91C5420B-2701-4AD4-8C9C-82B784C04C49}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.393950" DurationMax="1.306826">
 					<IncludedMemoryFiles>
 						<File Id="118878907" Language="SFX">
 							<ShortName>Foleys\Tiles\FOLEYS_Tile_Destruction_Level2_000.wav</ShortName>
@@ -305,7 +305,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3547271382" Name="FOLEYS_Tile_Hit" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Hit" GUID="{B3691EBE-234E-45A7-B794-99B8C8B770C4}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.492152" DurationMax="1.064915">
+				<Event Id="3547271382" Name="FOLEYS_Tile_Hit" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Hit" GUID="{B3691EBE-234E-45A7-B794-99B8C8B770C4}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.492152" DurationMax="1.064915">
 					<IncludedMemoryFiles>
 						<File Id="25467263" Language="SFX">
 							<ShortName>Foleys\Tiles\FOLEYS_Tile_Impact_ToxicLayer_002.wav</ShortName>
@@ -399,7 +399,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1448405397" Name="FOLEYS_Tile_Resist" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Resist" GUID="{4D133339-ADCA-4915-AC8D-6F9CDBFA04FD}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.187064" DurationMax="0.660708">
+				<Event Id="1448405397" Name="FOLEYS_Tile_Resist" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Resist" GUID="{4D133339-ADCA-4915-AC8D-6F9CDBFA04FD}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.187064" DurationMax="0.660708">
 					<IncludedMemoryFiles>
 						<File Id="23728125" Language="SFX">
 							<ShortName>Foleys\Tiles\FOLEYS_Tile_Resist_Level2_001.wav</ShortName>

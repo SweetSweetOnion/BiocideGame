@@ -1670,7 +1670,7 @@
 						</MusicTransition>
 					</TransitionList>
 					<ArgumentList>
-						<ArgumentRef Name="Main" ID="{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}"/>
+						<ArgumentRef Name="MainMusic" ID="{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>

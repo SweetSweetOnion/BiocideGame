@@ -38,7 +38,7 @@ public class WeaponManager : MonoBehaviour
 		TileManager.OnTileDestroy -= OnTileDestroy;
 	}
 
-	private void OnTileDestroy(Vector3Int position, float experience)
+    private void OnTileDestroy(Vector3Int position, float experience)
 	{
 		Collect(experience);
 	}
@@ -52,7 +52,20 @@ public class WeaponManager : MonoBehaviour
 				_currentWeaponIndex++;
 				_weaponController.SwitchWeapon(GetCurrentWeapon());
 				OnLevelUp?.Invoke(_currentWeaponIndex);
-			}
+                //Sound
+                AudioManager.instance.EFFECT_Weapon_LevelUp.Post(gameObject);
+                AudioManager.weaponLevel = _currentWeaponIndex;
+                if (_currentWeaponIndex == 1)
+                {
+                    AkSoundEngine.SetState("MainMusic", "Level_01");
+                }
+                else
+                    AkSoundEngine.SetState("MainMusic", "Level_0" + (GetCurrentWeapon().bulletLevel + 1).ToString());
+                AudioManager.instance.FOLEYS_Weapon_Shoot.Stop(_weaponController.gameObject);
+                AkSoundEngine.SetState("WeaponLevel", "Level_0" + _currentWeaponIndex.ToString());
+                AkSoundEngine.SetState("DestructionLevel", "Level_" + (GetCurrentWeapon().bulletLevel + 1).ToString());
+                //Sound
+            }
 		}
 		OnExperienceChange?.Invoke(_experience);
 	}

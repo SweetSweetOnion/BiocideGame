@@ -187,14 +187,14 @@
 				</Event>
 			</IncludedEvents>
 			<StateGroups>
-				<StateGroup Id="3161908922" Name="Main" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\Main" GUID="{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}">
+				<StateGroup Id="3479155863" Name="MainMusic" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\MainMusic" GUID="{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\Main\None" GUID="{47E1800A-9C1A-48A7-8F7F-02AC29EE4BB7}"/>
-						<State Id="1034344105" Name="Introduction" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\Main\Introduction" GUID="{6E2DCA28-2923-44DA-BEDF-ACFCD348AC53}"/>
-						<State Id="987635873" Name="Level_01" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\Main\Level_01" GUID="{1FF9BB1D-DFDD-49A8-B081-DF5A3881AFB6}"/>
-						<State Id="987635874" Name="Level_02" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\Main\Level_02" GUID="{ECD7AF2A-2AB5-4920-BF3E-869E541CE57D}"/>
-						<State Id="987635875" Name="Level_03" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\Main\Level_03" GUID="{2FAE39AB-4031-4234-8B73-93D21FEC9F1F}"/>
-						<State Id="529726532" Name="End" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\Main\End" GUID="{98F37E2A-B520-43FD-9BB4-5E26E00B9623}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\MainMusic\None" GUID="{47E1800A-9C1A-48A7-8F7F-02AC29EE4BB7}"/>
+						<State Id="1034344105" Name="Introduction" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\MainMusic\Introduction" GUID="{6E2DCA28-2923-44DA-BEDF-ACFCD348AC53}"/>
+						<State Id="987635873" Name="Level_01" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\MainMusic\Level_01" GUID="{1FF9BB1D-DFDD-49A8-B081-DF5A3881AFB6}"/>
+						<State Id="987635874" Name="Level_02" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\MainMusic\Level_02" GUID="{ECD7AF2A-2AB5-4920-BF3E-869E541CE57D}"/>
+						<State Id="987635875" Name="Level_03" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\MainMusic\Level_03" GUID="{2FAE39AB-4031-4234-8B73-93D21FEC9F1F}"/>
+						<State Id="529726532" Name="End" ObjectPath="\States\BIOCIDE_STATES\MUSIC STATES\MainMusic\End" GUID="{98F37E2A-B520-43FD-9BB4-5E26E00B9623}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -464,7 +464,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2560249231" Name="FOLEYS_Tile_Destroy" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Destroy" GUID="{91C5420B-2701-4AD4-8C9C-82B784C04C49}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.393950" DurationMax="1.306826">
+				<Event Id="2560249231" Name="FOLEYS_Tile_Destroy" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Destroy" GUID="{91C5420B-2701-4AD4-8C9C-82B784C04C49}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.393950" DurationMax="1.306826">
 					<IncludedMemoryFiles>
 						<File Id="118878907" Language="SFX">
 							<ShortName>Foleys\Tiles\FOLEYS_Tile_Destruction_Level2_000.wav</ShortName>
@@ -542,7 +542,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3547271382" Name="FOLEYS_Tile_Hit" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Hit" GUID="{B3691EBE-234E-45A7-B794-99B8C8B770C4}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.492152" DurationMax="1.064915">
+				<Event Id="3547271382" Name="FOLEYS_Tile_Hit" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Hit" GUID="{B3691EBE-234E-45A7-B794-99B8C8B770C4}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.492152" DurationMax="1.064915">
 					<IncludedMemoryFiles>
 						<File Id="25467263" Language="SFX">
 							<ShortName>Foleys\Tiles\FOLEYS_Tile_Impact_ToxicLayer_002.wav</ShortName>
@@ -636,7 +636,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1448405397" Name="FOLEYS_Tile_Resist" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Resist" GUID="{4D133339-ADCA-4915-AC8D-6F9CDBFA04FD}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.187064" DurationMax="0.660708">
+				<Event Id="1448405397" Name="FOLEYS_Tile_Resist" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Tile_Resist" GUID="{4D133339-ADCA-4915-AC8D-6F9CDBFA04FD}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.187064" DurationMax="0.660708">
 					<IncludedMemoryFiles>
 						<File Id="23728125" Language="SFX">
 							<ShortName>Foleys\Tiles\FOLEYS_Tile_Resist_Level2_001.wav</ShortName>

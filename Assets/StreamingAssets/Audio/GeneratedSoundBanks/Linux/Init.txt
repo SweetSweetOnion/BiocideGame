@@ -1,7 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1296044485	WeaponLevel			\BIOCIDE_STATES\GENERAL STATES\WeaponLevel	
 	1381176751	DestructionLevel			\BIOCIDE_STATES\GENERAL STATES\DestructionLevel	
-	3161908922	Main			\BIOCIDE_STATES\MUSIC STATES\Main	
+	3479155863	MainMusic			\BIOCIDE_STATES\MUSIC STATES\MainMusic	
 	4173766728	OverralAmb			\BIOCIDE_STATES\GENERAL STATES\OverralAmb	
 
 State	ID	Name	State Group			Notes
@@ -15,12 +15,12 @@ State	ID	Name	State Group			Notes
 	1290008369	Level_1	DestructionLevel			
 	1290008370	Level_2	DestructionLevel			
 	1290008371	Level_3	DestructionLevel			
-	529726532	End	Main			
-	748895195	None	Main			
-	987635873	Level_01	Main			
-	987635874	Level_02	Main			
-	987635875	Level_03	Main			
-	1034344105	Introduction	Main			
+	529726532	End	MainMusic			
+	748895195	None	MainMusic			
+	987635873	Level_01	MainMusic			
+	987635874	Level_02	MainMusic			
+	987635875	Level_03	MainMusic			
+	1034344105	Introduction	MainMusic			
 	748895195	None	OverralAmb			
 	1359166010	Destroyed	OverralAmb			
 	3501062356	Nature	OverralAmb			

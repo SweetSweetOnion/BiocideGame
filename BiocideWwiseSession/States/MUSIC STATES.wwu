@@ -7,7 +7,7 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<StateGroup Name="Main" ID="{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}">
+				<StateGroup Name="MainMusic" ID="{3F1E99D9-D973-4CE8-AE2F-B2A2212760B9}">
 					<ChildrenList>
 						<State Name="None" ID="{47E1800A-9C1A-48A7-8F7F-02AC29EE4BB7}"/>
 						<State Name="Introduction" ID="{6E2DCA28-2923-44DA-BEDF-ACFCD348AC53}"/>
