@@ -153,6 +153,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
+		if (playerHealth.isDead) return;
 		UpdateCurrentTiles();
 		UpdateJump();
 

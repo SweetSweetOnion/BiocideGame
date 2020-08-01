@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
 {
 
 	public PlayerController player;
+	public PlayerHealth health;
 	private Camera cam;
 	public Vector2 speed = new Vector2(100, 5);
 	public float backgroundSize = 120;
@@ -16,11 +17,15 @@ public class CameraController : MonoBehaviour
 	private Vector3 targetPos;
 	private Vector3 lastCamPos;
 
-
+	[Header("Screenshake")]
 	private Vector2 shakeDuration;
 	public float maxDuration = 10;
 	public float maxShake = 0;
 	public AnimationCurve shakeAmountOverTime;
+	public Vector2 shakeOnTileDmg ;
+	public Vector2 shakeOnTileDestroy;
+	public Vector2 shakeOnPlayerHit;
+	public Vector2 shakeOnLanded;
 
 	private void OnEnable()
 	{
@@ -28,29 +33,47 @@ public class CameraController : MonoBehaviour
 		TileManager.OnTileDamage += OnTileDamage;
 		TileManager.OnTileDestroy += OnTileDestroy;
 		player.OnLanded += OnLanded;
+		health.OnDamage += OnPlayerDamage;
+		GameManager.OnRespawn += OnRespawn;
 	}
 
-	private void OnLanded(float fallDuration)
-	{
-		if(fallDuration >= 1f)
-		AddShake(0, 0.5f);
-	}
-
-	private void OnTileDestroy(Vector3Int position, float experience)
-	{
-		AddShake(0.1f);
-	}
-
-	private void OnTileDamage(Vector3Int position, EnvironementTile envTile)
-	{
-		//AddShake(0.01f);
-	}
+	
 
 	private void OnDisable()
 	{
 		player.OnTeleport -= Player_onTeleport;
 		TileManager.OnTileDamage -= OnTileDamage;
 		TileManager.OnTileDestroy -= OnTileDestroy;
+		health.OnDamage -= OnPlayerDamage;
+		GameManager.OnRespawn -= OnRespawn;
+
+	}
+
+	private void OnPlayerDamage(int amount, Vector3 worldOrigin)
+	{
+		AddShake(shakeOnPlayerHit);
+	}
+
+	private void OnLanded(float fallDuration)
+	{
+		if (fallDuration >= 0.4f)
+			AddShake(shakeOnLanded);
+	}
+
+	private void OnTileDestroy(Vector3Int position, float experience)
+	{
+		AddShake(shakeOnTileDestroy);
+	}
+
+	private void OnTileDamage(Vector3Int position, EnvironementTile envTile)
+	{
+		//AddShake(1);
+		AddShake(shakeOnTileDmg);
+	}
+
+	private void OnRespawn()
+	{
+		SetCamToTarget();
 	}
 
 
@@ -148,12 +171,17 @@ public class CameraController : MonoBehaviour
 
 	public void AddShake(float duration)
 	{
-		shakeDuration += new Vector2(duration,duration);
+		shakeDuration.x = Mathf.Max(shakeDuration.x, duration);
+		shakeDuration.y = Mathf.Max(shakeDuration.y, duration);
+		//shakeDuration += new Vector2(duration,duration);
 		shakeDuration = Vector2.ClampMagnitude(shakeDuration, maxDuration);
 	}
-	public void AddShake(float dx, float dY)
+	public void AddShake(Vector2 d)
 	{
-		shakeDuration += new Vector2(dx, dY);
+		//shakeDuration += new Vector2(dx, dY);
+		shakeDuration.x = Mathf.Max(shakeDuration.x, d.x);
+		shakeDuration.y = Mathf.Max(shakeDuration.y, d.y);
+
 		shakeDuration.x = Mathf.Clamp(shakeDuration.x, 0, maxDuration);
 		shakeDuration.y = Mathf.Clamp(shakeDuration.y, 0, maxDuration);
 
