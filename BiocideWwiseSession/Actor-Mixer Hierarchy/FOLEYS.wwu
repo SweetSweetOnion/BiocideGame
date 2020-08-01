@@ -2108,8 +2108,19 @@
 										<BlendContainer Name="FOLEYS_Weapon_Trigger" ID="{776B0D9C-1CA9-4CEE-A15D-3944B5A67F44}" ShortID="157201613">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-1</Value>
