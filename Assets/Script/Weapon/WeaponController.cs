@@ -64,6 +64,8 @@ public class WeaponController : MonoBehaviour
 		{
 
 			if(Time.time > lastSpawnTime + _weapon.GetSpawnCooldown(_pressure)){
+				//shoot
+
 				Vector2 recoil = _weapon.recoil;
 				Vector2 shootDirection = Vector2.right;
 				if(_controller.isFlip ){

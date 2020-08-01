@@ -38,11 +38,6 @@ public class WeaponManager : MonoBehaviour
 		TileManager.OnTileDestroy -= OnTileDestroy;
 	}
 
-	/*private void Update()
-	{
-		Debug.Log(experience + "  " + GetNormalizedExperience());
-	}*/
-
 	private void OnTileDestroy(Vector3Int position, float experience)
 	{
 		Collect(experience);
