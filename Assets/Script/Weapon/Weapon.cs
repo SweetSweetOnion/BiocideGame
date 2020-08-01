@@ -26,6 +26,8 @@ public class Weapon : ScriptableObject
 	public float pressureAddEverySecond = -1f;
 	public float pressureAddPerReload = 2f;
 	public AnimationCurve pressureCurve;
+	[Space]
+	public string levelUpText;
 
 
 

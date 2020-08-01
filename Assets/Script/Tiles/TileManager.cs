@@ -16,6 +16,8 @@ public class TileManager : MonoBehaviour
 	public static Tilemap scriptTilemap => instance._scriptTilemap;
 
 	public TileType defautTiletype;
+	public Color backgroundTileColor;
+
 
 	[SerializeField]
 	private Tilemap _mainTilemap;
@@ -99,7 +101,7 @@ public class TileManager : MonoBehaviour
 		if (!t) return instance.defautTiletype;
 		return t;
 	}
-
+	
 	public static EnvironementTile GetOrCreateEnvironementTile(Vector3Int position)
 	{
 		if (!GetTileType(position)) return null;
@@ -118,6 +120,7 @@ public class TileManager : MonoBehaviour
 
 	public static void OnTileHit(Vector3Int position, Bullet bullet)
 	{
+		TileManager.GetOrCreateEnvironementTile(position).GetNormHp();
 		bool b = false;
 		//Debug.DrawRay(mainTilemap.GetCellCenterWorld(position), Vector3.up * 10, Color.red,1) ;
 		var t = GetOrCreateEnvironementTile(position);
@@ -154,6 +157,10 @@ public class TileManager : MonoBehaviour
 		{
 			tiles.Remove(position);
 		}
+
+		/*mainTilemap.SetTileFlags(position, TileFlags.None);
+		mainTilemap.SetColliderType(position, Tile.ColliderType.None);
+		mainTilemap.SetColor(position, instance.backgroundTileColor);*/
 		
 		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
