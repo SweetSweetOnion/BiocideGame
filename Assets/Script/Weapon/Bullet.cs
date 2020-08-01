@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
 
 	public delegate void BulletHit(Vector3 pos);
 	public static event BulletHit OnBulletHit;
-
+	private float angle;
 
 	private void Awake()
 	{
@@ -32,6 +32,8 @@ public class Bullet : MonoBehaviour
 		}
 
 		rb.AddForce(Vector2.down * gravity * Time.deltaTime);
+		float angle = Vector3.SignedAngle(rb.velocity.normalized, Vector3.left,Vector3.forward);
+		transform.rotation = Quaternion.Euler(0, 0, -angle);
 
 		lifetime -= Time.deltaTime;
 		if(lifetime < 0){
