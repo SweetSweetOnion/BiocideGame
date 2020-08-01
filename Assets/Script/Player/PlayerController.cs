@@ -209,8 +209,8 @@ public class PlayerController : MonoBehaviour
 	private void UpdateCurrentTiles(){
 		Vector3 bottomLeftPos = transform.position - Vector3.up * _boxCollider.size.y / 2 + Vector3.left * _boxCollider.size.x /2;
 		Vector3 bottomRightPos = transform.position - Vector3.up * _boxCollider.size.y / 2 - Vector3.left * _boxCollider.size.x /2;
-		currentTiles[0] = TileManager.mainTilemap.WorldToCell(bottomLeftPos - Vector3.up *0.1f);
-		currentTiles[1] = TileManager.mainTilemap.WorldToCell(bottomRightPos - Vector3.up * 0.1f);
+		currentTiles[0] = TileManager.mainTilemap.WorldToCell(bottomLeftPos - Vector3.up *0.1f + Vector3.left *0.1f );
+		currentTiles[1] = TileManager.mainTilemap.WorldToCell(bottomRightPos - Vector3.up * 0.1f - Vector3.left * 0.1f);
 		if(isGrounded){
 			TileManager.OnTilesWalkedOn(currentTiles, this);
 		}
