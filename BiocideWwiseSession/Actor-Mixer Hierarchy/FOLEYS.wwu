@@ -4903,17 +4903,17 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="FOLEYS_Bird_Death_000" ID="{CADA7EC5-9A32-440E-9732-90FE3AC38030}" ShortID="784651192">
+														<Sound Name="FOLEYS_Bird_Death_000" ID="{F9A15A34-55FB-41AF-AA8F-D95A541C8E24}" ShortID="263422030">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="FOLEYS_Bird_Death_000" ID="{D55AC6C8-97CD-4A46-AE99-8259016E2964}">
+																<AudioFileSource Name="FOLEYS_Bird_Death_000" ID="{8B6359A4-6751-4880-9890-EC6C1888BC99}">
 																	<Language>SFX</Language>
 																	<AudioFile>FOLEYS_Bird_Death_000.wav</AudioFile>
 																	<MediaIDList>
@@ -4922,20 +4922,20 @@
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="FOLEYS_Bird_Death_000" ID="{D55AC6C8-97CD-4A46-AE99-8259016E2964}" Platform="Linked"/>
+																<ActiveSource Name="FOLEYS_Bird_Death_000" ID="{8B6359A4-6751-4880-9890-EC6C1888BC99}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="FOLEYS_Bird_Death_001" ID="{3C90641A-8CB2-4B98-9406-FD92DA92522D}" ShortID="857635547">
+														<Sound Name="FOLEYS_Bird_Death_001" ID="{E90A4100-5DA6-4B90-A0C6-A7DFE553FA0A}" ShortID="6582195">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="FOLEYS_Bird_Death_001" ID="{862C653D-A45E-491F-9288-D28BB2552173}">
+																<AudioFileSource Name="FOLEYS_Bird_Death_001" ID="{C278DAD6-51FC-45AA-A83A-C07DEEFACEE0}">
 																	<Language>SFX</Language>
 																	<AudioFile>FOLEYS_Bird_Death_001.wav</AudioFile>
 																	<MediaIDList>
@@ -4944,42 +4944,20 @@
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="FOLEYS_Bird_Death_001" ID="{862C653D-A45E-491F-9288-D28BB2552173}" Platform="Linked"/>
+																<ActiveSource Name="FOLEYS_Bird_Death_001" ID="{C278DAD6-51FC-45AA-A83A-C07DEEFACEE0}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="FOLEYS_Bird_Death_003" ID="{D7E8CB2C-67C0-4CC5-8772-35FEFA96DB6B}" ShortID="496748284">
+														<Sound Name="FOLEYS_Bird_Death_002" ID="{CB1B2353-A459-42B5-9979-87CA3B16A8C4}" ShortID="434297730">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 																</Reference>
 																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="FOLEYS_Bird_Death_003" ID="{CE382B2A-4E9E-47EC-9AD9-EC79365B6B96}">
-																	<Language>SFX</Language>
-																	<AudioFile>FOLEYS_Bird_Death_003.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="479949396"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="FOLEYS_Bird_Death_003" ID="{CE382B2A-4E9E-47EC-9AD9-EC79365B6B96}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="FOLEYS_Bird_Death_002" ID="{501F219C-B7E8-4E22-9EDE-4FD43561A791}" ShortID="576197144">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="FOLEYS_Bird_Death_002" ID="{4B1810A7-4738-4E7B-8706-ECBADC295D41}">
+																<AudioFileSource Name="FOLEYS_Bird_Death_002" ID="{84CB72FD-B1AD-460A-AF84-CE7CC3A6BF92}">
 																	<Language>SFX</Language>
 																	<AudioFile>FOLEYS_Bird_Death_002.wav</AudioFile>
 																	<MediaIDList>
@@ -4988,7 +4966,29 @@
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="FOLEYS_Bird_Death_002" ID="{4B1810A7-4738-4E7B-8706-ECBADC295D41}" Platform="Linked"/>
+																<ActiveSource Name="FOLEYS_Bird_Death_002" ID="{84CB72FD-B1AD-460A-AF84-CE7CC3A6BF92}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOLEYS_Bird_Death_003" ID="{C3DA5AC7-E07C-4F10-98F5-F422D3ED5766}" ShortID="576695929">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOLEYS_Bird_Death_003" ID="{980EF76F-DD9E-46B9-AB37-95586EE078D4}">
+																	<Language>SFX</Language>
+																	<AudioFile>FOLEYS_Bird_Death_003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="479949396"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOLEYS_Bird_Death_003" ID="{980EF76F-DD9E-46B9-AB37-95586EE078D4}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>

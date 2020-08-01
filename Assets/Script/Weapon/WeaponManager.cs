@@ -69,6 +69,8 @@ public class WeaponManager : MonoBehaviour
                     AudioManager.instance.AMB_Nature.Stop(AudioManager.instance.gameObject, 10, AkCurveInterpolation.AkCurveInterpolation_SCurve);
                     AudioManager.instance.AMB_Destroyed.Post(AudioManager.instance.gameObject);
                 }
+                if (_weaponController.isShooting)
+                    AudioManager.instance.FOLEYS_Weapon_Shoot.Post(_weaponController.gameObject);
                 //Sound
             }
 		}
