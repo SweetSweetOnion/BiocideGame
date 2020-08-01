@@ -55050,6 +55050,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 242795343642545798, guid: f9145dc2127a94740b7d688e57a37e2c,
+        type: 3}
+      propertyPath: FOLEYS_Char_Death.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 099c91c52c0cb394695d9694bcd5390f,
+        type: 2}
     - target: {fileID: 242795343642545799, guid: f9145dc2127a94740b7d688e57a37e2c,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -260,6 +260,16 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 844ff38151c5a0e4aa8693f74a13775c,
       type: 2}
+  FOLEYS_Char_Death:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 582688d8008d00b46ab0db1bf084e2c4,
+      type: 2}
+  FOLEYS_Bird_Death:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 25e929d5a8d943b4899a340beabbae4e,
+      type: 2}
   FOLEYS_Tile_Destroy:
     idInternal: 0
     valueGuidInternal: 

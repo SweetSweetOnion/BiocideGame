@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
     public AK.Wwise.Event FOLEYS_Char_Hit;
     public AK.Wwise.Event FOLEYS_Char_Landing;
     public AK.Wwise.Event FOLEYS_Char_TakeOff;
+    public AK.Wwise.Event FOLEYS_Char_Death;
+    public AK.Wwise.Event FOLEYS_Bird_Death;
     public AK.Wwise.Event FOLEYS_Tile_Destroy;
     public AK.Wwise.Event FOLEYS_Tile_Hit;
     public AK.Wwise.Event FOLEYS_Tile_Resist;

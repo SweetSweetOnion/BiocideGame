@@ -122,6 +122,28 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Stop_Weapon" ID="{F6B9F105-47BA-465C-B9EB-888EA9BED671}"/>
+				<Event Name="FOLEYS_Char_Death" ID="{D2D9F1BC-F88A-41D7-B53F-1608617FC811}">
+					<ChildrenList>
+						<Action Name="" ID="{3C58915A-90A9-49F9-AD35-44702F37D8B9}" ShortID="596031469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Char_Death" ID="{68F19553-94E0-4A14-9DFA-AAAA72170C3A}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Bird_Death" ID="{17C11B1C-9AD7-4882-BD34-2447743E7417}">
+					<ChildrenList>
+						<Action Name="" ID="{AD0C9849-9681-4508-A608-519790904735}" ShortID="435842295">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Bird_Death" ID="{18A98232-B0A8-45EC-81C8-91DD9805777D}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

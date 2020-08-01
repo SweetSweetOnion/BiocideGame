@@ -13,6 +13,62 @@
 			<ShortName>FOLEYS_MAIN</ShortName>
 			<Path>FOLEYS_MAIN.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3710739246" Name="FOLEYS_Bird_Death" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Bird_Death" GUID="{17C11B1C-9AD7-4882-BD34-2447743E7417}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.521569" DurationMax="2.182715">
+					<IncludedMemoryFiles>
+						<File Id="102082554" Language="SFX">
+							<ShortName>FOLEYS_Bird_Death_001.wav</ShortName>
+							<Path>SFX\FOLEYS_Bird_Death_001_755F56E2.wem</Path>
+						</File>
+						<File Id="358144200" Language="SFX">
+							<ShortName>FOLEYS_Bird_Death_000.wav</ShortName>
+							<Path>SFX\FOLEYS_Bird_Death_000_755F56E2.wem</Path>
+						</File>
+						<File Id="479949396" Language="SFX">
+							<ShortName>FOLEYS_Bird_Death_003.wav</ShortName>
+							<Path>SFX\FOLEYS_Bird_Death_003_755F56E2.wem</Path>
+						</File>
+						<File Id="889410281" Language="SFX">
+							<ShortName>FOLEYS_Bird_Death_002.wav</ShortName>
+							<Path>SFX\FOLEYS_Bird_Death_002_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2031942103" Name="FOLEYS_Char_Death" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Death" GUID="{D2D9F1BC-F88A-41D7-B53F-1608617FC811}" DurationType="OneShot" DurationMin="0.412729" DurationMax="1.405521">
+					<IncludedMemoryFiles>
+						<File Id="245515467" Language="SFX">
+							<ShortName>VO_HumanPain_26.wav</ShortName>
+							<Path>SFX\VO_HumanPain_26_755F56E2.wem</Path>
+						</File>
+						<File Id="435280655" Language="SFX">
+							<ShortName>VO_HumanPain_25.wav</ShortName>
+							<Path>SFX\VO_HumanPain_25_755F56E2.wem</Path>
+						</File>
+						<File Id="510601863" Language="SFX">
+							<ShortName>[YTP]FR Urgences.wav</ShortName>
+							<Path>SFX\[YTP]FR Urgences_542EC0D1.wem</Path>
+						</File>
+						<File Id="726875142" Language="SFX">
+							<ShortName>VO_HumanFight_04.wav</ShortName>
+							<Path>SFX\VO_HumanFight_04_755F56E2.wem</Path>
+						</File>
+						<File Id="758486508" Language="SFX">
+							<ShortName>[YTP]FR Urgences.wav</ShortName>
+							<Path>SFX\[YTP]FR Urgences_82851A3F.wem</Path>
+						</File>
+						<File Id="915850153" Language="SFX">
+							<ShortName>VO_HumanFight_06.wav</ShortName>
+							<Path>SFX\VO_HumanFight_06_755F56E2.wem</Path>
+						</File>
+						<File Id="920720125" Language="SFX">
+							<ShortName>VO_HumanPain_24.wav</ShortName>
+							<Path>SFX\VO_HumanPain_24_755F56E2.wem</Path>
+						</File>
+						<File Id="1064835678" Language="SFX">
+							<ShortName>VO_HumanFight_02.wav</ShortName>
+							<Path>SFX\VO_HumanFight_02_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1962994296" Name="FOLEYS_Char_Footsteps" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Footsteps" GUID="{5423F9DE-24B0-4D19-B7EB-E38D74CAB511}" DurationType="OneShot" DurationMin="0.550023" DurationMax="0.728094">
 					<IncludedMemoryFiles>
 						<File Id="171009811" Language="SFX">
