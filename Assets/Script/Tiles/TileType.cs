@@ -19,5 +19,6 @@ public class TileType : Tile
 	public TileBase[] damageLevelSprites;
 	public TileBase vfxDamageTile;
 	public TileBase backgroundTile;
+	public TileBase toxicTile;
 
 }

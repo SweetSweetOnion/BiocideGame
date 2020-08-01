@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77e8301dd2d360409ca47b60ce61ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tilemap: {fileID: 0}
 --- !u!114 &3774778860817153452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,3 +56,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd1741116588574bad1c9200210154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defautTiletype: {fileID: 11400000, guid: 6d2687507e1028446a85eaf660be1747, type: 2}
+  _mainTilemap: {fileID: 0}
+  _resistanceTilemap: {fileID: 0}
+  _damageTilemap: {fileID: 0}
+  _vfxTile: {fileID: 0}
+  _backgroundTilemap: {fileID: 0}
+  _scriptTilemap: {fileID: 0}

@@ -12,8 +12,12 @@ public class WeaponManager : MonoBehaviour
 	private float _experience = 0;
 	private int _currentWeaponIndex = 0;
 
+	public int currentLevel => _currentWeaponIndex;
+
 	public delegate void ExperienceChange(float newExp);
 	public event ExperienceChange OnExperienceChange;
+	public delegate void LevelChange(int newLevel);
+	public event LevelChange OnLevelUp;
 
 
 	//accessors
@@ -52,6 +56,7 @@ public class WeaponManager : MonoBehaviour
 			{
 				_currentWeaponIndex++;
 				_weaponController.SwitchWeapon(GetCurrentWeapon());
+				OnLevelUp?.Invoke(_currentWeaponIndex);
 			}
 		}
 		OnExperienceChange?.Invoke(_experience);
