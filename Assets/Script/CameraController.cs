@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
 
 	public PlayerController player;
 	public PlayerHealth health;
+	public WeaponController weaponController;
 	private Camera cam;
 	public Vector2 speed = new Vector2(100, 5);
 	public float backgroundSize = 120;
@@ -26,6 +27,7 @@ public class CameraController : MonoBehaviour
 	public Vector2 shakeOnTileDestroy;
 	public Vector2 shakeOnPlayerHit;
 	public Vector2 shakeOnLanded;
+	public Vector2 shakeshoot;
 
 	private void OnEnable()
 	{
@@ -102,6 +104,10 @@ public class CameraController : MonoBehaviour
 	// Update is called once per frame
 	void LateUpdate()
 	{
+		if(weaponController.isShooting && weaponController.pressure > 50f){
+			AddShake(shakeshoot * weaponController.pressure / 100 * (weaponController.currentWeapon.bulletLevel+1));
+		}
+
 		targetPos.z = transform.position.z;
 
 		if (player.transform.position.x > targetPos.x) targetPos.x = player.transform.position.x;

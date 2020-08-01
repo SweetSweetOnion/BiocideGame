@@ -7,6 +7,7 @@ public class Bird : MonoBehaviour
 	public float minSpeed, maxSpeed;
 	//public Vector2 randomDir;
 	public Vector2 perlinSpeed;
+	public Transform player;
 
 	private Vector3 direction;
 	private float speed;
@@ -14,6 +15,8 @@ public class Bird : MonoBehaviour
 	private SpriteRenderer sprite;
 	private Animator anim;
 	private Vector2 perlinPos;
+
+	public bool isVisible => sprite.isVisible;
 
 	private void Awake()
 	{
@@ -47,7 +50,22 @@ public class Bird : MonoBehaviour
 
 		sprite.flipX = direction.x < 0;
 
-		
+		if (transform.position.x > player.position.x  + 30)
+		{
+			transform.position = new Vector3(player.position.x-30, transform.position.y, 0);
 
+		}
+		if (transform.position.x < player.position.x - 30)
+		{
+			transform.position = new Vector3(player.position.x + 30, transform.position.y, 0);
+
+		}
+
+	}
+
+	public void Kill(){
+		OiseauManager.birds.Remove(this);
+
+		Destroy(gameObject);
 	}
 }
