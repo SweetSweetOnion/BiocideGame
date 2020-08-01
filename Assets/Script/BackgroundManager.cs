@@ -27,6 +27,10 @@ public class BackgroundManager : MonoBehaviour
 	public Color[] tilemapStart;
 	public Color[] tilemapEnd;
 
+	public Material materialColor;
+	public Color matStart;
+	public Color matEnd;
+
 	private void Update()
 	{
 		float x =  Mathf.Abs(Mathf.Sin(Mathf.Clamp01(Mathf.InverseLerp(minX, maxX, controller.transform.position.x )) * Mathf.PI ));
@@ -41,6 +45,8 @@ public class BackgroundManager : MonoBehaviour
 			tilemapColor[i].color = Color.Lerp(tilemapStart[i], tilemapEnd[i], x);
 
 		}
+
+		materialColor.color = Color.Lerp(matStart, matEnd, x);
 
 	}
 
@@ -57,5 +63,7 @@ public class BackgroundManager : MonoBehaviour
 			tilemapColor[i].color = Color.Lerp(tilemapStart[i], tilemapEnd[i], f);
 
 		}
+		materialColor.color = Color.Lerp(matStart, matEnd, f);
+
 	}
 }
