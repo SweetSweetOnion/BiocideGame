@@ -66,6 +66,9 @@ public class Bullet : MonoBehaviour
 			}
 		}
 
+		collision.transform.GetComponent<Bird>()?.Kill();			
+		
+
 		OnBulletHit?.Invoke(transform.position);
 
 	}

@@ -19,6 +19,8 @@ public class WeaponController : MonoBehaviour
 	public float pressure => _pressure;
 	public Weapon currentWeapon => _weapon;
 
+	public bool isShooting => _useWeapon;
+
 
 	private void Awake()
 	{

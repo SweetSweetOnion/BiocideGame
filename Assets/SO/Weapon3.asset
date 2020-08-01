@@ -27,7 +27,7 @@ MonoBehaviour:
   directionOffsetY: 0
   spawnOffset: {x: 1.02, y: -0.09}
   recoil: {x: 0, y: 0}
-  pressureAddPerUse: -1
+  pressureAddPerUse: -8
   pressureAddEverySecond: 0
   pressureAddPerReload: 30
   pressureCurve:
@@ -54,3 +54,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  levelUpText: 
