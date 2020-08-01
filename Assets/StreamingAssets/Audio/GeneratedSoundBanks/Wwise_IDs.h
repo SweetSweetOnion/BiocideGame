@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID AMB_NATURE = 2327484403U;
         static const AkUniqueID EFFECT_RESSOURCE_EARN = 3812594291U;
         static const AkUniqueID EFFECT_WEAPON_LEVELUP = 2264089113U;
+        static const AkUniqueID FOLEYS_BIRD_DEATH = 3710739246U;
+        static const AkUniqueID FOLEYS_CHAR_DEATH = 2031942103U;
         static const AkUniqueID FOLEYS_CHAR_FOOTSTEPS = 1962994296U;
         static const AkUniqueID FOLEYS_CHAR_HIT = 2368415702U;
         static const AkUniqueID FOLEYS_CHAR_LANDING = 3542894396U;
