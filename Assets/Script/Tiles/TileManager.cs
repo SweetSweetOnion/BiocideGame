@@ -16,6 +16,8 @@ public class TileManager : MonoBehaviour
 	public static Tilemap scriptTilemap => instance._scriptTilemap;
 
 	public TileType defautTiletype;
+	public Color backgroundTileColor;
+
 
 	[SerializeField]
 	private Tilemap _mainTilemap;
@@ -99,7 +101,7 @@ public class TileManager : MonoBehaviour
 		if (!t) return instance.defautTiletype;
 		return t;
 	}
-
+	
 	public static EnvironementTile GetOrCreateEnvironementTile(Vector3Int position)
 	{
 		if (!GetTileType(position)) return null;
@@ -129,7 +131,7 @@ public class TileManager : MonoBehaviour
 			b = true;
 		}
 		OnTileHitByBullet?.Invoke(bullet.transform.position, position, b,t.GetNormHp());
-		//laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        TileAudioManager.instance.PostTileHitSound(position, t.GetNormHp(), b);
 
 	}
 
@@ -154,13 +156,18 @@ public class TileManager : MonoBehaviour
 		{
 			tiles.Remove(position);
 		}
+
+		/*mainTilemap.SetTileFlags(position, TileFlags.None);
+		mainTilemap.SetColliderType(position, Tile.ColliderType.None);
+		mainTilemap.SetColor(position, instance.backgroundTileColor);*/
 		
 		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
 		mainTilemap.SetTile(position, null);
 		scriptTilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
-	}
+        TileAudioManager.instance.PostTileDestroySound(position);
+    }
 
 	public static void TransformTile(Vector3Int position, TileType type)
 	{

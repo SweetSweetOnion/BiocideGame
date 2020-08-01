@@ -6,6 +6,145 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="FOLEYS_Weapon_Shoot" ID="{71BA262A-D577-4B2F-BD84-59A8F24F2D3B}">
+					<ChildrenList>
+						<Action Name="" ID="{176B6CDC-2AC4-4090-A6AF-D3975C475FC0}" ShortID="312453759">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.12"/>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Weapon_Shoot" ID="{042A5E5A-1221-4BB4-A1A4-C9C3F4C09A11}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Weapon_Trigger" ID="{F6A48422-3DD1-4C30-B7EE-FDD1AA08C04C}">
+					<ChildrenList>
+						<Action Name="" ID="{240EE2E7-F4AF-4BA4-AD3F-3E054F492A4F}" ShortID="160061825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Weapon_Trigger" ID="{776B0D9C-1CA9-4CEE-A15D-3944B5A67F44}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Char_TakeOff" ID="{C239EF41-7F46-4A82-A506-EB37F9CE9285}">
+					<ChildrenList>
+						<Action Name="" ID="{639C9C1E-F4F3-4AE7-B7ED-8C46BD46A988}" ShortID="197094465">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Char_TakeOff" ID="{AE743A1B-A4B2-4EE1-AC91-095E0E0D1BB3}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Tile_Resist" ID="{4D133339-ADCA-4915-AC8D-6F9CDBFA04FD}">
+					<ChildrenList>
+						<Action Name="" ID="{A5C46026-48A5-4CBB-A21A-BF609E68F016}" ShortID="21904502">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Tile_Resist" ID="{23313425-FF5F-4AD0-AD23-C75DB928266E}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Tile_Destroy" ID="{91C5420B-2701-4AD4-8C9C-82B784C04C49}">
+					<ChildrenList>
+						<Action Name="" ID="{5CAABF46-FBA4-47ED-9DED-489F7BEABF1C}" ShortID="890980144">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Tile_Destroy" ID="{D7623CCB-8352-4A98-B483-950A57C7CB9C}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Tile_Hit" ID="{B3691EBE-234E-45A7-B794-99B8C8B770C4}">
+					<ChildrenList>
+						<Action Name="" ID="{EC14FB5E-9972-4D8D-A5CB-129FE1BD79C7}" ShortID="409484965">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Tile_Hit" ID="{3A09DBAC-3001-4DF5-8AFB-D884F6A2EF97}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Weapon_Reload" ID="{1C71D9B3-7B2E-4BE7-B60C-30A14EDD5EFE}">
+					<ChildrenList>
+						<Action Name="" ID="{A09AD8A7-1E70-43A9-B8E9-91B46BD8A7FF}" ShortID="1024168504">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Weapon_Reload" ID="{3D9076CF-CC84-4D5C-9165-31E38595B814}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Char_Landing" ID="{6D4BEE40-124E-4C09-80AD-5DC83065BFA2}">
+					<ChildrenList>
+						<Action Name="" ID="{FC315C3F-8FF2-46EA-B3CD-16177F64680C}" ShortID="949776432">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Char_Landing" ID="{A231E49E-F7BF-4ACA-B41F-B10D318E4AC8}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Char_Footsteps" ID="{5423F9DE-24B0-4D19-B7EB-E38D74CAB511}">
+					<ChildrenList>
+						<Action Name="" ID="{E0739180-73AB-4892-A286-E85EE11F0A38}" ShortID="843816986">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Char_Footsteps" ID="{AE87A992-4EFA-4424-B8BC-7F2C318EF3A4}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Char_Hit" ID="{BBDD1C6C-2981-429F-A143-9D72655BA8D7}">
+					<ChildrenList>
+						<Action Name="" ID="{F77F2E4A-8EC7-486F-9918-F2D3C9187F91}" ShortID="361438103">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Char_Hit" ID="{42F18B4E-A918-4EC1-97F8-731E0C4D3DF1}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Weapon" ID="{F6B9F105-47BA-465C-B9EB-888EA9BED671}"/>
+				<Event Name="FOLEYS_Char_Death" ID="{D2D9F1BC-F88A-41D7-B53F-1608617FC811}">
+					<ChildrenList>
+						<Action Name="" ID="{3C58915A-90A9-49F9-AD35-44702F37D8B9}" ShortID="596031469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Char_Death" ID="{68F19553-94E0-4A14-9DFA-AAAA72170C3A}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FOLEYS_Bird_Death" ID="{17C11B1C-9AD7-4882-BD34-2447743E7417}">
+					<ChildrenList>
+						<Action Name="" ID="{AD0C9849-9681-4508-A608-519790904735}" ShortID="435842295">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FOLEYS_Bird_Death" ID="{18A98232-B0A8-45EC-81C8-91DD9805777D}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

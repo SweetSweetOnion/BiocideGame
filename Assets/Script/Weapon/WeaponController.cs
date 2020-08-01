@@ -19,14 +19,20 @@ public class WeaponController : MonoBehaviour
 	public float pressure => _pressure;
 	public Weapon currentWeapon => _weapon;
 
+	public bool isShooting => _useWeapon;
+
 
 	private void Awake()
 	{
 		_controller = GetComponent<PlayerController>();
 		_playerInput = GetComponent<PlayerInput>();
-	}
 
-	private void OnEnable()
+        //SOUND
+        AkSoundEngine.SetState("WeaponLevel", "Level_00");
+        //SOUND
+    }
+
+    private void OnEnable()
 	{
 		_playerInput.currentActionMap["Fire"].started += FireStart;
 		_playerInput.currentActionMap["Fire"].canceled += FireEnd;
@@ -44,21 +50,44 @@ public class WeaponController : MonoBehaviour
 	private void FireStart(InputAction.CallbackContext obj)
 	{
 		_useWeapon = true;
-	}
 
-	private void FireEnd(InputAction.CallbackContext obj)
+        //SOUND
+        AudioManager.instance.FOLEYS_Weapon_Trigger.Post(gameObject);
+        if (AudioManager.weaponLevel == 0 || AudioManager.weaponLevel == 1 || AudioManager.weaponLevel == 4)
+        {
+            AudioManager.instance.FOLEYS_Weapon_Shoot.Post(gameObject);
+        }
+        //SOUND
+    }
+
+    private void FireEnd(InputAction.CallbackContext obj)
 	{
 		_useWeapon = false;
-	}
 
-	private void ReloadPerformed(InputAction.CallbackContext obj)
+        //SOUND
+        if (AudioManager.weaponLevel == 0 || AudioManager.weaponLevel == 1 || AudioManager.weaponLevel == 4)
+        {
+            AudioManager.instance.FOLEYS_Weapon_Shoot.Stop(gameObject);
+        }
+        //SOUND
+    }
+
+    private void ReloadPerformed(InputAction.CallbackContext obj)
 	{
 		_pressure += _weapon.pressureAddPerReload;
-	}
+
+        //SOUND
+        AudioManager.instance.FOLEYS_Weapon_Reload.Post(gameObject);
+        //SOUND
+    }
 
 	private void Update()
 	{
-		if (!_weapon) return;
+        //SOUND
+        AkSoundEngine.SetRTPCValue("WeaponCharge", _pressure);
+        //SOUND
+
+        if (!_weapon) return;
 
 		if(_useWeapon)
 		{
@@ -76,8 +105,15 @@ public class WeaponController : MonoBehaviour
 				_weapon.SpawnBullet(transform.position, shootDirection, _controller.velocity,_pressure) ;
 				lastSpawnTime = Time.time;
 				_pressure += _weapon.pressureAddPerUse;
-			}
-		}
+
+                //SOUND
+                if (AudioManager.weaponLevel == 2 || AudioManager.weaponLevel == 3)
+                {
+                    AudioManager.instance.FOLEYS_Weapon_Shoot.Post(gameObject);
+                }
+                //SOUND
+            }
+        }
 		float p = _pressure/100f;
 		_pressure += _weapon.pressureAddEverySecond * Time.deltaTime;
 		_pressure = Mathf.Clamp(_pressure, 0, 100);

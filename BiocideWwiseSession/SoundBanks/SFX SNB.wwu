@@ -6,6 +6,12 @@
 				<Property Name="Color" Type="int16" Value="2"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="EFFECTS SNB" ID="{EDCF6A99-44D7-42A7-B79D-BF1D88C9EB6B}" PersistMode="Reference"/>
+				<WorkUnit Name="FOLEYS SNB" ID="{9FE3FF24-E95B-4295-BED4-6A123C9F4846}" PersistMode="Reference"/>
+				<WorkUnit Name="AMB SNB" ID="{FA4D04E0-F7BD-436D-871A-0EBC5CFC835E}" PersistMode="Reference"/>
+				<WorkUnit Name="UI SNB" ID="{0D22CC5B-38D7-4D10-A83E-FE7384948000}" PersistMode="Reference"/>
+			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

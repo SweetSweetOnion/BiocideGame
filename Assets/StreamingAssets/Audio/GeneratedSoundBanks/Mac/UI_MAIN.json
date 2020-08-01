@@ -1,0 +1,61 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\",
+   "SourceFilesRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "2963962765",
+    "GUID": "{E1CD5B77-D973-45FA-B67A-26987719CA9F}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\BIOCIDE_SNB\\SFX SNB\\UI SNB\\UI_MAIN",
+    "ShortName": "UI_MAIN",
+    "Path": "UI_MAIN.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3474566310",
+      "Name": "UI_Menu_Select",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\UI EVENTS\\UI_Menu_Select",
+      "GUID": "{9FFFDEBC-A639-489D-A23F-B7227CC2FFC1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.186750",
+      "DurationMax": "0.186750",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "611464467",
+        "Language": "SFX",
+        "ShortName": "UI\\UI_Menu_Select.wav",
+        "Path": "SFX\\UI\\UI_Menu_Select_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1216325478",
+      "Name": "UI_Menu_Submit",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\UI EVENTS\\UI_Menu_Submit",
+      "GUID": "{5FA3A699-4053-4C52-BADA-6D7412618372}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.351208",
+      "DurationMax": "0.351208",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "112460998",
+        "Language": "SFX",
+        "ShortName": "UI\\UI__Menu_Submit.wav",
+        "Path": "SFX\\UI\\UI__Menu_Submit_755F56E2.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

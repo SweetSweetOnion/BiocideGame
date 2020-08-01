@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2264089113	EFFECT_Weapon_LevelUp			\BIOCIDE_EVENTS\SFX EVENTS\EFFECTS EVENTS\EFFECT_Weapon_LevelUp	
+	3812594291	EFFECT_Ressource_Earn			\BIOCIDE_EVENTS\SFX EVENTS\EFFECTS EVENTS\EFFECT_Ressource_Earn	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3319344	EFFECT_Ressource_Earn_000	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\Effects\EFFECT_Ressource_Earn_000_755F56E2.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\EFFECTS\Effects\Ressource\EFFECT_Ressource_Earn\Random\EFFECT_Ressource_Earn_000		10634
+	177917399	EFFECT_Ressource_Earn_003	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\Effects\EFFECT_Ressource_Earn_003_755F56E2.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\EFFECTS\Effects\Ressource\EFFECT_Ressource_Earn\Random\EFFECT_Ressource_Earn_003		8843
+	373536504	EFFECT_Ressource_Earn_002	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\Effects\EFFECT_Ressource_Earn_002_755F56E2.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\EFFECTS\Effects\Ressource\EFFECT_Ressource_Earn\Random\EFFECT_Ressource_Earn_002		11366
+	936843245	EFFECT_Ressource_Earn_001	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\Effects\EFFECT_Ressource_Earn_001_755F56E2.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\EFFECTS\Effects\Ressource\EFFECT_Ressource_Earn\Random\EFFECT_Ressource_Earn_001		9450
+	971511490	Pulverisator_LevelUp_Level_0	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Linux\SFX\Effects\Pulverisator_LevelUp_Level_0_755F56E2.wem		\Actor-Mixer Hierarchy\BIOCIDE_AUDIO\SFX\EFFECTS\Effects\Weapon\EFFECT_Weapon_LevelUp\Pulverisator_LevelUp_Level_0		92694
+

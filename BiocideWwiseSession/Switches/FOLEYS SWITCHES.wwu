@@ -6,6 +6,14 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Texture" ID="{518E7FD8-4F04-4C66-8D54-B361B2636EA9}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{25668535-5119-473F-A7E4-04A38A683D52}"/>
+						<Switch Name="Toxic" ID="{44E25BFB-A1CF-47CF-B6C1-63A0983BA2D7}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
 		</WorkUnit>
 	</Switches>
 </WwiseDocument>

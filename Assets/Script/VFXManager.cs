@@ -6,8 +6,12 @@ public class VFXManager : MonoBehaviour
 	public Animator impactVFX;
 	public PlayerHealth ph;
 
+	public ParticleSystem part;
+
 	private Animator[] impacts = new Animator[20];
 	private int currentImpact = 0;
+
+
 
 	private void Awake()
 	{
@@ -39,6 +43,8 @@ public class VFXManager : MonoBehaviour
 		impacts[currentImpact].ResetTrigger("Trigger");
 		impacts[currentImpact].SetTrigger("Trigger");
 		currentImpact++;
+		part.transform.position = pos;
+		part.Play();
 	}
 	private void OnDead()
 	{

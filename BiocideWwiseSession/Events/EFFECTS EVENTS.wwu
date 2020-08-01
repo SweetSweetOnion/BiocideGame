@@ -6,6 +6,30 @@
 				<Property Name="Color" Type="int16" Value="16"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="EFFECT_Ressource_Earn" ID="{31A70AE6-B972-41BA-A692-ECEC979C9E9B}">
+					<ChildrenList>
+						<Action Name="" ID="{DE66B584-4425-402D-81EF-E216A2607A1E}" ShortID="820779071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EFFECT_Ressource_Earn" ID="{1C34DD99-CC81-4BC1-835C-574020840161}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EFFECT_Weapon_LevelUp" ID="{3975F92D-0159-49B1-8E62-2A878070A7E2}">
+					<ChildrenList>
+						<Action Name="" ID="{86A983EE-80FB-4023-94D1-16032A8F843A}" ShortID="797095227">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EFFECT_Weapon_LevelUp" ID="{3FDF1552-EB17-4D76-8702-DDC193509F07}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

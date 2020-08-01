@@ -9,14 +9,16 @@ public class Decoration : MonoBehaviour
 	private void OnEnable()
 	{
 
-		TileManager.OnTileDamage += OnTileDamage ;
+		//TileManager.OnTileDamage += OnTileDamage ;
+		TileManager.OnTileDestroy += OnTileDestroy;
 	}
 
 	
 
 	private void OnDisable()
 	{
-		TileManager.OnTileDamage -= OnTileDamage;
+		//TileManager.OnTileDamage -= OnTileDamage;
+		TileManager.OnTileDestroy -= OnTileDestroy;
 
 	}
 
@@ -36,19 +38,19 @@ public class Decoration : MonoBehaviour
 	}
 
 
-/*	private void OnTileDestroy(Vector3Int position, float experience)
+	private void OnTileDestroy(Vector3Int position, float experience)
 	{
 		if(pos == position){
 			Destroy(gameObject);
 		}
-	}*/
-	private void OnTileDamage(Vector3Int position, EnvironementTile envTile)
+	}
+	/*private void OnTileDamage(Vector3Int position, EnvironementTile envTile)
 	{
 		if (pos == position)
 		{
 			Destroy(gameObject);
 		}
-	}
+	}*/
 
 	private void OnTriggerStay2D(Collider2D other)
 	{
