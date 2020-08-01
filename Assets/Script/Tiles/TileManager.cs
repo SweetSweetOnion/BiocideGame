@@ -43,7 +43,7 @@ public class TileManager : MonoBehaviour
 	public delegate void CompleteTileEvent(Vector3Int position, EnvironementTile envTile);
 	public static event CompleteTileEvent OnTileDamage;
 	public static event TileEventExperience OnTileDestroy;
-	public delegate void TileHit(Vector3 bulletHitPoint, Vector3Int cellCoordinates, bool receiveDamage);
+	public delegate void TileHit(Vector3 bulletHitPoint, Vector3Int cellCoordinates, bool receiveDamage, float normHp);
 	public static event TileHit OnTileHitByBullet;
 
 	private void Awake()
@@ -121,13 +121,16 @@ public class TileManager : MonoBehaviour
 		bool b = false;
 		//Debug.DrawRay(mainTilemap.GetCellCenterWorld(position), Vector3.up * 10, Color.red,1) ;
 		var t = GetOrCreateEnvironementTile(position);
-		if (t!= null && !t.CanResist(bullet))
+		if (t == null) return;
+		if (!t.CanResist(bullet))
 		{
 			t.ReceiveDamage(bullet.damage);
 			OnTileDamage?.Invoke(position, t);
 			b = true;
 		}
-		OnTileHitByBullet?.Invoke(bullet.transform.position, position, b);
+		OnTileHitByBullet?.Invoke(bullet.transform.position, position, b,t.GetNormHp());
+		//laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
 	}
 
 	public static void OnTilesWalkedOn(Vector3Int[] positions, PlayerController player)
