@@ -132,7 +132,7 @@ public class TileManager : MonoBehaviour
 			b = true;
 		}
 		OnTileHitByBullet?.Invoke(bullet.transform.position, position, b,t.GetNormHp());
-		//laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        TileAudioManager.instance.PostTileHitSound(position, t.GetNormHp(), b);
 
 	}
 
@@ -167,7 +167,8 @@ public class TileManager : MonoBehaviour
 		mainTilemap.SetTile(position, null);
 		scriptTilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
-	}
+        TileAudioManager.instance.PostTileDestroySound(position);
+    }
 
 	public static void TransformTile(Vector3Int position, TileType type)
 	{

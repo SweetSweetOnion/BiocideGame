@@ -6,6 +6,34 @@
 				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="AMB_Destroyed" ID="{3B7859F3-0152-47BB-9E74-80CB81BD0727}">
+					<ChildrenList>
+						<Action Name="" ID="{2EC11ECD-7D6C-41C8-95BE-08A64BB68E80}" ShortID="97304250">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="10"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Destroyed" ID="{7B1DA218-2DA1-4A2F-891B-0D0B07B90C2A}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_Nature" ID="{B93A1BE6-0147-41E6-967F-5F92627CB4C0}">
+					<ChildrenList>
+						<Action Name="" ID="{164177E1-E852-4A89-8311-7F26EA784297}" ShortID="841330880">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Nature" ID="{9BFF3EF1-DB60-4DF0-9243-4DA8AC115CC3}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

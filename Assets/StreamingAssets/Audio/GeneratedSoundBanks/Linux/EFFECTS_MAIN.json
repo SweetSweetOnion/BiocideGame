@@ -1,0 +1,79 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\",
+   "SourceFilesRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\.cache\\Linux\\",
+   "SoundBanksRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Linux\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- DOCS PERSO\\Taff\\Biocide\\BiocideGame\\BiocideWwiseSession\\GeneratedSoundBanks\\Linux"
+  },
+  "SoundBanks": [
+   {
+    "Id": "520556019",
+    "GUID": "{3582558E-8D8B-45C4-9BA5-F82FCCE719FC}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\BIOCIDE_SNB\\SFX SNB\\EFFECTS SNB\\EFFECTS_MAIN",
+    "ShortName": "EFFECTS_MAIN",
+    "Path": "EFFECTS_MAIN.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3812594291",
+      "Name": "EFFECT_Ressource_Earn",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\EFFECT_Ressource_Earn",
+      "GUID": "{31A70AE6-B972-41BA-A692-ECEC979C9E9B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.249360",
+      "DurationMax": "0.324350",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "3319344",
+        "Language": "SFX",
+        "ShortName": "Effects\\EFFECT_Ressource_Earn_000.wav",
+        "Path": "SFX\\Effects\\EFFECT_Ressource_Earn_000_755F56E2.wem"
+       },
+       {
+        "Id": "177917399",
+        "Language": "SFX",
+        "ShortName": "Effects\\EFFECT_Ressource_Earn_003.wav",
+        "Path": "SFX\\Effects\\EFFECT_Ressource_Earn_003_755F56E2.wem"
+       },
+       {
+        "Id": "373536504",
+        "Language": "SFX",
+        "ShortName": "Effects\\EFFECT_Ressource_Earn_002.wav",
+        "Path": "SFX\\Effects\\EFFECT_Ressource_Earn_002_755F56E2.wem"
+       },
+       {
+        "Id": "936843245",
+        "Language": "SFX",
+        "ShortName": "Effects\\EFFECT_Ressource_Earn_001.wav",
+        "Path": "SFX\\Effects\\EFFECT_Ressource_Earn_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2264089113",
+      "Name": "EFFECT_Weapon_LevelUp",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\EFFECT_Weapon_LevelUp",
+      "GUID": "{3975F92D-0159-49B1-8E62-2A878070A7E2}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.232646",
+      "DurationMax": "2.232646",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "971511490",
+        "Language": "SFX",
+        "ShortName": "Effects\\Pulverisator_LevelUp_Level_0.wav",
+        "Path": "SFX\\Effects\\Pulverisator_LevelUp_Level_0_755F56E2.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -32,6 +32,9 @@ public class PlayerHealth : MonoBehaviour
 			_isDead = true;
 			OnDead?.Invoke();
 		}
+        //SOUND
+        AudioManager.instance.FOLEYS_Char_Hit.Post(gameObject);
+        //SOUND
 	}
 
 	public void ResetHp(){

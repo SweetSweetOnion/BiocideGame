@@ -6,6 +6,30 @@
 				<Property Name="Color" Type="int16" Value="11"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="UI_Menu_Submit" ID="{5FA3A699-4053-4C52-BADA-6D7412618372}">
+					<ChildrenList>
+						<Action Name="" ID="{0591FAED-C5EC-4BD2-9F42-8C5D88888B6D}" ShortID="1050547373">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Menu_Submit" ID="{2B1F86BE-5ED4-410C-B4DF-C561D585A87A}" WorkUnitID="{BCA17406-2EAE-4800-B769-6449CC0ED489}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Menu_Select" ID="{9FFFDEBC-A639-489D-A23F-B7227CC2FFC1}">
+					<ChildrenList>
+						<Action Name="" ID="{65DDC922-1B60-4B51-8970-8E420FCEE9C0}" ShortID="327250929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Menu_Select" ID="{8FAB7B94-1A96-47A5-87BC-421F44B00FCC}" WorkUnitID="{BCA17406-2EAE-4800-B769-6449CC0ED489}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

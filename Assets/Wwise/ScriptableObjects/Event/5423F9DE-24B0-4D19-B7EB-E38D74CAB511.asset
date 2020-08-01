@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94d731c02e61f9418ac95f0835bfe78, type: 3}
+  m_Name: 5423F9DE-24B0-4D19-B7EB-E38D74CAB511
+  m_EditorClassIdentifier: 
+  objectName: FOLEYS_Char_Footsteps
+  id: 1962994296
+  guid: 5423F9DE-24B0-4D19-B7EB-E38D74CAB511
