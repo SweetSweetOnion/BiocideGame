@@ -57064,6 +57064,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3559091370225405804, guid: 7611abfa54aa5004c89f799fa5520bd4,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
         type: 3}
       propertyPath: moveWithTransform
@@ -57072,12 +57077,27 @@ PrefabInstance:
     - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
         type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 5000
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
+        type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 8503
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
+        type: 3}
+      propertyPath: CollisionModule.maxCollisionShapes
+      value: 516
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3559091370225405807, guid: 7611abfa54aa5004c89f799fa5520bd4,
         type: 3}
@@ -116705,6 +116725,26 @@ PrefabInstance:
       propertyPath: _scriptTilemap
       value: 
       objectReference: {fileID: 1952959030}
+    - target: {fileID: 3774778860817153452, guid: 68280979f2dd95c49a0b9f18325200d3,
+        type: 3}
+      propertyPath: backgroundTileColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774778860817153452, guid: 68280979f2dd95c49a0b9f18325200d3,
+        type: 3}
+      propertyPath: backgroundTileColor.r
+      value: 0.4627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774778860817153452, guid: 68280979f2dd95c49a0b9f18325200d3,
+        type: 3}
+      propertyPath: backgroundTileColor.g
+      value: 0.4627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774778860817153452, guid: 68280979f2dd95c49a0b9f18325200d3,
+        type: 3}
+      propertyPath: backgroundTileColor.b
+      value: 0.4627451
+      objectReference: {fileID: 0}
     - target: {fileID: 4688875792722015232, guid: 68280979f2dd95c49a0b9f18325200d3,
         type: 3}
       propertyPath: m_Name

@@ -98,7 +98,7 @@ public class TileManager : MonoBehaviour
 	private static TileType GetTileType(Vector3Int pos){
 		if (!mainTilemap.HasTile(pos)) return null;
 		var t = scriptTilemap.GetTileType(pos);
-		if (!t) return instance.defautTiletype;
+		//if (!t) return instance.defautTiletype;
 		return t;
 	}
 	
@@ -150,20 +150,20 @@ public class TileManager : MonoBehaviour
 
 	public static void RemoveTile(Vector3Int position)
 	{
-		backgroundTilemap.SetTile(position, GetTileType(position).backgroundTile);
+		//backgroundTilemap.SetTile(position, GetTileType(position).backgroundTile);
 
 		if (tiles.ContainsKey(position))
 		{
 			tiles.Remove(position);
 		}
 
-		/*mainTilemap.SetTileFlags(position, TileFlags.None);
+		mainTilemap.SetTileFlags(position, TileFlags.None);
 		mainTilemap.SetColliderType(position, Tile.ColliderType.None);
-		mainTilemap.SetColor(position, instance.backgroundTileColor);*/
+		mainTilemap.SetColor(position, instance.backgroundTileColor);
 		
 		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
-		mainTilemap.SetTile(position, null);
+		//mainTilemap.SetTile(position, null);
 		scriptTilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
         TileAudioManager.instance.PostTileDestroySound(position);
