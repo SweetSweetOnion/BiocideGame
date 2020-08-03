@@ -31,9 +31,11 @@ public class BackgroundManager : MonoBehaviour
 	public Color matStart;
 	public Color matEnd;
 
+	public float offset = 0;
+
 	private void Update()
 	{
-		float x =  Mathf.Abs(Mathf.Sin(Mathf.Clamp01(Mathf.InverseLerp(minX, maxX, controller.transform.position.x )) * Mathf.PI ));
+		float x =  Mathf.Abs(Mathf.Sin(Mathf.Clamp01(Mathf.InverseLerp(minX, maxX, controller.transform.position.x )) * Mathf.PI + offset));
 
 		for(int i = 0; i< background.Length; i++){
 			background[i].color = Color.Lerp(backColorStart[i], backColorEnd[i], x);
