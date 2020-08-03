@@ -57064,41 +57064,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3559091370225405804, guid: 7611abfa54aa5004c89f799fa5520bd4,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
-        type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 2500
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
-        type: 3}
-      propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 8503
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
-        type: 3}
-      propertyPath: CollisionModule.maxCollisionShapes
-      value: 516
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559091370225405805, guid: 7611abfa54aa5004c89f799fa5520bd4,
-        type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3559091370225405807, guid: 7611abfa54aa5004c89f799fa5520bd4,
         type: 3}
       propertyPath: m_Name
@@ -116277,7 +116242,7 @@ PrefabInstance:
     - target: {fileID: 886725726200691421, guid: 543bd3605decf1443853371dd818c997,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.39
+      value: -15.61
       objectReference: {fileID: 0}
     - target: {fileID: 886725726871299125, guid: 543bd3605decf1443853371dd818c997,
         type: 3}
@@ -116332,27 +116297,27 @@ PrefabInstance:
     - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
         type: 3}
       propertyPath: shakeOnTileDestroy.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
-        type: 3}
-      propertyPath: shakeOnTileDestroy.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
-        type: 3}
-      propertyPath: shakeOnLanded.y
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
         type: 3}
+      propertyPath: shakeOnTileDestroy.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
+        type: 3}
+      propertyPath: shakeOnLanded.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
+        type: 3}
       propertyPath: shakeOnPlayerHit.y
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
         type: 3}
       propertyPath: shakeOnPlayerHit.x
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
         type: 3}
@@ -116383,6 +116348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: parralaxMultiplier.Array.data[2]
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 886725726871299127, guid: 543bd3605decf1443853371dd818c997,
+        type: 3}
+      propertyPath: maxShake
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 886725726871299273, guid: 543bd3605decf1443853371dd818c997,
         type: 3}
@@ -116571,6 +116541,12 @@ PrefabInstance:
       propertyPath: experienceLevel.Array.data[5]
       value: 7000
       objectReference: {fileID: 0}
+    - target: {fileID: 1580252708464739270, guid: c55460b38a06c6b45a14caac5927f4a0,
+        type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 3176916bdcdaced4f8ab6176435b4b07,
+        type: 2}
     - target: {fileID: 1580252708464739271, guid: c55460b38a06c6b45a14caac5927f4a0,
         type: 3}
       propertyPath: triggerMask.m_Bits

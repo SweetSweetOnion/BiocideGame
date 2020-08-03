@@ -21,6 +21,7 @@ public class Weapon : ScriptableObject
 	public float directionOffsetY = 2;
 	public Vector2 spawnOffset;
 	public Vector2 recoil;
+	public float recoilDuration;
 	[Header("Pressure")]
 	public float pressureAddPerUse = -10f;
 	public float pressureAddEverySecond = -1f;

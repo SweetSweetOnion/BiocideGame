@@ -26,7 +26,8 @@ MonoBehaviour:
   directionSpread: 40
   directionOffsetY: 0.1
   spawnOffset: {x: 1.02, y: -0.09}
-  recoil: {x: 0, y: 0}
+  recoil: {x: -5, y: 0}
+  recoilDuration: 0.1
   pressureAddPerUse: -2
   pressureAddEverySecond: 0
   pressureAddPerReload: 30
