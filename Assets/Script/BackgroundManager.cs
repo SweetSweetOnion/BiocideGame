@@ -36,6 +36,7 @@ public class BackgroundManager : MonoBehaviour
 
 	private float currentValue = 0;
 	private float sunMoonPos;
+	public AnimationCurve transition;
 
 	private void Start()
 	{
@@ -56,7 +57,7 @@ public class BackgroundManager : MonoBehaviour
 
 		sunMoonPos = Mathf.MoveTowards(sunMoonPos, Mathf.Max(sunMoonPos, controller.transform.position.x), Time.deltaTime * 15);
 
-		float x =  Mathf.Abs(Mathf.Sin(currentValue * Mathf.PI + offset));
+		float x =  Mathf.Abs(Mathf.Sin(Mathf.Clamp01(transition.Evaluate(currentValue)) * Mathf.PI + offset));
 
 		sunMoonRotation.rotation = Quaternion.Euler(0, 0, -currentValue * 360);
 		sunMoonRotation.transform.position = new Vector3(sunMoonPos, sunMoonRotation.position.y, sunMoonRotation.position.z);
