@@ -24,7 +24,7 @@ MonoBehaviour:
   maxSpawnCooldown: 0.5
   minSpawnCooldown: 1
   directionSpread: 30
-  directionOffsetY: 0
+  directionOffsetY: 0.8
   spawnOffset: {x: 1.02, y: -0.09}
   recoil: {x: -5, y: 0}
   recoilDuration: 0.1

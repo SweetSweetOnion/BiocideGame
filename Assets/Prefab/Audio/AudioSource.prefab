@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5214588829449611070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51, y: -5, z: 0}
+  m_LocalPosition: {x: 32, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -69,5 +69,5 @@ MonoBehaviour:
   eventToPost:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 26276e25cf7e16343abf0ef1714a45be,
+    WwiseObjectReference: {fileID: 11400000, guid: 0b4c29be52062bc4c89e1c47916df1d2,
       type: 2}

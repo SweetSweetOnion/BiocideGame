@@ -25,6 +25,9 @@ public class Bird : MonoBehaviour
 		anim = GetComponent<Animator>();
 		perlinPos = new Vector2(Random.Range(-1000f, 1000f), Random.Range(-1000f, 1000f));
 		anim.Play("Fly", 0, Random.Range(0f, 1f));
+		minY = Random.Range(minY, minY + 5.2f);
+		maxY = Random.Range(maxY-5.2f,maxY);
+
 	}
 
 

@@ -89,7 +89,10 @@ public class WeaponManager : MonoBehaviour
 
 	public float GetNormalizedExperience()
 	{
-		return (_experience - experienceLevel[_currentWeaponIndex]) / experienceLevel[_currentWeaponIndex + 1];
+		
+		float f = (_experience - experienceLevel[_currentWeaponIndex]) / (experienceLevel[_currentWeaponIndex + 1] - experienceLevel[_currentWeaponIndex]);
+		//Debug.Log(_experience + "/" + experienceLevel[_currentWeaponIndex + 1] + " ----> " + f);
+		return f;
 	}
 
 

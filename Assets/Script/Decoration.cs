@@ -6,10 +6,20 @@ public class Decoration : MonoBehaviour
 	public Vector3 bottomPoint;
 	public bool doDamage;
 	private Vector3Int pos;
+
+	public Sprite[] spriteHP;
+	private SpriteRenderer spriteRend;
+
+	private void Awake()
+	{
+		spriteRend = GetComponent<SpriteRenderer>();
+	}
 	private void OnEnable()
 	{
 
-		//TileManager.OnTileDamage += OnTileDamage ;
+		TileManager.OnTileDamage += OnTileDamage ;
+		TileManager.OnTileToxicDamage += OnTileDamage;
+
 		TileManager.OnTileDestroy += OnTileDestroy;
 	}
 
@@ -17,7 +27,8 @@ public class Decoration : MonoBehaviour
 
 	private void OnDisable()
 	{
-		//TileManager.OnTileDamage -= OnTileDamage;
+		TileManager.OnTileDamage -= OnTileDamage;
+		TileManager.OnTileToxicDamage -= OnTileDamage;
 		TileManager.OnTileDestroy -= OnTileDestroy;
 
 	}
@@ -44,13 +55,17 @@ public class Decoration : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
-	/*private void OnTileDamage(Vector3Int position, EnvironementTile envTile)
+
+	private void OnTileDamage(Vector3Int position, EnvironementTile envTile)
 	{
 		if (pos == position)
 		{
-			Destroy(gameObject);
+			if(spriteHP.Length > 0)
+				spriteRend.sprite = GetSpriteHp(envTile.GetNormHp());
+
+			StartCoroutine(FlashRoutine());
 		}
-	}*/
+	}
 
 	private void OnTriggerStay2D(Collider2D other)
 	{
@@ -61,4 +76,16 @@ public class Decoration : MonoBehaviour
 		}
 	}
 
+	private Sprite GetSpriteHp(float normHp){
+		float rev = 1 - normHp;
+		int index = Mathf.Clamp(Mathf.FloorToInt(rev * (spriteHP.Length)),0,spriteHP.Length-1);
+		return spriteHP[index];
+	}
+
+	private IEnumerator FlashRoutine(){
+		spriteRend.material.SetColor("_AddColor", new Color(1, 1, 1, 0));
+		yield return new WaitForSeconds(0.02f);
+		spriteRend.material.SetColor("_AddColor", new Color(0, 0, 0, 0));
+
+	}
 }

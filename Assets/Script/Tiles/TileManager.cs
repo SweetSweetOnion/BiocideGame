@@ -47,6 +47,7 @@ public class TileManager : MonoBehaviour
 	public static event TileEventExperience OnTileDestroy;
 	public delegate void TileHit(Vector3 bulletHitPoint, Vector3Int cellCoordinates, bool receiveDamage, float normHp);
 	public static event TileHit OnTileHitByBullet;
+	public static event CompleteTileEvent OnTileToxicDamage;
 
 	private void Awake()
 	{
@@ -135,6 +136,14 @@ public class TileManager : MonoBehaviour
 
 	}
 
+	public static void ToxicDamage(Vector3Int position, EnvironementTile t)
+	{
+		if(t!=null)
+		OnTileToxicDamage?.Invoke(position,t);
+		TileAudioManager.instance.PostTileHitSound(position, t.GetNormHp(), true);
+
+	}
+
 	public static void OnTilesWalkedOn(Vector3Int[] positions, PlayerController player)
 	{
 		foreach (Vector3Int pos in positions)
@@ -180,6 +189,7 @@ public class TileManager : MonoBehaviour
 			GetOrCreateEnvironementTile(position);
 		}
 		OnTileDestroy?.Invoke(position, 2);
+		TileAudioManager.instance.PostTileDestroySound(position);
 		//mainTilemap.SetTile(position, type.toxicTile);
 	}
 

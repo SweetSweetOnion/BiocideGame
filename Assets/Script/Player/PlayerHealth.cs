@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Runtime.InteropServices;
+using System;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -15,9 +16,10 @@ public class PlayerHealth : MonoBehaviour
 	public event BasicEvent OnDead;
 	public delegate void Damage(int amount, Vector3 worldOrigin);
 	public event Damage OnDamage;
+	public event BasicEvent OnReset;
 	public int currentHp => _currentHp;
 	public bool isDead => _isDead;
-	private void Awake()
+	private void Start()
 	{
 		ResetHp();
 	}
@@ -41,5 +43,6 @@ public class PlayerHealth : MonoBehaviour
 	public void ResetHp(){
 		_currentHp = startHp;
 		_isDead = false;
+		OnReset?.Invoke();
 	}
 }
