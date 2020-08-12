@@ -35,8 +35,11 @@ public class BackgroundManager : MonoBehaviour
 	public Transform sunMoonRotation;
 
 	private float currentValue = 0;
+	private float smoothValue = 0;
 	private float sunMoonPos;
-	public AnimationCurve transition;
+
+	public AnimationCurve curve;
+
 
 	private void Start()
 	{
@@ -47,17 +50,22 @@ public class BackgroundManager : MonoBehaviour
 	private void Update()
 	{
 		float n = Mathf.Clamp01(Mathf.InverseLerp(minX, maxX, controller.transform.position.x));
-		if (currentValue - n >0.3f )
+		float c = curve.Evaluate(n);
+
+		if (currentValue - c >0.1f )
 		{
 			currentValue = 0;
+			smoothValue = 0;
 			sunMoonPos = controller.transform.position.x;
 		}
-		currentValue = Mathf.MoveTowards(currentValue, Mathf.Max(currentValue, n), Time.deltaTime * 5);
-
+		//currentValue = Mathf.MoveTowards(currentValue, Mathf.Max(currentValue, n), Time.deltaTime * 5);
+		//currentValue = Mathf.Lerp(currentValue, Mathf.Max(currentValue, c), Time.deltaTime * 2);
+		currentValue = Mathf.Max(currentValue, c);
+		smoothValue = Mathf.Lerp(smoothValue, currentValue, Time.deltaTime * 5);
 
 		sunMoonPos = Mathf.MoveTowards(sunMoonPos, Mathf.Max(sunMoonPos, controller.transform.position.x), Time.deltaTime * 15);
 
-		float x =  Mathf.Abs(Mathf.Sin(Mathf.Clamp01(transition.Evaluate(currentValue)) * Mathf.PI + offset));
+		float x =  Mathf.Abs(Mathf.Sin(Mathf.Clamp01(currentValue) * Mathf.PI + offset));
 
 		sunMoonRotation.rotation = Quaternion.Euler(0, 0, -currentValue * 360);
 		sunMoonRotation.transform.position = new Vector3(sunMoonPos, sunMoonRotation.position.y, sunMoonRotation.position.z);

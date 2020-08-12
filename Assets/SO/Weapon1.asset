@@ -15,7 +15,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 325166070, guid: 06b75dc9452dbbd46bd8dd6112b6442a, type: 3}
   maxBulletSpeed: 20
   minBulletSpeed: 8
-  bulletDamage: 8
+  bulletDamage: 12
   bulletGravity: 2000
   bulletLifetime: 10
   bulletLevel: 0
