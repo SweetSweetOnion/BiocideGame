@@ -17,6 +17,7 @@ public class TileManager : MonoBehaviour
 
 	public TileType defautTiletype;
 	public Color backgroundTileColor;
+	public int loopLength = 120;
 
 
 	[SerializeField]
@@ -130,6 +131,7 @@ public class TileManager : MonoBehaviour
 			t.ReceiveDamage(bullet.damage);
 			OnTileDamage?.Invoke(position, t);
 			b = true;
+			GetRepeatCell(position, instance.loopLength)?.ReceiveDamage(bullet.damage);
 		}
 		OnTileHitByBullet?.Invoke(bullet.transform.position, position, b,t.GetNormHp());
         TileAudioManager.instance.PostTileHitSound(position, t.GetNormHp(), b);
@@ -191,6 +193,14 @@ public class TileManager : MonoBehaviour
 		OnTileDestroy?.Invoke(position, 2);
 		TileAudioManager.instance.PostTileDestroySound(position);
 		//mainTilemap.SetTile(position, type.toxicTile);
+	}
+
+	public static EnvironementTile GetRepeatCell(Vector3Int originalPos, int loopLength ){
+		var t = GetOrCreateEnvironementTile(originalPos + new Vector3Int(loopLength, 0, 0));
+		if(t==null){
+			t = GetOrCreateEnvironementTile(originalPos - new Vector3Int(loopLength, 0, 0));
+		}
+		return t;
 	}
 
 }
