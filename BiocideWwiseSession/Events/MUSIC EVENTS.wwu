@@ -29,6 +29,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MUSIC_FadeOut" ID="{F94678F5-FDDF-4188-9664-5288DCDE0EEA}">
+					<ChildrenList>
+						<Action Name="" ID="{3862DA9E-82EE-4007-9630-8CC72F2BC0C9}" ShortID="987531983">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="8"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Core_EndLOOP" ID="{731CB004-DA3F-4C13-9A09-C8AB4CDDC04F}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,95 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="97">
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Virtual Acoustics\Factory Reflect Acoustic Textures.wwu" DateLow="1583575844" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Virtual Acoustics\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Triggers\Default Work Unit.wwu" DateLow="1583933588" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\VOICE SWITCHES.wwu" DateLow="1583933773" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\UI SWITCHES.wwu" DateLow="1584280935" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Virtual Acoustics\Factory Reflect Acoustic Textures.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Virtual Acoustics\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Triggers\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\VOICE SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\UI SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\TEMPLATE SWITCHES.wwu" DateLow="1583933773" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\SFX SWITCHES.wwu" DateLow="1584280868" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\MUSIC SWITCHES.wwu" DateLow="1583933773" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\GENERAL SWITCHES.wwu" DateLow="1596198164" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\FOLEYS SWITCHES.wwu" DateLow="1596210150" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\EFFECTS SWITCHES.wwu" DateLow="1584280935" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\BIOCIDE_SWITCHES.wwu" DateLow="1596013842" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\AMBIANCES SWITCHES.wwu" DateLow="1584280935" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\VOICE STATES.wwu" DateLow="1583933797" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\UI STATES.wwu" DateLow="1584281374" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\SFX SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\MUSIC SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\GENERAL SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\FOLEYS SWITCHES.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\EFFECTS SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\BIOCIDE_SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Switches\AMBIANCES SWITCHES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\VOICE STATES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\UI STATES.wwu" DateLow="1600604007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\TEMPLATE STATES.wwu" DateLow="1583933797" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\SFX STATES.wwu" DateLow="1584281374" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\MUSIC STATES.wwu" DateLow="1596191267" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\GENERAL STATES.wwu" DateLow="1596198181" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\FOLEYS STATES.wwu" DateLow="1584281374" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\EFFECTS STATES.wwu" DateLow="1584281374" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\Default Work Unit.wwu" DateLow="1583932944" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\BIOCIDE_STATES.wwu" DateLow="1596013842" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\AMBIANCES STATES.wwu" DateLow="1584281374" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1584364497" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\VOICE SNB.wwu" DateLow="1583933904" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\UI SNB.wwu" DateLow="1596211709" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\SFX STATES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\MUSIC STATES.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\GENERAL STATES.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\FOLEYS STATES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\EFFECTS STATES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\BIOCIDE_STATES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\States\AMBIANCES STATES.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\VOICE SNB.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\UI SNB.wwu" DateLow="1600604144" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\TEMPLATE SNB.wwu" DateLow="1583933880" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\SFX SNB.wwu" DateLow="1596211653" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\MUSIC SNB.wwu" DateLow="1596014108" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\FOLEYS SNB.wwu" DateLow="1596211709" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\EFFECTS SNB.wwu" DateLow="1596211709" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\BIOCIDE_SNB.wwu" DateLow="1596013836" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\AMB SNB.wwu" DateLow="1596211709" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Queries\Factory Queries.wwu" DateLow="1583575572" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Queries\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Presets\Factory Spatial Audio.wwu" DateLow="1583575572" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Presets\Factory Reflect.wwu" DateLow="1584283665" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Presets\Default Work Unit.wwu" DateLow="1596210303" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Modulators\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Mixing Sessions\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\SFX SNB.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\MUSIC SNB.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\GENERAL SNB.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\FOLEYS SNB.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\EFFECTS SNB.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\BIOCIDE_SNB.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\SoundBanks\AMB SNB.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Queries\Factory Queries.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Queries\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Presets\Factory Spatial Audio.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Presets\Factory Reflect.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Presets\Default Work Unit.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Modulators\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Mixing Sessions\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Master-Mixer Hierarchy\TEMPLATE MIX.wwu" DateLow="1584364406" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1583923552" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Master-Mixer Hierarchy\BIOCIDE_MIX.wwu" DateLow="1596216577" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Master-Mixer Hierarchy\BIOCIDE_MIX.wwu" DateLow="1600604144" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Interactive Music Hierarchy\TEMPLATE MUSIC.wwu" DateLow="1583933969" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Interactive Music Hierarchy\MAIN.wwu" DateLow="1596211592" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Interactive Music Hierarchy\BIOCIDE_MUSIC.wwu" DateLow="1596013819" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\VOICE RTPC.wwu" DateLow="1583933842" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\UI RTPC.wwu" DateLow="1584283621" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Interactive Music Hierarchy\MAIN.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Interactive Music Hierarchy\BIOCIDE_MUSIC.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\VOICE RTPC.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\UI RTPC.wwu" DateLow="1600604007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\TEMPLATE RTPC.wwu" DateLow="1583933842" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\SFX RTPC.wwu" DateLow="1584283592" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\MUSIC RTPC.wwu" DateLow="1583933842" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\GENERAL RTPC.wwu" DateLow="1596209941" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\FOLEYS RTPC.wwu" DateLow="1596029045" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\EFFECTS RTPC.wwu" DateLow="1584283621" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\Default Work Unit.wwu" DateLow="1584008960" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\BIOCIDE_RTPC.wwu" DateLow="1596013843" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\AMBIANCES RTPC.wwu" DateLow="1584283621" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\VOICE EVENTS.wwu" DateLow="1583933708" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\UI EVENTS.wwu" DateLow="1596212452" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\SFX RTPC.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\MUSIC RTPC.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\GENERAL RTPC.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\FOLEYS RTPC.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\EFFECTS RTPC.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\BIOCIDE_RTPC.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Game Parameters\AMBIANCES RTPC.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\VOICE EVENTS.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\UI EVENTS.wwu" DateLow="1600604144" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\TEMPLATE EVENTS.wwu" DateLow="1583933708" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\SFX EVENTS.wwu" DateLow="1584280758" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\MUSIC EVENTS.wwu" DateLow="1596211599" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\FOLEYS EVENTS.wwu" DateLow="1596211585" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\EFFECTS EVENTS.wwu" DateLow="1596211585" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\Default Work Unit.wwu" DateLow="1596216530" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\BIOCIDE_EVENTS.wwu" DateLow="1596013827" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\AMBIANCES EVENTS.wwu" DateLow="1596211585" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Effects\Factory Effects.wwu" DateLow="1587811051" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Effects\Default Work Unit.wwu" DateLow="1583939614" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\SFX EVENTS.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\MUSIC EVENTS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\GENERAL EVENTS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\FOLEYS EVENTS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\EFFECTS EVENTS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\Default Work Unit.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\BIOCIDE_EVENTS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Events\AMBIANCES EVENTS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Effects\Factory Effects.wwu" DateLow="1600604007" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Effects\Default Work Unit.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1600604007" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Conversion Settings\TEMPLATE CONVERSIONS.wwu" DateLow="1583934044" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1596013819" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Conversion Settings\Default Work Unit.wwu" DateLow="1596014146" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Conversion Settings\BIOCIDE_CONVERSIONS.wwu" DateLow="1596013850" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Control Surface Sessions\Default Work Unit.wwu" DateLow="1583917503" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\BiocideWwiseSession.wproj" DateLow="1596014100" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\BiocideWwiseSession.Pamplemousse.wsettings" DateLow="1596216564" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Audio Devices\Default Work Unit.wwu" DateLow="1583917556" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Attenuations\Default Work Unit.wwu" DateLow="1596211509" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\VOICES.wwu" DateLow="1584280248" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\UI.wwu" DateLow="1596212442" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Conversion Settings\Default Work Unit.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Conversion Settings\BIOCIDE_CONVERSIONS.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Control Surface Sessions\Default Work Unit.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\BiocideWwiseSession.wproj" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\BiocideWwiseSession.Pamplemousse.wsettings" DateLow="1600604010" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Audio Devices\Default Work Unit.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Attenuations\Default Work Unit.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\VOICES.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\UI.wwu" DateLow="1600604144" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\TEMPLATE AUDIO.wwu" DateLow="1583933594" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1583924638" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\FOLEYS.wwu" DateLow="1596211545" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\EFFECTS.wwu" DateLow="1596211286" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1583917962" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\BIOCIDE_AUDIO.wwu" DateLow="1596013819" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\AMBIANCES.wwu" DateLow="1596211213" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\FOLEYS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\EFFECTS.wwu" DateLow="1600604144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\BIOCIDE_AUDIO.wwu" DateLow="1600604006" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\Actor-Mixer Hierarchy\AMBIANCES.wwu" DateLow="1600604144" DateHigh="0"/>
 </ValidationCache>

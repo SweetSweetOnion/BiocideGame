@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1414448543	Play_MusicTest			\BIOCIDE_EVENTS\MUSIC EVENTS\Play_MusicTest	
 	1615767906	MUSIC_Main			\BIOCIDE_EVENTS\MUSIC EVENTS\MUSIC_Main	
+	1749303025	MUSIC_FadeOut			\BIOCIDE_EVENTS\MUSIC EVENTS\MUSIC_FadeOut	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3479155863	MainMusic			\BIOCIDE_STATES\MUSIC STATES\MainMusic	
@@ -32,6 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	653738480	Music_Core_Level2_003	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level2_003_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level2\Music_Core_Level2_003\Music_Core_Level2_003		813157
 	887449326	Music_Core_Level1_003	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level1_003_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Level1_003\Music_Core_Level1_003		903810
 	911791777	Music_Introduction	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Introduction_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Introduction\Music_Introduction\Music_Introduction		2876861
+	954659592	Music_Core_EndLOOP	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_EndLOOP_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\End\Music_Core_EndLOOP\Music_Core_EndLOOP		1074196
 	990558758	Music_Core_Level3_000	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level3_000_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level3\Music_Core_Level3_000\Music_Core_Level3_000		989182
 	1046536498	Music_Core_Level1_002	D:\Documents\- DOCS PERSO\Taff\Biocide\BiocideGame\BiocideWwiseSession\.cache\Mac\SFX\Music\Music_Core_Level1_002_073B4D0C.wem		\Interactive Music Hierarchy\BIOCIDE_MUSIC\MAIN\MUSIC_Main\Level1\Music_Core_Level1_002\Music_Core_Level1_002		909627
 

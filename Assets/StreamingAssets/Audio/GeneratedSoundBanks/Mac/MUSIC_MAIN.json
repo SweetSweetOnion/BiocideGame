@@ -21,6 +21,16 @@
     "Path": "MUSIC_MAIN.bnk",
     "IncludedEvents": [
      {
+      "Id": "1749303025",
+      "Name": "MUSIC_FadeOut",
+      "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\MUSIC EVENTS\\MUSIC_FadeOut",
+      "GUID": "{F94678F5-FDDF-4188-9664-5288DCDE0EEA}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
       "Id": "1615767906",
       "Name": "MUSIC_Main",
       "ObjectPath": "\\Events\\BIOCIDE_EVENTS\\MUSIC EVENTS\\MUSIC_Main",
@@ -130,6 +140,12 @@
         "Path": "SFX\\Music\\Music_Introduction_073B4D0C.wem"
        },
        {
+        "Id": "954659592",
+        "Language": "SFX",
+        "ShortName": "Music\\Music_Core_EndLOOP.wav",
+        "Path": "SFX\\Music\\Music_Core_EndLOOP_073B4D0C.wem"
+       },
+       {
         "Id": "990558758",
         "Language": "SFX",
         "ShortName": "Music\\Music_Core_Level3_000.wav",
@@ -148,6 +164,9 @@
         "Media": [
          {
           "Id": "274576765"
+         },
+         {
+          "Id": "954659592"
          }
         ]
        },

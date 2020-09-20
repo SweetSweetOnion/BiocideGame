@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{719039D4-9188-4803-879A-DC9561F2A18E}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{719039D4-9188-4803-879A-DC9561F2A18E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{719039D4-9188-4803-879A-DC9561F2A18E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{9216F570-8183-4303-9587-222F9D7BBE7F}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="End" ID="{A78D48F3-5206-49CC-989B-CED72F020100}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUSIC_FadeOut" ID="{F94678F5-FDDF-4188-9664-5288DCDE0EEA}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Core_EndLOOP" ID="{731CB004-DA3F-4C13-9A09-C8AB4CDDC04F}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="WeaponCharge" ID="{ABF41A08-5D07-4151-8FD8-E2057B025511}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_PlayerHP" ID="{39930319-837D-456C-9732-CFB1733C2971}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_TileHP" ID="{3E91FD57-6CB0-4E5C-81FC-8A32F82DC98B}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{B87AAC0B-EC37-4A11-A20B-F3AC8EE29D31}"/>
+						<CurrentStateRef Name="None" ID="{90561E16-5FDD-4450-8AB7-8C2FDF994514}"/>
+						<CurrentStateRef Name="None" ID="{81135210-0084-452D-BFFF-CA7022523806}"/>
+						<CurrentStateRef Name="None" ID="{47E1800A-9C1A-48A7-8F7F-02AC29EE4BB7}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Grass" ID="{25668535-5119-473F-A7E4-04A38A683D52}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

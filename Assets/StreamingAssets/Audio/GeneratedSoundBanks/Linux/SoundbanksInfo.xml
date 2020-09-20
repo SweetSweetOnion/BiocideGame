@@ -64,6 +64,7 @@
 			<ShortName>MUSIC_MAIN</ShortName>
 			<Path>MUSIC_MAIN.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1749303025" Name="MUSIC_FadeOut" ObjectPath="\Events\BIOCIDE_EVENTS\MUSIC EVENTS\MUSIC_FadeOut" GUID="{F94678F5-FDDF-4188-9664-5288DCDE0EEA}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1615767906" Name="MUSIC_Main" ObjectPath="\Events\BIOCIDE_EVENTS\MUSIC EVENTS\MUSIC_Main" GUID="{CF2C8A3B-4081-4BCA-960C-9E44EE1129DD}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="25953484" Language="SFX">
@@ -134,6 +135,10 @@
 							<ShortName>Music\Music_Introduction.wav</ShortName>
 							<Path>SFX\Music\Music_Introduction_073B4D0C.wem</Path>
 						</File>
+						<File Id="954659592" Language="SFX">
+							<ShortName>Music\Music_Core_EndLOOP.wav</ShortName>
+							<Path>SFX\Music\Music_Core_EndLOOP_073B4D0C.wem</Path>
+						</File>
 						<File Id="990558758" Language="SFX">
 							<ShortName>Music\Music_Core_Level3_000.wav</ShortName>
 							<Path>SFX\Music\Music_Core_Level3_000_073B4D0C.wem</Path>
@@ -147,6 +152,7 @@
 						<SwitchContainer SwitchValue="{98F37E2A-B520-43FD-9BB4-5E26E00B9623}">
 							<Media>
 								<File Id="274576765"/>
+								<File Id="954659592"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{6E2DCA28-2923-44DA-BEDF-ACFCD348AC53}">
@@ -290,7 +296,7 @@
 						</File>
 						<File Id="510601863" Language="SFX">
 							<ShortName>[YTP]FR Urgences.wav</ShortName>
-							<Path>SFX\[YTP]FR Urgences_542EC0D1.wem</Path>
+							<Path>SFX\[YTP]FR Urgences_E70F3E9E.wem</Path>
 						</File>
 						<File Id="726875142" Language="SFX">
 							<ShortName>VO_HumanFight_04.wav</ShortName>
@@ -298,7 +304,7 @@
 						</File>
 						<File Id="758486508" Language="SFX">
 							<ShortName>[YTP]FR Urgences.wav</ShortName>
-							<Path>SFX\[YTP]FR Urgences_82851A3F.wem</Path>
+							<Path>SFX\[YTP]FR Urgences_4148B015.wem</Path>
 						</File>
 						<File Id="915850153" Language="SFX">
 							<ShortName>VO_HumanFight_06.wav</ShortName>

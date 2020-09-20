@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID FOLEYS_WEAPON_RELOAD = 1212767844U;
         static const AkUniqueID FOLEYS_WEAPON_SHOOT = 917610224U;
         static const AkUniqueID FOLEYS_WEAPON_TRIGGER = 672917745U;
+        static const AkUniqueID MUSIC_FADEOUT = 1749303025U;
         static const AkUniqueID MUSIC_MAIN = 1615767906U;
         static const AkUniqueID PLAY_MUSICTEST = 1414448543U;
         static const AkUniqueID STOP_EVENT = 2904546416U;
