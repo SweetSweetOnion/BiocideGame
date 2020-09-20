@@ -75,7 +75,7 @@
                 {
                     "name": "",
                     "id": "3bbe7f89-472e-430b-8add-21d78ec20e97",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -164,6 +164,17 @@
                     "name": "",
                     "id": "607e59fd-681e-4079-9a80-2b3f841caf26",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a42623b1-1094-4702-85a2-a219baac484a",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

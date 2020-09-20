@@ -28,6 +28,7 @@ public class CameraController : MonoBehaviour
 	public Vector2 shakeOnPlayerHit;
 	public Vector2 shakeOnLanded;
 	public Vector2 shakeshoot;
+	public Vector2 camOffset;
 
 	private void OnEnable()
 	{
@@ -110,11 +111,11 @@ public class CameraController : MonoBehaviour
 
 		targetPos.z = transform.position.z;
 
-		if (player.transform.position.x > targetPos.x) targetPos.x = player.transform.position.x;
+		if (player.transform.position.x > targetPos.x) targetPos.x = player.transform.position.x + camOffset.x;
 
 		if (player.isGrounded)
 		{
-			targetPos.y = player.transform.position.y;
+			targetPos.y = player.transform.position.y + camOffset.y;
 		}
 
 		Vector3 v = transform.position;

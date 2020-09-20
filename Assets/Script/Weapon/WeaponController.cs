@@ -101,7 +101,8 @@ public class WeaponController : MonoBehaviour
 					recoil.x *= -1;
 					shootDirection.x *= -1;
 				}
-				_controller.AddForce(recoil * _weapon.GetPressure(_pressure));
+				_controller.AddForce(recoil * _weapon.GetPressure(_pressure),_weapon.recoilDuration * _weapon.GetPressure(_pressure));
+
 				_weapon.SpawnBullet(transform.position, shootDirection, _controller.velocity,_pressure) ;
 				lastSpawnTime = Time.time;
 				_pressure += _weapon.pressureAddPerUse;

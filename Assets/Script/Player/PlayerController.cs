@@ -237,7 +237,7 @@ public class PlayerController : MonoBehaviour
 		{
 			_jumpTime = timeToJumpHeight;
 			_velocity.y = 0;
-			if (_jumpInput && _canJump)
+			if (_jumpInput && _canJump && !_shouldLock)
 			{
 				_velocity.y = _jumpVelocity;
 				_jumpTime = 0;

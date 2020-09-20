@@ -34,10 +34,10 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  startHp: {x: 90, y: 110}
+  startHp: {x: 100, y: 100}
   resistanceLevel: 10
   doDamage: 1
-  damagePerTick: 10
+  damagePerTick: 20
   tickCooldDown: 0.25
   indestructible: 1
   transformTo: {fileID: 0}

@@ -17,6 +17,7 @@ public class EnvironementTile
 	public float hp => _hp;
 	private int flashCount = 0;
 
+
 	public EnvironementTile(TileType t, Vector3Int pos)
 	{
 		_tile = t;
@@ -50,6 +51,7 @@ public class EnvironementTile
 		if (other == null) return;
 		if (other._tile.indestructible == false &&_tile.resistanceLevel >= other._tile.resistanceLevel){
 			other.ReceiveDamage(_tile.damagePerTick);
+			TileManager.ToxicDamage(_position+offset, other);
 		}
 	}
 

@@ -15,7 +15,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 325166070, guid: 06b75dc9452dbbd46bd8dd6112b6442a, type: 3}
   maxBulletSpeed: 20
   minBulletSpeed: 8
-  bulletDamage: 8
+  bulletDamage: 12
   bulletGravity: 2000
   bulletLifetime: 10
   bulletLevel: 0
@@ -26,7 +26,8 @@ MonoBehaviour:
   directionSpread: 5
   directionOffsetY: 0.5
   spawnOffset: {x: 1.02, y: -0.09}
-  recoil: {x: 0, y: 0}
+  recoil: {x: -0.2, y: 0}
+  recoilDuration: 0.1
   pressureAddPerUse: -2
   pressureAddEverySecond: 0
   pressureAddPerReload: 30
@@ -54,3 +55,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  levelUpText: 

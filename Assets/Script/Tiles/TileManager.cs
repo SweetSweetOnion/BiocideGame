@@ -17,6 +17,7 @@ public class TileManager : MonoBehaviour
 
 	public TileType defautTiletype;
 	public Color backgroundTileColor;
+	public int loopLength = 120;
 
 
 	[SerializeField]
@@ -47,6 +48,7 @@ public class TileManager : MonoBehaviour
 	public static event TileEventExperience OnTileDestroy;
 	public delegate void TileHit(Vector3 bulletHitPoint, Vector3Int cellCoordinates, bool receiveDamage, float normHp);
 	public static event TileHit OnTileHitByBullet;
+	public static event CompleteTileEvent OnTileToxicDamage;
 
 	private void Awake()
 	{
@@ -98,7 +100,7 @@ public class TileManager : MonoBehaviour
 	private static TileType GetTileType(Vector3Int pos){
 		if (!mainTilemap.HasTile(pos)) return null;
 		var t = scriptTilemap.GetTileType(pos);
-		if (!t) return instance.defautTiletype;
+		//if (!t) return instance.defautTiletype;
 		return t;
 	}
 	
@@ -129,9 +131,18 @@ public class TileManager : MonoBehaviour
 			t.ReceiveDamage(bullet.damage);
 			OnTileDamage?.Invoke(position, t);
 			b = true;
+			GetRepeatCell(position, instance.loopLength)?.ReceiveDamage(bullet.damage);
 		}
 		OnTileHitByBullet?.Invoke(bullet.transform.position, position, b,t.GetNormHp());
         TileAudioManager.instance.PostTileHitSound(position, t.GetNormHp(), b);
+
+	}
+
+	public static void ToxicDamage(Vector3Int position, EnvironementTile t)
+	{
+		if(t!=null)
+		OnTileToxicDamage?.Invoke(position,t);
+		TileAudioManager.instance.PostTileHitSound(position, t.GetNormHp(), true);
 
 	}
 
@@ -150,20 +161,20 @@ public class TileManager : MonoBehaviour
 
 	public static void RemoveTile(Vector3Int position)
 	{
-		backgroundTilemap.SetTile(position, GetTileType(position).backgroundTile);
+		//backgroundTilemap.SetTile(position, GetTileType(position).backgroundTile);
 
 		if (tiles.ContainsKey(position))
 		{
 			tiles.Remove(position);
 		}
 
-		/*mainTilemap.SetTileFlags(position, TileFlags.None);
+		mainTilemap.SetTileFlags(position, TileFlags.None);
 		mainTilemap.SetColliderType(position, Tile.ColliderType.None);
-		mainTilemap.SetColor(position, instance.backgroundTileColor);*/
+		mainTilemap.SetColor(position, instance.backgroundTileColor);
 		
 		resistanceTilemap.SetTile(position, null);
 		damageTilemap.SetTile(position, null);
-		mainTilemap.SetTile(position, null);
+		//mainTilemap.SetTile(position, null);
 		scriptTilemap.SetTile(position, null);
 		OnTileDestroy?.Invoke(position, 10);
         TileAudioManager.instance.PostTileDestroySound(position);
@@ -179,7 +190,17 @@ public class TileManager : MonoBehaviour
 			tiles.Remove(position);
 			GetOrCreateEnvironementTile(position);
 		}
+		OnTileDestroy?.Invoke(position, 2);
+		TileAudioManager.instance.PostTileDestroySound(position);
 		//mainTilemap.SetTile(position, type.toxicTile);
+	}
+
+	public static EnvironementTile GetRepeatCell(Vector3Int originalPos, int loopLength ){
+		var t = GetOrCreateEnvironementTile(originalPos + new Vector3Int(loopLength, 0, 0));
+		if(t==null){
+			t = GetOrCreateEnvironementTile(originalPos - new Vector3Int(loopLength, 0, 0));
+		}
+		return t;
 	}
 
 }
