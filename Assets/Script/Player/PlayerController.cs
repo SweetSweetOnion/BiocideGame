@@ -91,6 +91,8 @@ public class PlayerController : MonoBehaviour
 		_playerInput.currentActionMap["Jump"].canceled += JumpEnd;
 		_playerInput.currentActionMap["Move"].performed += MovePerformed;
 		_playerHealth.OnDamage += OnDamage;
+		_playerInput.currentActionMap["Invincible"].performed += SetInvincible;
+		_playerInput.currentActionMap["Reset"].performed += DoReset;
 	}
 
 	
@@ -100,8 +102,21 @@ public class PlayerController : MonoBehaviour
 		_playerInput.currentActionMap["Jump"].started -= JumpStart;
 		_playerInput.currentActionMap["Jump"].canceled -= JumpEnd;
 		_playerInput.currentActionMap["Move"].performed -= MovePerformed;
-		_playerHealth.OnDamage += OnDamage;
+		_playerInput.currentActionMap["Invincible"].performed -= SetInvincible;
+		_playerInput.currentActionMap["Reset"].performed -= DoReset;
 
+		_playerHealth.OnDamage -= OnDamage;
+
+	}
+
+	private void SetInvincible(InputAction.CallbackContext obj)
+	{
+		_playerHealth._isInvincible = !_playerHealth._isInvincible;
+	}
+
+	private void DoReset(InputAction.CallbackContext obj)
+	{
+		GameManager.instance.DoReset();
 	}
 
 	private void OnDamage(int amount, Vector3 worldOrigin)

@@ -49,32 +49,52 @@ public class WeaponManager : MonoBehaviour
 		{
 			if (_experience >= experienceLevel[_currentWeaponIndex + 1])
 			{
-				_currentWeaponIndex++;
-				_weaponController.SwitchWeapon(GetCurrentWeapon());
-				OnLevelUp?.Invoke(_currentWeaponIndex);
-                //Sound
-                AudioManager.instance.EFFECT_Weapon_LevelUp.Post(gameObject);
-                AudioManager.weaponLevel = _currentWeaponIndex;
-                if (_currentWeaponIndex == 1)
-                {
-                    AkSoundEngine.SetState("MainMusic", "Level_01");
-                }
-                else
-                    AkSoundEngine.SetState("MainMusic", "Level_0" + (GetCurrentWeapon().bulletLevel + 1).ToString());
-                AudioManager.instance.FOLEYS_Weapon_Shoot.Stop(_weaponController.gameObject);
-                AkSoundEngine.SetState("WeaponLevel", "Level_0" + _currentWeaponIndex.ToString());
-                AkSoundEngine.SetState("DestructionLevel", "Level_" + (GetCurrentWeapon().bulletLevel + 1).ToString());
-                if (GetCurrentWeapon().bulletLevel == 2)
-                {
-                    AudioManager.instance.AMB_Nature.Stop(AudioManager.instance.gameObject, 10, AkCurveInterpolation.AkCurveInterpolation_SCurve);
-                    AudioManager.instance.AMB_Destroyed.Post(AudioManager.instance.gameObject);
-                }
-                if (_weaponController.isShooting)
-                    AudioManager.instance.FOLEYS_Weapon_Shoot.Post(_weaponController.gameObject);
-                //Sound
+				LevelUp();
+               
             }
 		}
 		OnExperienceChange?.Invoke(_experience);
+	}
+
+	public void LevelUp(){
+		if(_currentWeaponIndex >= experienceLevel.Length -2){
+			_currentWeaponIndex = 0;
+			_experience = 0;
+			Debug.Log(GetCurrentWeapon());
+			_weaponController.SwitchWeapon(GetCurrentWeapon());
+			OnLevelUp?.Invoke(_currentWeaponIndex);
+			return;
+		}
+
+		if (_experience < experienceLevel[_currentWeaponIndex + 1])
+		{
+			_experience = experienceLevel[_currentWeaponIndex + 1];
+		}
+
+
+		_currentWeaponIndex++;
+		_weaponController.SwitchWeapon(GetCurrentWeapon());
+		OnLevelUp?.Invoke(_currentWeaponIndex);
+		//Sound
+		AudioManager.instance.EFFECT_Weapon_LevelUp.Post(gameObject);
+		AudioManager.weaponLevel = _currentWeaponIndex;
+		if (_currentWeaponIndex == 1)
+		{
+			AkSoundEngine.SetState("MainMusic", "Level_01");
+		}
+		else
+			AkSoundEngine.SetState("MainMusic", "Level_0" + (GetCurrentWeapon().bulletLevel + 1).ToString());
+		AudioManager.instance.FOLEYS_Weapon_Shoot.Stop(_weaponController.gameObject);
+		AkSoundEngine.SetState("WeaponLevel", "Level_0" + _currentWeaponIndex.ToString());
+		AkSoundEngine.SetState("DestructionLevel", "Level_" + (GetCurrentWeapon().bulletLevel + 1).ToString());
+		if (GetCurrentWeapon().bulletLevel == 2)
+		{
+			AudioManager.instance.AMB_Nature.Stop(AudioManager.instance.gameObject, 10, AkCurveInterpolation.AkCurveInterpolation_SCurve);
+			AudioManager.instance.AMB_Destroyed.Post(AudioManager.instance.gameObject);
+		}
+		if (_weaponController.isShooting)
+			AudioManager.instance.FOLEYS_Weapon_Shoot.Post(_weaponController.gameObject);
+		//Sound
 	}
 
 	private void OnTileDamage(Tuple<Vector3Int, float> tuple)

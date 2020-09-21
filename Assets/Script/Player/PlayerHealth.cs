@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
 	public int startHp = 3;
 	public float damageCooldown = 1;
+	public bool _isInvincible = false;
 
 	private int _currentHp;
 	private float _lastDamage = -1;
@@ -25,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
 	}
 
 	public void ReceivedDamage(int amount, Vector3 worldOrigin){
+		if (_isInvincible) return;
 		if (Time.time <= _lastDamage + damageCooldown) return;
 		if (_isDead) return;
 		_currentHp -= amount;
