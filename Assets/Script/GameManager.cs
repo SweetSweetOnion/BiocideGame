@@ -47,7 +47,12 @@ public class GameManager : MonoBehaviour
 	{
 		StartCoroutine(EndGameRoutine());
 	}
-
+	public void DoReset()
+	{
+		controller.transform.position = startPosition;
+		controller.playerHealth.ResetHp();
+		OnRespawn?.Invoke();
+	}
 	private IEnumerator EndGameRoutine(){
 		yield return new WaitForSeconds(3);
 		controller.transform.position = startPosition;

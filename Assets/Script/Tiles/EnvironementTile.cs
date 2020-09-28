@@ -81,8 +81,9 @@ public class EnvironementTile
 
 	public void WalkByPlayer(PlayerController player)
 	{
-		if (_doDamage)
+		if (_doDamage && TileManager.mainTilemap.WorldToCell(player.transform.position) == (_position + Vector3Int.up)){
 			player.playerHealth.ReceivedDamage(1, TileManager.mainTilemap.GetCellCenterWorld(_position));
+		}
 	}
 
 	public bool CanResist(Bullet b)
