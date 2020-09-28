@@ -1483,50 +1483,6 @@
 																<ActiveSource Name="VO_HumanFight_04" ID="{ECB6D8EE-4739-464D-9127-4F22EE644301}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<Sound Name="VO_HumanFight_06" ID="{D81A4D76-A713-4E1C-93AA-0F6D947F930F}" ShortID="663043175">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="VO_HumanFight_06" ID="{85597F7D-19A0-4984-8DE9-8A47B39BEFBF}">
-																	<Language>SFX</Language>
-																	<AudioFile>VO_HumanFight_06.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="915850153"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="VO_HumanFight_06" ID="{85597F7D-19A0-4984-8DE9-8A47B39BEFBF}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="VO_HumanPain_24" ID="{BA5D6241-9B79-4668-8CBB-A8374C849643}" ShortID="149679971">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="VO_HumanPain_24" ID="{2699591F-62A6-4AB2-82B1-23F6D1C916DD}">
-																	<Language>SFX</Language>
-																	<AudioFile>VO_HumanPain_24.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="920720125"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="VO_HumanPain_24" ID="{2699591F-62A6-4AB2-82B1-23F6D1C916DD}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 														<Sound Name="VO_HumanPain_25" ID="{CB4DBF25-1CF1-45D1-B6F7-62CE6D42FCC9}" ShortID="384280261">
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -1569,66 +1525,6 @@
 															</ChildrenList>
 															<ActiveSourceList>
 																<ActiveSource Name="VO_HumanPain_26" ID="{A64AD704-3760-4BF0-BE08-F795F08B5278}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="[YTP]FR Urgences" ID="{1CA90167-67D2-4644-B07F-48A59AC84B85}" ShortID="924647461">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="[YTP]FR Urgences" ID="{EA18BAB5-2DF9-451F-9122-2340076B6468}">
-																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.172782662753775"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="165.117613369799"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="165.99961448611"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>[YTP]FR Urgences.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="510601863"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="[YTP]FR Urgences" ID="{EA18BAB5-2DF9-451F-9122-2340076B6468}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="[YTP]FR Urgences_01" ID="{EE576D12-B9EB-46A4-BF56-927795CDB693}" ShortID="343788073">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="[YTP]FR Urgences" ID="{EAF47141-D26E-4B7D-B175-7E348F19D6FC}">
-																	<PropertyList>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.172782662753775"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="166.293151357547"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="167.159049213752"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>[YTP]FR Urgences.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="758486508"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="[YTP]FR Urgences" ID="{EAF47141-D26E-4B7D-B175-7E348F19D6FC}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>

@@ -539,7 +539,7 @@
       "GUID": "{D2D9F1BC-F88A-41D7-B53F-1608617FC811}",
       "DurationType": "OneShot",
       "DurationMin": "0.412729",
-      "DurationMax": "1.405521",
+      "DurationMax": "0.653625",
       "IncludedMemoryFiles": [
        {
         "Id": "245515467",
@@ -554,34 +554,10 @@
         "Path": "SFX\\VO_HumanPain_25_755F56E2.wem"
        },
        {
-        "Id": "510601863",
-        "Language": "SFX",
-        "ShortName": "[YTP]FR Urgences.wav",
-        "Path": "SFX\\[YTP]FR Urgences_E70F3E9E.wem"
-       },
-       {
         "Id": "726875142",
         "Language": "SFX",
         "ShortName": "VO_HumanFight_04.wav",
         "Path": "SFX\\VO_HumanFight_04_755F56E2.wem"
-       },
-       {
-        "Id": "758486508",
-        "Language": "SFX",
-        "ShortName": "[YTP]FR Urgences.wav",
-        "Path": "SFX\\[YTP]FR Urgences_4148B015.wem"
-       },
-       {
-        "Id": "915850153",
-        "Language": "SFX",
-        "ShortName": "VO_HumanFight_06.wav",
-        "Path": "SFX\\VO_HumanFight_06_755F56E2.wem"
-       },
-       {
-        "Id": "920720125",
-        "Language": "SFX",
-        "ShortName": "VO_HumanPain_24.wav",
-        "Path": "SFX\\VO_HumanPain_24_755F56E2.wem"
        },
        {
         "Id": "1064835678",

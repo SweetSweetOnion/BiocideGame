@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
     public AK.Wwise.Event FOLEYS_Weapon_Trigger;
     public AK.Wwise.Event UI_Menu_Select;
     public AK.Wwise.Event UI_Menu_Submit;
+    public AK.Wwise.Event MUSIC_FadeOut;
 
     public static int weaponLevel = 0;
 
@@ -43,5 +44,15 @@ public class AudioManager : MonoBehaviour
     {
         MUSIC_Main.Post(gameObject);
         AMB_Nature.Post(gameObject);
+    }
+
+    public void FadeMusic()
+    {
+        MUSIC_FadeOut.Post(gameObject);
+    }
+
+    public void SetMusicToEnd()
+    {
+        AkSoundEngine.SetState("MainMusic", "End");
     }
 }

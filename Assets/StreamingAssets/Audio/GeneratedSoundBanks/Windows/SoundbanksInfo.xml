@@ -284,7 +284,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2031942103" Name="FOLEYS_Char_Death" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Death" GUID="{D2D9F1BC-F88A-41D7-B53F-1608617FC811}" DurationType="OneShot" DurationMin="0.412729" DurationMax="1.405521">
+				<Event Id="2031942103" Name="FOLEYS_Char_Death" ObjectPath="\Events\BIOCIDE_EVENTS\SFX EVENTS\FOLEYS EVENTS\FOLEYS_Char_Death" GUID="{D2D9F1BC-F88A-41D7-B53F-1608617FC811}" DurationType="OneShot" DurationMin="0.412729" DurationMax="0.653625">
 					<IncludedMemoryFiles>
 						<File Id="245515467" Language="SFX">
 							<ShortName>VO_HumanPain_26.wav</ShortName>
@@ -294,25 +294,9 @@
 							<ShortName>VO_HumanPain_25.wav</ShortName>
 							<Path>SFX\VO_HumanPain_25_755F56E2.wem</Path>
 						</File>
-						<File Id="510601863" Language="SFX">
-							<ShortName>[YTP]FR Urgences.wav</ShortName>
-							<Path>SFX\[YTP]FR Urgences_E70F3E9E.wem</Path>
-						</File>
 						<File Id="726875142" Language="SFX">
 							<ShortName>VO_HumanFight_04.wav</ShortName>
 							<Path>SFX\VO_HumanFight_04_755F56E2.wem</Path>
-						</File>
-						<File Id="758486508" Language="SFX">
-							<ShortName>[YTP]FR Urgences.wav</ShortName>
-							<Path>SFX\[YTP]FR Urgences_4148B015.wem</Path>
-						</File>
-						<File Id="915850153" Language="SFX">
-							<ShortName>VO_HumanFight_06.wav</ShortName>
-							<Path>SFX\VO_HumanFight_06_755F56E2.wem</Path>
-						</File>
-						<File Id="920720125" Language="SFX">
-							<ShortName>VO_HumanPain_24.wav</ShortName>
-							<Path>SFX\VO_HumanPain_24_755F56E2.wem</Path>
 						</File>
 						<File Id="1064835678" Language="SFX">
 							<ShortName>VO_HumanFight_02.wav</ShortName>
